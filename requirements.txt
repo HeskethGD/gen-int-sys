@@ -1,0 +1,8 @@
+# Direct dependencies for all eight notebooks and the verification suite.
+marimo==0.25.1
+sympy==1.14.0
+mpmath==1.3.0
+numpy==2.3.5
+scipy==1.16.3
+matplotlib==3.10.7
+pytest==9.1.1
