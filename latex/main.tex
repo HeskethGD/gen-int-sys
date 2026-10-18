@@ -97,9 +97,7 @@ The modular example has explicit theta-constant mode solutions and a direct map 
 
 \section{Introduction}
 
-Integrable systems of coupled modes provide a meeting point between nonlinear optics, classical mechanics, and special-function theory. In nonlinear optics, resonant wave mixing and nonlinear directional couplers furnish familiar examples \cite{armstrongInteractionsLightWaves1962,stolenParametricAmplificationFrequency1982,chenFourphotonParametricMixing1989,chenFourwaveMixingOptical1989,agrawalNonlinearFiberOptics2019,jensenNonlinearCoherentCoupler1982}. Conserved combinations of modal powers reduce these systems to a scalar autonomous differential equation. Cubic and quartic polynomial reductions lead to elliptic functions, while the individual complex mode amplitudes require additional reconstruction. Explicit solutions of optical coupled-mode equations reveal connections with classical mechanical systems and identities among elliptic functions, motivating the search for a common constructive framework \cite{jensenNonlinearCoherentCoupler1982,heskethGeneralComplexEnvelope2015,heskethFWMWeierstrassElliptic2026,heskethCompleteWeierstrassElliptic2026}. More recently, we obtained local solutions for polynomial Kummer-type systems with larger mode number $N$ using hyperelliptic sigma functions and Abelian integrals \cite{zotero-item-855}.
-
-Under suitable parameter choices and initial conditions, these coupled-mode systems also admit projections to classical mechanical systems, including the Lagrange top and the Duffing oscillator; the Euler top appears as a special reduction, as discussed in the examples below \cite{Whittaker1937,kovacicJacobiEllipticFunctions2016}.
+Integrable coupled-mode systems connect nonlinear optics with special-function theory. Resonant wave mixing and nonlinear directional couplers provide familiar examples \cite{armstrongInteractionsLightWaves1962,stolenParametricAmplificationFrequency1982,chenFourphotonParametricMixing1989,chenFourwaveMixingOptical1989,agrawalNonlinearFiberOptics2019,jensenNonlinearCoherentCoupler1982}, whose conserved modal-power combinations reduce the dynamics to a scalar autonomous differential equation. Cubic and quartic polynomial reductions lead to elliptic functions, with the individual mode amplitudes recovered by further quadratures \cite{jensenNonlinearCoherentCoupler1982,heskethGeneralComplexEnvelope2015,heskethFWMWeierstrassElliptic2026,heskethCompleteWeierstrassElliptic2026}. Under suitable parameter choices and initial conditions, these systems also connect with classical mechanics through projections to the Lagrange top and Duffing oscillator, while the Euler top appears as a special reduction \cite{Whittaker1937,kovacicJacobiEllipticFunctions2016}. More recently, we obtained local solutions for polynomial Kummer-type systems with interaction terms formed from products of $N>4$ modes, using hyperelliptic sigma functions and Abelian integrals \cite{zotero-item-855}.
 
 The construction of integrable Hamiltonian systems has several established approaches. Lax representations relate the equations of motion to spectral invariants, while separation relations can be used to define commuting Hamiltonians and their separated equations. Stäckel transforms and coupling-constant metamorphosis provide ways to obtain related integrable systems from known ones \cite{krishnaswamiIntroductionLaxPairs2020,blaszakGeneralizedStackelSystems2011,sergyeyevCouplingConstantMetamorphosis2012}. These approaches offer a broad context for the present work, which concerns a particular family of resonantly coupled modes and uses a scalar autonomous equation as the starting point for its construction.
 
@@ -128,7 +126,10 @@ We first recall the general Hamiltonian reduction and develop the inverse constr
 
 \section{The general Hamiltonian system}
 \label{sec:gen-ham-system}
-In this section we recall the established reduction and reconstruction mechanism and formulate the product identities as the Main Theorem used in the subsequent construction. 
+In this section we recall the established Hamiltonian reduction and reconstruction mechanism in the notation used for the subsequent construction.
+
+The separation and reconstruction mechanism is established in the Kummer literature. Kummer treated constant resonant coupling ($P$ constant in our notation) and polynomial power dependence ($Q$ polynomial), subject to the degree restrictions of his setting \cite{kummerResonantClassicalHamiltonians1990}. Odzijewicz and Wawreniuk allowed smooth power-dependent coupling and diagonal functions, corresponding to $P$ and $Q$, and obtained the separated scalar equation and reconstruction quadratures \cite[Section~2, especially Eq.~(2.31)]{odzijewiczClassicalQuantumKummer2016}. Their formulation uses conjugate oscillator variables and a positive coupling function; here we work locally with independent complex canonical variables and holomorphic coefficients.
+
 The notation is motivated by nonlinear optics and elliptic function theory.
 Unless otherwise stated, the complex constructions are local: $P,Q$ are holomorphic on an open domain $\Omega\subset\mathbb C^N$, and the modes are holomorphic on a simply connected open domain $D\subset\mathbb C$ with $x(D)\subset\Omega$.
 Meromorphic coefficients are restricted to domains avoiding their poles; roots, logarithms, and inverse functions are taken on compatible local branches, and every displayed division is restricted to a nonzero denominator.
@@ -153,7 +154,7 @@ Let us introduce the notation $x_j = u_j v_j$ such that:
     P{\left(u_1 v_1, \dots , u_N v_N \right)} &= P{\left(x_1, \dots , x_N \right)}, \\
     \partial_{v_j} P &= u_j \partial_{x_j} P = u_j \left(\partial_{x_j} P\right) |_{x_j=u_j v_j},
 \end{align}
-etc., then we can write the equations of motion obtained via Hamilton's equations as:
+then we can write the equations of motion obtained via Hamilton's equations as:
 \begin{align}
     \frac{d u_j}{dz} &= \partial_{v_j} H, \notag \\
         &= \left\{\left(\prod_{m=1}^{N} u_{m}^{{\beta}_{m}} + \prod_{m=1}^{N} v_{m}^{{\beta}_{m}}\right) \partial_{x_j} P - \partial_{x_j} Q \right\} u_j + \frac{\beta_j P}{v_j} \prod_{m=1}^{N} v_{m}^{{\beta}_{m}}, \notag \\
@@ -220,122 +221,7 @@ Choosing $\beta_N\ne0$ after relabelling if necessary, the $N-1$ quantities
 \end{equation}
 commute with one another and with $H$. The system is therefore Liouville integrable on the regular locus where these $N$ integrals are functionally independent. A detailed verification is supplied in the supplementary computational notebooks. The constructions below use the explicit scalar reduction and reconstruction quadratures directly. No global invariant-torus or action--angle conclusion is asserted for the general complex systems.
 
-\subsection{Theorem form without Hamiltonian mechanics}
-The separation and reconstruction mechanism underlying the following statement is established in the Kummer literature. Kummer treated constant resonant coupling ($P$ constant in our notation) and polynomial power dependence ($Q$ polynomial), subject to the degree restrictions of his setting \cite{kummerResonantClassicalHamiltonians1990}. Odzijewicz and Wawreniuk allowed smooth power-dependent coupling and diagonal functions, corresponding to $P$ and $Q$, and obtained the separated scalar equation and reconstruction quadratures \cite[Section~2, especially Eq.~(2.31)]{odzijewiczClassicalQuantumKummer2016}. Their formulation uses conjugate oscillator variables and a positive coupling function; here we work locally with independent complex canonical variables and holomorphic coefficients.
-
-We call the following statement the Main Theorem because it supplies the identities used throughout our construction, without claiming the underlying separability as a new result. We give a direct proof from the differential equations, independently of Hamiltonian conservation, making the local branch and initial-data compatibility conditions explicit. Thus we work in reverse from the equations for $\rho$, $u_j$ and $v_j$ to the identities derived in Section \ref{sec:gen-ham-system}.
-
-\begin{theorem}[Main Theorem]
-Let $\Omega\subset\mathbb C^N$ and $D\subset\mathbb C$ be open, with $D$ simply connected.
-Let $P,Q$ be holomorphic on $\Omega$, and let $u_j,v_j,\rho$ be holomorphic on $D$, with $u_jv_j\ne0$, $x(D)\subset\Omega$, and $P(x(z))\ne0$ throughout $D$.
-Let $\beta_j\in\mathbb Z$ satisfy $\sum_j\beta_j\ne0$, and define
-\begin{align}
-    x_j(z) &= u_j(z) v_j(z), \\
-    p(z) &= P\left(x_1,\dots, x_N\right), \\
-    q(z) &= Q\left(x_1,\dots, x_N\right), \\
-    r(z) &= \prod_{m=1}^{N}x_m^{\beta_m}.
-\end{align}
-Let prime denote differentiation with respect to $z$, assume $\rho'(z)\ne0$ on $D$, and let $\rho$ satisfy
-\begin{equation}
-    {\rho'}^2 = q^2 - 4p^2r. \label{eq:theorem-rho-srd}
-\end{equation}
-Let $u_j$ solve:
-\begin{equation}
-    \left(\log\left(u_j\right)\right)' = \frac{\beta_j Q}{2 x_j} - \partial_{x_j}Q + \frac{Q \partial_{x_j}P}{P} + \frac{\left(\log\left(x_j\right)\right)'}{2}, \label{eq:theorem-dlog-uj}
-\end{equation}
-where $P,Q$ and their partial derivatives are evaluated at $(x_1(z),\dots,x_N(z))$. 
-Define $v_j$ such that for $\gamma_j \in \mathbb{C} \quad  (j=1,\dots,N): \sum_{j=1}^{N}\gamma_j = 0$:
-\begin{equation}
-    u_j v_j = \gamma_j - \beta_j \rho. \label{eq:ujvj-rho-theorem}
-\end{equation}
-Choose $z_0\in D$ and impose the initial compatibility condition
-\begin{equation}
-    \prod_{m=1}^{N}u_m\left(z_0\right)^{\beta_m} = \frac{q\left(z_0\right) + \rho'\left(z_0\right)}{2 p\left(z_0\right)}. \label{eq:theorem-z0}
-\end{equation}
-Then it follows that:
-\begin{align}
-    \prod_{m=1}^{N}u_m^{\beta_m} = \frac{q + \rho'}{2 p}, \notag \\
-    \prod_{m=1}^{N}v_m^{\beta_m} = \frac{q - \rho'}{2 p}, \label{eq:u_v-qprho-prods} 
-\end{align}
-
-\end{theorem}
-
-\begin{proof}
-The hypotheses permit holomorphic logarithms of the nonvanishing factors on $D$. From \eqref{eq:theorem-dlog-uj} we may write:
-\begin{equation}
-    \frac{1}{2}\sum_{j=1}^{N}\beta_j\left(\log{\left[\frac{u_j}{v_j}\right]}\right)' = \frac{Q}{2}\sum_{j=1}^{N}\frac{\beta_j^2}{x_j} - \sum_{j=1}^{N}\beta_j\partial_{x_j}Q + \frac{Q}{P}\sum_{j=1}^{N}\beta_j\partial_{x_j}P, \label{eq:theorem-log-sum}
-\end{equation}
-and from \eqref{eq:ujvj-rho-theorem}:
-\begin{equation*}
-    \beta_j = -\frac{{x_j}'}{\rho'}
-\end{equation*}
-hence, by making use of general calculus identities such as:
-\begin{equation*}
-    q' = \sum_{j=1}^{N}{x_j}'\partial_{x_j}Q
-\end{equation*}
-we may rewrite \eqref{eq:theorem-log-sum} as:
-\begin{align}
-    \left(\log{\left[\prod_{j=1}^{N}\left(\frac{u_j}{v_j}\right)^{\beta_j}\right]}\right)' &= -\frac{Q}{\rho'}\left(\log{\left[\prod_{j=1}^{N}{x_j}^{\beta_j}\right]}\right)' + \frac{2}{\rho'}\sum_{j=1}^{N}{x_j}'\partial_{x_j}Q - \frac{2Q}{\rho' P}\sum_{j=1}^{N}{x_j}'\partial_{x_j}P, \notag \\[10pt]
-    &= -\frac{q r'}{\rho' r} + \frac{2 q'}{\rho'} - \frac{2 q p'}{\rho' p}. \label{eq:theorem-log-sum-2}
-\end{align}
-However, we also observe that:
-\begin{align}
-    \left(\log{\left[\frac{q + \rho'}{q - \rho'}\right]}\right)' &= \frac{q' + \rho''}{q + \rho'} - \frac{q' - \rho''}{q - \rho'}, \notag \\[10pt]
-    &= -\frac{q r'}{\rho' r} + \frac{2q'}{\rho'} - \frac{2 q p'}{\rho' p}
-\end{align}
-hence:
-\begin{align}
-    \left(\log{\left[\prod_{j=1}^{N}\left(\frac{u_j}{v_j}\right)^{\beta_j}\right]}\right)'  &= \left(\log{\left[\frac{q + \rho'}{q - \rho'}\right]}\right)', \notag \\
-    \left(\log{\left[\prod_{j=1}^{N}\left(\frac{u_j}{v_j}\right)^{\beta_j}\right]}\right)' + \left(\log{\left[\prod_{j=1}^{N}\left(u_j v_j\right)^{\beta_j}\right]}\right)'  &= \left(\log{\left[\frac{q + \rho'}{q - \rho'}\right]}\right)' + \left(\log{\left[r\right]}\right)', \notag \\
-    2\left(\log{\left[\prod_{j=1}^{N}{u_j}^{\beta_j}\right]}\right)'  &= \left(\log{\left[r\left(\frac{q + \rho'}{q - \rho'}\right)\right]}\right)', \notag \\
-    2\left(\log{\left[\prod_{j=1}^{N}{u_j}^{\beta_j}\right]}\right)'  &= \left(\log{\left[\frac{\left(q + \rho'\right)^2}{4p^2}\right]}\right)', \notag \\
-    \left(\log{\left[\prod_{j=1}^{N}{u_j}^{\beta_j}\right]}\right)'  &= \left(\log{\left[\frac{q + \rho'}{p}\right]}\right)'.
-\end{align}
-Integrating and accounting for \eqref{eq:theorem-z0} thus gives:
-\begin{align}
-    \int_{z_0}^{z}\left(\log{\left[\prod_{j=1}^{N}{u_j}^{\beta_j}\right]}\right)'{dz}  &= \int_{z_0}^{z}\left(\log{\left[\frac{q + \rho'}{p}\right]}\right)'{dz}, \notag \\
-    \prod_{j=1}^{N}{u_j}^{\beta_j}  &= \frac{q + \rho'}{2p}.
-\end{align}
-As \eqref{eq:theorem-rho-srd} may be factored into:
-\begin{align}
-    -\left(\frac{\rho' + q}{2p}\right)\left(\frac{\rho' - q}{2p}\right) = r = \prod_{m=1}^{N}\left(u_m v_m\right)^{\beta_m} = \left(\prod_{m=1}^{N}u_m^{\beta_m}\right)\left(\prod_{m=1}^{N}v_m^{\beta_m}\right),
-\end{align}
-it follows that:
-\begin{equation}
-    \prod_{j=1}^{N}{v_j}^{\beta_j}  = \frac{q - \rho'}{2p}.
-\end{equation}
-
-\end{proof}
-
-
-\paragraph{Initial reconstruction data.}
-Condition \eqref{eq:theorem-z0} fixes one multiplicative reconstruction constant.
-Its right hand side is nonzero because $(q+\rho')(q-\rho')=4p^2r\ne0$.
-Since $\sum_j\beta_j\ne0$, at least one weight is nonzero; after choosing the other nonzero initial mode values, that mode can be chosen to satisfy \eqref{eq:theorem-z0}, with a compatible root if necessary, and $v_j(z_0)=x_j(z_0)/u_j(z_0)$.
-For nonconstant holomorphic solutions, the product identities extend by continuity across isolated zeros of $\rho'$ wherever the modes and coefficients extend regularly.
-
-\paragraph{Constant modal powers.}
-Constant solutions of the squared scalar equation are not covered by the theorem: its derivation divides by $\rho'$, and a scalar root alone need not give a compatible mode solution.
-Suppose $\rho(z)\equiv\rho_*$, where $\rho_*$ is a fixed constant, and all modal products are nonzero.
-Then $x_j=\gamma_j-\beta_j\rho_*$ and hence $p,q,r$ are constant.
-In this case the required product identities reduce to
-\begin{equation}
-    U(z)=V(z)=\frac{q}{2p},
-    \qquad U(z)=\prod_j u_j(z)^{\beta_j},\quad
-    V(z)=\prod_j v_j(z)^{\beta_j}.
-\end{equation}
-Thus the weighted products must be constant in this constant-power case, although they generally vary when $\rho$ is nonconstant.
-In addition to the initial product condition and $q^2=4p^2r$, compatibility requires
-\begin{equation}
-    \sum_{j=1}^{N}\beta_j\left[
-    \frac{\beta_j q}{2x_j}-\partial_{x_j}Q
-    +\frac{q}{p}\partial_{x_j}P\right]=0,
-    \label{eq:stationary-scalar-compatibility}
-\end{equation}
-with all terms evaluated at $x_j=\gamma_j-\beta_j\rho_*$.
-For constant modal powers, the left hand side is $U'/U$. Its vanishing ensures that the initially imposed value $U=q/(2p)$ is preserved; since $UV=r$, the value of $V$ is then preserved as well.
-The individual modes may still evolve, with their logarithmic derivatives cancelling in the weighted products.
-
+An independent differential-equation proof of the reconstruction identities is given in Appendix~\ref{app:direct-reconstruction}. Reconstruction requires compatible initial products; constant modal powers require an additional compatibility condition, also treated there.
 
 \section{Generating integrable systems from an autonomous differential equation}
 \label{sec:ode-generation}
@@ -349,7 +235,7 @@ Let $f$ be holomorphic on an open set $\mathcal U\subset\mathbb C$, and let $\rh
 \begin{equation}
     \rho' = f(\rho)
 \end{equation}
-Following the notation of the main theorem in which $x_j=u_j v_j=\gamma_j - \beta_j\rho$ we write:
+Using $x_j=u_j v_j=\gamma_j-\beta_j\rho$ from \eqref{eq:uvj-rho-gammaj}, we write:
 \begin{equation}
     f(\rho) = F(x_1,\dots,x_N). \label{eq:f-F}
 \end{equation}
@@ -359,7 +245,7 @@ $F$ may be a polynomial that raises each $x_j$ to different powers but still upo
 this is common in physical nonlinear optics cases with elliptic function solutions for example.
 Alternatively, we may simply substitute the sum over $u_j v_j$ from \eqref{eq:rho-mean-mode-pow} into $f$ to define $F$, 
 which is a simple approach for symmetric toy model exploration. 
-In either case, from \eqref{eq:theorem-rho-srd} we may then write:
+Writing $p=P(x(\rho))$, $q=Q(x(\rho))$ and $r=\prod_jx_j(\rho)^{\beta_j}$, equation \eqref{eq:drho-sqrd-ham} gives:
 \begin{align}
     {\rho'}^2 &= q^2 - 4p^2r, \\
     f(\rho)^2 &= q^2 - 4p^2r,
@@ -397,7 +283,7 @@ Furthermore, the differential equations for $u_j, v_j$ indeed yield the target:
 where the branch of $\rho'=\pm f(\rho)$ is fixed by the initial condition. 
 We note that although $Q$ is substituted in terms of $F$, one may still choose $P$ subject to the local regularity conditions, so $f$ does not generate a unique system.
 In particular, $F$ must have a holomorphic extension to the modal-power domain, and $F^2+4P^2R$ must admit the selected holomorphic square root defining $Q$. A nonzero radicand at the initial point is sufficient after shrinking the domain.
-The reconstruction formulas require $P$ and the modal products to be nonzero; the direct theorem applies where $f(\rho)\ne0$, with stationary cases treated separately as above.
+The reconstruction formulas require $P$ and the modal products to be nonzero; the direct reconstruction theorem in Appendix~\ref{app:direct-reconstruction} applies where $f(\rho)\ne0$, with stationary cases treated separately there.
 
 \begin{lemma}[Removal of a common modal-power factor]
 \label{lem:common-modal-power-factor}
@@ -489,7 +375,7 @@ Define $\widehat{\rho}(\xi)=\rho(z(\xi))$. Then $\widehat{x}_j=\gamma_j-\beta_j\
 Thus the factorisation is always available locally by taking $\widehat{Q}=Q/P$, but it does not in general make the original choice of $P$ irrelevant: $P$ may remain within the ratio $Q/P$ and it fixes the relation between $z$ and $\xi$ through \eqref{eq:xi-z-P-reparam}.
 The result is most useful when $P$ and $Q$ have an explicit common factor which cancels from $\widehat{Q}$, in which case that factor affects only the parametrisation on the chosen energy level.
 The modular $\lambda$ system in Section \ref{sec:modular-example} provides such an example, since the common factor involving the complete elliptic integral can be transferred into the change of parameter.
-For broader discussion of phase-space-dependent multiples of Hamiltonian vector fields as time reparameterisations, see \cite{garcia-naranjoStructurePreservingDiscretization2020}.
+For broader discussion of such time reparameterisations, see \cite{garcia-naranjoStructurePreservingDiscretization2020}.
 The same argument applies on any fixed energy level after subtracting the energy from $H$, as is implemented here by an additive change to $Q$.
 
 
@@ -509,14 +395,14 @@ On the corresponding branch of $\mathcal H_S=0$, applying $S^{-1}$ gives
 \end{equation}
 Thus the same local level set is described by $K=U+V-h(x)=0$, a Hamiltonian of the original form with coupling function $1$.
 Equality of the level sets alone does not identify their parametrised dynamics.
-Indeed, differentiating $S(h)=Q/P$ shows that, on this level,
+Indeed, differentiating $S(h)=Q/P$ shows that, on this level, Hamilton's equations take the form
 \begin{equation}
-    d\mathcal H_S=A(x)\,dK,
-    \qquad A(x)=P(x)S'(h(x)),
+    \frac{du_j}{dz}=\partial_{v_j}\mathcal H_S=A(x)\partial_{v_j}K,
+    \qquad
+    \frac{dv_j}{dz}=-\partial_{u_j}\mathcal H_S=-A(x)\partial_{u_j}K,
     \label{eq:nonlinear-mixing-vector-factor}
 \end{equation}
-where $d$ denotes the differential on phase space.
-Their Hamiltonian vector fields therefore satisfy $X_{\mathcal H_S}=A X_K$, so the solution curves agree after the local change of parameter $d\xi/dz=A(x(z))$, as in Lemma \ref{lem:common-modal-power-factor}.
+where $A(x)=P(x)S'(h(x))$. Thus the mode derivatives differ from those generated by $K$ by the same nonzero factor $A(x)$. The solution curves therefore agree after the local change of parameter $d\xi/dz=A(x(z))$, as in Lemma \ref{lem:common-modal-power-factor}.
 Alternatively, define
 \begin{equation}
     \widetilde H=A(x)K
@@ -524,17 +410,14 @@ Alternatively, define
     \qquad
     \widetilde P=A,\quad \widetilde Q=Ah.
 \end{equation}
-Since $d\widetilde H=A\,dK$ on $K=0$, this Hamiltonian reproduces the vector field of $\mathcal H_S$ on the selected level in the original variable $z$.
+On $K=0$, the terms produced by differentiating $A$ in $\widetilde H=AK$ vanish, so this Hamiltonian gives the same Hamilton equations as $\mathcal H_S$ on the selected level in the original variable $z$.
 Consequently, a locally invertible function of $U+V$ does not enlarge the class of level-set dynamics represented by arbitrary $P,Q$, although this equivalence may not be apparent from the initial Hamiltonian expression.
 The equivalence is local to the chosen inverse branch and level set; the Hamiltonians need not generate the same dynamics away from that level.
 
 \section{Nonlinear optics, classical mechanics, and elliptic functions}
 \label{sec:elliptic-examples}
 
-Nonlinear optics operating in the quasi-continuous-wave regime where time derivatives are negligible in comparison to other effects provided much of the inspiration for this research.
-These systems often have solutions in terms of doubly periodic and quasi-doubly periodic elliptic functions.
-We will present a general system that encompasses many of these systems as special cases and then list important examples in a table. 
-We defer the proof of their solutions to existing literature.
+Continuous-wave and quasi-continuous-wave nonlinear optics, where temporal derivatives can be neglected, provides a broad hierarchy of integrable coupled-mode systems, many with elliptic-function solutions. Here we recap the importance and extent of this hierarchy by presenting a common system and summarising its optical and classical-mechanical special cases. We then show how the same framework extends beyond the elliptic hierarchy to higher-degree scalar curves and incomplete beta inversion. Detailed solutions of the established optical models are left to the cited literature.
 
 For constants $a_j, a_{j,k}, c \in \mathbb{C}$, let us consider the $N \le 4$ mode system with:
 \begin{align}
@@ -659,8 +542,6 @@ For $m\ge1$, the scalar polynomial has repeated roots, so its high degree does n
 \section{Log-augmented polynomial systems}
 \label{sec:lotka-volterra-related}
 
-Throughout this section, dynamical variables are functions of the independent variable $z$, and primes denote differentiation with respect to $z$. We display this dependence when introducing variables and suppress it subsequently for readability. Parameters and fixed values of first integrals are constant along each trajectory.
-
 We introduce the category of log-augmented polynomial systems to describe polynomial mode equations whose scalar generating equations retain logarithmic terms. The scalar equations belong to a broader class of rational functions augmented by powers of a logarithm, which also includes systems with rational mode equations. A useful form is
 \begin{equation}
     \rho'(z)^2=R_1(\rho(z))+R_2(\rho(z))\bigl[\log R_3(\rho(z))\bigr]^m,
@@ -669,7 +550,7 @@ We introduce the category of log-augmented polynomial systems to describe polyno
 \end{equation}
 where $R_1,R_2,R_3$ are fixed rational functions of their scalar argument and $m$ is a constant integer. More generally, several logarithmic powers may occur together. We work locally on consistent logarithmic branches, away from poles and other singularities. Such equations can arise in the Hamiltonian framework considered here when logarithmic terms $[\log \mathcal R(x_1,\ldots,x_N)]^M$ are combined with rational functions of the modal powers $x_j=u_jv_j$ and the weighted products $U=\prod_j u_j^{\beta_j}$, $V=\prod_j v_j^{\beta_j}$, for choices compatible with the scalar reduction. The Hamiltonian exponent $M$ need not equal $m$: squaring or eliminating the mode products can generate mixed logarithmic powers.
 
-These systems are interesting because their equations of motion can be polynomial or rational even though their scalar reductions contain logarithms. Differentiation of logarithmic Hamiltonian terms produces rational expressions, while the zero-energy relation can eliminate remaining logarithms from the mode equations. The logarithmic dependence nevertheless persists in the conserved relation and reappears in the scalar equation for $\rho$. Thus, unlike the systems in the preceding section, polynomial mode equations here need not imply an elliptic or hyperelliptic scalar reduction: the logarithmic terms generally prevent the reduced relation from defining an algebraic curve. The examples below illustrate how this structure can remain hidden in otherwise familiar-looking polynomial systems.
+These systems are interesting because their equations of motion can be polynomial or rational even though their scalar reductions contain logarithms. Differentiation of logarithmic Hamiltonian terms produces rational expressions, while the zero-energy relation can eliminate remaining logarithms from the mode equations. The logarithmic dependence nevertheless persists in the conserved relation and reappears in the scalar equation for $\rho$. Thus, unlike the systems in Section~\ref{sec:elliptic-examples}, polynomial mode equations here need not imply an elliptic or hyperelliptic scalar reduction: the logarithmic terms generally prevent the reduced relation from defining an algebraic curve. The examples below illustrate how this structure can remain hidden in otherwise familiar-looking polynomial systems.
 
 We first present an $m=1$ reduction of a polynomial system considered by Sergyeyev \cite{sergyeyevCouplingConstantMetamorphosis2012} and a separate rational-coefficient equation with an explicit Lambert $W$ solution. We then consider four systems involving squared logarithmic expressions, possibly with shifted or rescaled arguments and lower logarithmic powers after expansion.
 
@@ -697,8 +578,8 @@ Sergyeyev uses these to reduce the system to a scalar equation containing a firs
 \end{equation}
 For $I\ne0$, the integral $J$ becomes
 \begin{equation}
-    J=\frac38(u^2+v^2)-\frac{x}{4}
-      +b\log\left(\frac{x+b}{I}\right).
+    J=\frac38(u^2+v^2)-\frac{uv}{4}
+      +b\log\left(\frac{uv+b}{I}\right).
 \end{equation}
 The first integral defines a fixed function $g$ of the modal power, whose value $g(u(z)v(z))$ varies along the trajectory:
 \begin{equation}
@@ -714,13 +595,13 @@ Choose its local branch so that $g(uv)=v-u$ on the conserved surface, away from 
     \right].
     \label{eq:sergyeyev-power-hamiltonian}
 \end{equation}
-On $H=0$, its canonical equations reproduce the transformed $(X,Z)$ subsystem in the original independent variable $z$. The remaining variable is recovered from $Y^2=(uv+b)/I$ with a consistent branch. We give this Hamiltonian representation for completeness of the examples; we make no particular claim that it offers an advantage over Sergyeyev's original formulation.
+On $H=0$, its canonical equations reproduce the transformed $(X,Z)$ subsystem in the original independent variable $z$. The remaining variable is recovered from $Y^2=(uv+b)/I$ with a consistent branch. We give this Hamiltonian representation for completeness of the examples; we make no particular claim that it offers an advantage over Sergyeyev's original formulation (beyond its symmetry in $u,v$).
 
 In the original variable $z$, direct differentiation gives $(uv)'=-3(uv+b)(u+v)$. Our one-mode convention with $\beta_1=2$ fixes $\gamma_1=0$ and hence
 \begin{equation}
     \rho(z)=-\frac{u(z)v(z)}{2}.
 \end{equation}
-Using the first integral to eliminate $(u+v)^2$ then gives
+Using the first integral to eliminate $(u+v)^2$ then gives Sergyeyev's equation
 \begin{equation}
     \rho'^2=6(b-2\rho)^2\left[
         J-2\rho-b\log\left(\frac{b-2\rho}{I}\right)
@@ -754,7 +635,7 @@ which verify \eqref{eq:lambert-log-rational-ode}. The logarithmic branch is chos
 \subsection{Squared logarithmic terms: \texorpdfstring{$m=2$}{m=2}}
 \label{sec:log-quadratic-examples}
 
-The elliptic examples in the previous section are generated by scalar differential equations which can be reduced to the Weierstrass equation for $s(z)$, with constant invariants $g_2,g_3$
+The elliptic examples in Section~\ref{sec:elliptic-examples} are generated by scalar differential equations which can be reduced to the Weierstrass equation for $s(z)$, with constant invariants $g_2,g_3$
 \begin{equation}
     s'^2=4s^3-g_2s-g_3.
 \end{equation}
@@ -857,7 +738,7 @@ For $\alpha\ne0$, this is a special case of \eqref{eq:log-weierstrass-normal}: o
 
 \subsubsection{A parity-time symmetric dimer}
 
-Ramezani et al. \cite{ramezaniUnidirectionalNonlinearPTsymmetric2010} study a nonlinear optical dimer with balanced gain and loss and cubic Kerr nonlinearity. Its polynomial mode equations conceal the inverse-trigonometric conservation law that produces the logarithmic scalar reduction below. We use its complexified form for $\psi_1(z),\psi_2(z),\widetilde\psi_1(z),\widetilde\psi_2(z)$, with constant parameters $\chi,\kappa$:
+Ramezani et al. \cite{ramezaniUnidirectionalNonlinearPTsymmetric2010} study a nonlinear optical dimer with balanced gain and loss and cubic Kerr nonlinearity. Its polynomial mode equations conceal the inverse-trigonometric conservation law that produces the logarithmic scalar reduction below. We treat $\psi_1(z),\psi_2(z),\widetilde\psi_1(z),\widetilde\psi_2(z)$ as four independent complex variables: the tilde labels a separate variable and does not denote complex conjugation. With constant parameters $\chi,\kappa$, the complexified equations are:
 \begin{align}
     \psi_1' &= \mathrm{i}\chi\psi_1^2\widetilde{\psi}_1+\kappa\psi_1+\mathrm{i}\psi_2, \notag \\
     \psi_2' &= \mathrm{i}\chi\psi_2^2\widetilde{\psi}_2-\kappa\psi_2+\mathrm{i}\psi_1, \notag \\
@@ -865,7 +746,7 @@ Ramezani et al. \cite{ramezaniUnidirectionalNonlinearPTsymmetric2010} study a no
     \widetilde{\psi}_2' &= -\mathrm{i}\chi\psi_2\widetilde{\psi}_2^2-\kappa\widetilde{\psi}_2-\mathrm{i}\widetilde{\psi}_1. \label{eq:ramezani-system}
 \end{align}
 The physical dimer is recovered by $\widetilde\psi_j=\psi_j^*$; $\chi$ is the Kerr coefficient and $\kappa$ the balanced gain/loss coefficient, with the linear coupling normalized to unity.
-Introduce the Stokes variables $S_0(z),S_1(z),S_2(z)$:
+Introduce the complex Stokes variables $S_0(z),S_1(z),S_2(z)\in\mathbb C$, which become real on the physical conjugate restriction:
 \begin{align}
     S_0
     &=
@@ -1084,9 +965,9 @@ and on $H_3=0$ generates
     4(\gamma_1-\rho)(\gamma_2-\rho)(\gamma_3-\rho).
     \label{eq:three-mode-log-rho}
 \end{equation}
-The general equation \eqref{eq:three-mode-log-rho} allows different linear functions of $\rho$ outside and inside the logarithm. The restriction $a_1=a_3=0$ is directly of the form \eqref{eq:log-weierstrass-factorised}.
+Equation \eqref{eq:three-mode-log-rho} is an $m=2$ member of the log-augmented class \eqref{eq:log-augmented-scalar} without any parameter restriction. The choice $a_1=a_3=0$ puts it directly in the factorised form \eqref{eq:log-weierstrass-factorised}. More generally, that form is reached by the affine change $w=a_2\rho+a_3$ whenever $a_0a_2\ne0$ and $a_0a_3+a_1a_2=0$, so that the two linear factors have the same zero.
 
-In this restricted case, introduce new functions $\widetilde{u}_j(z),\widetilde{v}_j(z)$ and $S(z)$, locally where $S(z)\ne0$, by
+For the choice $a_1=a_3=0$, introduce new functions $\widetilde{u}_j(z),\widetilde{v}_j(z)$ and $S(z)$, locally where $S(z)\ne0$, by
 \begin{equation}
     u_j(z)=S(z)\widetilde{u}_j(z),
     \qquad
@@ -1242,9 +1123,9 @@ we may therefore write
     \qquad
     \gamma_1+\gamma_2=0.
 \end{equation}
-For compactness in the scalar equation only, define the fixed affine function $R$ by
+For compactness in the scalar equation only, define the fixed affine function $\ell$ by
 \begin{equation}
-    R(\rho)
+    \ell(\rho)
     =
     a_1(\gamma_1-\rho)
     +
@@ -1254,16 +1135,16 @@ Equation \eqref{eq:drho-sqrd-ham} gives
 \begin{equation}
     \rho'^2
     =
-    R(\rho)^2
+    \ell(\rho)^2
     \left[
-        \log^2(a_0R(\rho))
+        \log^2(a_0\ell(\rho))
         -
         4(\gamma_1-\rho)(\gamma_2-\rho)
     \right]. \label{eq:two-mode-log-rho}
 \end{equation}
 Finally, on defining
 \begin{equation}
-    w(z)=\frac{1}{a_0R(\rho(z))},
+    w(z)=\frac{1}{a_0\ell(\rho(z))},
 \end{equation}
 equation \eqref{eq:two-mode-log-rho} becomes
 \begin{equation}
@@ -1419,7 +1300,7 @@ An additional factor depending separately on the modes, i.e. not just mode power
 \section{A system generated by the modular \texorpdfstring{$\lambda$}{lambda} function}
 \label{sec:modular-example}
 
-We now give a second deliberately constructed example, this time generated by the modular lambda function.
+We now give a deliberately constructed example generated by the modular lambda function, $\lambda$.
 Its first-order differential equation is
 \begin{equation}
     \frac{d\lambda}{d\tau}
@@ -1735,7 +1616,7 @@ We then define a total complex modal phase $\Phi: \mathbb{C} \to \mathbb{C}$, we
 \begin{equation}
     \Phi(z) = \sum_{j=1}^{N}\beta_j\phi_j(z)
 \end{equation}
-From \eqref{eq:u_v-qprho-prods} we get:
+From \eqref{eq:-u-v-prod-fs-det} we get:
 \begin{align}
     \prod_{j=1}^{N}\left(\frac{u_j}{v_j}\right)^{\beta_j} &= \frac{q + \rho'}{q - \rho'}, \notag \\
     e^{2\Phi} &= \frac{q + f(\rho)}{q - f(\rho)} \label{eq:Phi-q-f-rho}
@@ -1867,7 +1748,7 @@ The following example applies this construction with each prescribed modal phase
 \subsection{A system generated by an inverse spherical Bessel function}
 \label{sec:inverse-spherical-bessel-example}
 
-We now give a deliberately constructed example that combines the inverse procedure of Section \ref{sec:ode-generation} with the total-phase formulation above.
+We now give a deliberately constructed example that combines the inverse procedure of Section \ref{sec:ode-generation} with the total-phase formulation of Section~\ref{sec:mode-power-form}.
 Rather than beginning with a familiar Hamiltonian system, we prescribe a locally invertible special function from which we obtain the equation for $\rho$, the mode solutions, and finally a non-polynomial Hamiltonian that generates them.
 
 Let $j_1$ denote the spherical Bessel function of the first kind of order one,
@@ -2023,11 +1904,11 @@ Cubic and quartic scalar polynomials give elliptic curves when nonsingular, whil
 Repeated factors require normalization before the genus can be inferred, as the one-mode Fermat family illustrates; its incomplete-beta parametrisation also shows that the curve and the differential defining the independent variable must both be considered.
 By contrast, the Lotka--Volterra model and the other log-augmented examples show that polynomial mode equations can retain logarithmic terms in their scalar reductions.
 Thus polynomiality of the coupled equations does not by itself imply elliptic or hyperelliptic dynamics.
-A useful next step would be to identify conditions on $P$ and $Q$ that make the mode equations polynomial or rational, and to classify the scalar relations compatible with those conditions.
+The examples provide several sufficient mechanisms for rational or polynomial mode equations, even when the Hamiltonian contains nonrational functions. A complete characterisation of such Hamiltonians, with the canonical variables and allowed reparameterisations specified, remains open.
 
 The passage from local quadratures to global mode solutions raises a separate set of questions.
 Even when $\rho$ is meromorphic, reconstructing a mode by exponentiating an integral of its logarithmic derivative can introduce branching or nontrivial continuation around closed paths.
-For higher-genus scalar curves, inversion of the scalar Abelian integral brings additional constraints and need not define a globally single-valued meromorphic function of $z$.
+For higher-genus scalar curves, the obstruction already occurs in $\rho(z)$ itself: inversion of the scalar Abelian integral generally produces a function with branching under continuation, rather than a globally meromorphic function of $z$. The individual modes may inherit this branching as well as acquiring further branching through reconstruction.
 It would be valuable to formulate criteria, in terms of the singularities and periods of the reconstruction differentials, for the modes to be single-valued on a specified domain or meromorphic on an appropriate covering surface.
 Such criteria should also clarify continuation through zeros of modal products, where the logarithmic form of the reconstruction equations can become singular even when the original mode equations remain regular.
 
@@ -2046,6 +1927,125 @@ This provides a mathematical programme for organising the functional freedom of 
 
 The computational companion, including self-contained Marimo notebooks, supplementary derivations, executed HTML exports, and symbolic and numerical tests, is available at\newline
 \url{https://github.com/HeskethGD/gen-int-sys}.
+
+\appendix
+
+\section{Direct verification of reconstruction}
+\label{app:direct-reconstruction}
+
+This appendix proves the reconstruction product identities directly from the differential equations, independently of Hamiltonian conservation. We work in reverse from the equations for $\rho$, $u_j$ and $v_j$ to the identities derived in Section \ref{sec:gen-ham-system}, making the local branch and initial-data compatibility conditions explicit.
+
+\begin{theorem}[Direct reconstruction theorem]
+Let $\Omega\subset\mathbb C^N$ and $D\subset\mathbb C$ be open, with $D$ simply connected.
+Let $P,Q$ be holomorphic on $\Omega$, and let $u_j,v_j,\rho$ be holomorphic on $D$, with $u_jv_j\ne0$, $x(D)\subset\Omega$, and $P(x(z))\ne0$ throughout $D$.
+Let $\beta_j\in\mathbb Z$ satisfy $\sum_j\beta_j\ne0$, and define
+\begin{align}
+    x_j(z) &= u_j(z) v_j(z), \\
+    p(z) &= P\left(x_1,\dots, x_N\right), \\
+    q(z) &= Q\left(x_1,\dots, x_N\right), \\
+    r(z) &= \prod_{m=1}^{N}x_m^{\beta_m}.
+\end{align}
+Let prime denote differentiation with respect to $z$, assume $\rho'(z)\ne0$ on $D$, and let $\rho$ satisfy
+\begin{equation}
+    {\rho'}^2 = q^2 - 4p^2r. \label{eq:theorem-rho-srd}
+\end{equation}
+Let $u_j$ solve:
+\begin{equation}
+    \left(\log\left(u_j\right)\right)' = \frac{\beta_j Q}{2 x_j} - \partial_{x_j}Q + \frac{Q \partial_{x_j}P}{P} + \frac{\left(\log\left(x_j\right)\right)'}{2}, \label{eq:theorem-dlog-uj}
+\end{equation}
+where $P,Q$ and their partial derivatives are evaluated at $(x_1(z),\dots,x_N(z))$. 
+Define $v_j$ such that for $\gamma_j \in \mathbb{C} \quad  (j=1,\dots,N): \sum_{j=1}^{N}\gamma_j = 0$:
+\begin{equation}
+    u_j v_j = \gamma_j - \beta_j \rho. \label{eq:ujvj-rho-theorem}
+\end{equation}
+Choose $z_0\in D$ and impose the initial compatibility condition
+\begin{equation}
+    \prod_{m=1}^{N}u_m\left(z_0\right)^{\beta_m} = \frac{q\left(z_0\right) + \rho'\left(z_0\right)}{2 p\left(z_0\right)}. \label{eq:theorem-z0}
+\end{equation}
+Then it follows that:
+\begin{align}
+    \prod_{m=1}^{N}u_m^{\beta_m} = \frac{q + \rho'}{2 p}, \notag \\
+    \prod_{m=1}^{N}v_m^{\beta_m} = \frac{q - \rho'}{2 p}, \label{eq:u_v-qprho-prods} 
+\end{align}
+
+\end{theorem}
+
+\begin{proof}
+The hypotheses permit holomorphic logarithms of the nonvanishing factors on $D$. From \eqref{eq:theorem-dlog-uj} we may write:
+\begin{equation}
+    \frac{1}{2}\sum_{j=1}^{N}\beta_j\left(\log{\left[\frac{u_j}{v_j}\right]}\right)' = \frac{Q}{2}\sum_{j=1}^{N}\frac{\beta_j^2}{x_j} - \sum_{j=1}^{N}\beta_j\partial_{x_j}Q + \frac{Q}{P}\sum_{j=1}^{N}\beta_j\partial_{x_j}P, \label{eq:theorem-log-sum}
+\end{equation}
+and from \eqref{eq:ujvj-rho-theorem}:
+\begin{equation*}
+    \beta_j = -\frac{{x_j}'}{\rho'}
+\end{equation*}
+hence, by making use of general calculus identities such as:
+\begin{equation*}
+    q' = \sum_{j=1}^{N}{x_j}'\partial_{x_j}Q
+\end{equation*}
+we may rewrite \eqref{eq:theorem-log-sum} as:
+\begin{align}
+    \left(\log{\left[\prod_{j=1}^{N}\left(\frac{u_j}{v_j}\right)^{\beta_j}\right]}\right)' &= -\frac{Q}{\rho'}\left(\log{\left[\prod_{j=1}^{N}{x_j}^{\beta_j}\right]}\right)' + \frac{2}{\rho'}\sum_{j=1}^{N}{x_j}'\partial_{x_j}Q - \frac{2Q}{\rho' P}\sum_{j=1}^{N}{x_j}'\partial_{x_j}P, \notag \\[10pt]
+    &= -\frac{q r'}{\rho' r} + \frac{2 q'}{\rho'} - \frac{2 q p'}{\rho' p}. \label{eq:theorem-log-sum-2}
+\end{align}
+However, we also observe that:
+\begin{align}
+    \left(\log{\left[\frac{q + \rho'}{q - \rho'}\right]}\right)' &= \frac{q' + \rho''}{q + \rho'} - \frac{q' - \rho''}{q - \rho'}, \notag \\[10pt]
+    &= -\frac{q r'}{\rho' r} + \frac{2q'}{\rho'} - \frac{2 q p'}{\rho' p}
+\end{align}
+hence:
+\begin{align}
+    \left(\log{\left[\prod_{j=1}^{N}\left(\frac{u_j}{v_j}\right)^{\beta_j}\right]}\right)'  &= \left(\log{\left[\frac{q + \rho'}{q - \rho'}\right]}\right)', \notag \\
+    \left(\log{\left[\prod_{j=1}^{N}\left(\frac{u_j}{v_j}\right)^{\beta_j}\right]}\right)' + \left(\log{\left[\prod_{j=1}^{N}\left(u_j v_j\right)^{\beta_j}\right]}\right)'  &= \left(\log{\left[\frac{q + \rho'}{q - \rho'}\right]}\right)' + \left(\log{\left[r\right]}\right)', \notag \\
+    2\left(\log{\left[\prod_{j=1}^{N}{u_j}^{\beta_j}\right]}\right)'  &= \left(\log{\left[r\left(\frac{q + \rho'}{q - \rho'}\right)\right]}\right)', \notag \\
+    2\left(\log{\left[\prod_{j=1}^{N}{u_j}^{\beta_j}\right]}\right)'  &= \left(\log{\left[\frac{\left(q + \rho'\right)^2}{4p^2}\right]}\right)', \notag \\
+    \left(\log{\left[\prod_{j=1}^{N}{u_j}^{\beta_j}\right]}\right)'  &= \left(\log{\left[\frac{q + \rho'}{p}\right]}\right)'.
+\end{align}
+Integrating and accounting for \eqref{eq:theorem-z0} thus gives:
+\begin{align}
+    \int_{z_0}^{z}\left(\log{\left[\prod_{j=1}^{N}{u_j}^{\beta_j}\right]}\right)'{dz}  &= \int_{z_0}^{z}\left(\log{\left[\frac{q + \rho'}{p}\right]}\right)'{dz}, \notag \\
+    \prod_{j=1}^{N}{u_j}^{\beta_j}  &= \frac{q + \rho'}{2p}.
+\end{align}
+As \eqref{eq:theorem-rho-srd} may be factored into:
+\begin{align}
+    -\left(\frac{\rho' + q}{2p}\right)\left(\frac{\rho' - q}{2p}\right) = r = \prod_{m=1}^{N}\left(u_m v_m\right)^{\beta_m} = \left(\prod_{m=1}^{N}u_m^{\beta_m}\right)\left(\prod_{m=1}^{N}v_m^{\beta_m}\right),
+\end{align}
+it follows that:
+\begin{equation}
+    \prod_{j=1}^{N}{v_j}^{\beta_j}  = \frac{q - \rho'}{2p}.
+\end{equation}
+
+\end{proof}
+
+
+\paragraph{Initial reconstruction data.}
+Condition \eqref{eq:theorem-z0} fixes one multiplicative reconstruction constant.
+Its right hand side is nonzero because $(q+\rho')(q-\rho')=4p^2r\ne0$.
+Since $\sum_j\beta_j\ne0$, at least one weight is nonzero; after choosing the other nonzero initial mode values, that mode can be chosen to satisfy \eqref{eq:theorem-z0}, with a compatible root if necessary, and $v_j(z_0)=x_j(z_0)/u_j(z_0)$.
+For nonconstant holomorphic solutions, the product identities extend by continuity across isolated zeros of $\rho'$ wherever the modes and coefficients extend regularly.
+
+\paragraph{Constant modal powers.}
+Constant solutions of the squared scalar equation are not covered by the theorem: its derivation divides by $\rho'$, and a scalar root alone need not give a compatible mode solution.
+Suppose $\rho(z)\equiv\rho_*$, where $\rho_*$ is a fixed constant, and all modal products are nonzero.
+Then $x_j=\gamma_j-\beta_j\rho_*$ and hence $p,q,r$ are constant.
+In this case the required product identities reduce to
+\begin{equation}
+    U(z)=V(z)=\frac{q}{2p},
+    \qquad U(z)=\prod_j u_j(z)^{\beta_j},\quad
+    V(z)=\prod_j v_j(z)^{\beta_j}.
+\end{equation}
+Thus the weighted products must be constant in this constant-power case, although they generally vary when $\rho$ is nonconstant.
+In addition to the initial product condition and $q^2=4p^2r$, compatibility requires
+\begin{equation}
+    \sum_{j=1}^{N}\beta_j\left[
+    \frac{\beta_j q}{2x_j}-\partial_{x_j}Q
+    +\frac{q}{p}\partial_{x_j}P\right]=0,
+    \label{eq:stationary-scalar-compatibility}
+\end{equation}
+with all terms evaluated at $x_j=\gamma_j-\beta_j\rho_*$.
+For constant modal powers, the left hand side is $U'/U$. Its vanishing ensures that the initially imposed value $U=q/(2p)$ is preserved; since $UV=r$, the value of $V$ is then preserved as well.
+The individual modes may still evolve, with their logarithmic derivatives cancelling in the weighted products.
+
 
 \printbibliography
 

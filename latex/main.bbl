@@ -1,0 +1,1670 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{armstrongInteractionsLightWaves1962}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=55ef1280ddaf8f051bca7f0bf1cfdaf6}{%
+           family={Armstrong},
+           familyi={A\bibinitperiod},
+           given={J.\bibnamedelimi A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=402030c79027ed682af61081e116653d}{%
+           family={Bloembergen},
+           familyi={B\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=4fbb515c9af61ca22b35c9083315d7e7}{%
+           family={Ducuing},
+           familyi={D\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=ea0ce469e5250ade803fedc0307e0ee4}{%
+           family={Pershan},
+           familyi={P\bibinitperiod},
+           given={P.\bibnamedelimi S.},
+           giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{b4696186f1fcdea1dedff8f7860d944e}
+      \strng{fullhash}{d86e4e2d144f8fafb446bf646a0f09c8}
+      \strng{fullhashraw}{d86e4e2d144f8fafb446bf646a0f09c8}
+      \strng{bibnamehash}{b4696186f1fcdea1dedff8f7860d944e}
+      \strng{authorbibnamehash}{b4696186f1fcdea1dedff8f7860d944e}
+      \strng{authornamehash}{b4696186f1fcdea1dedff8f7860d944e}
+      \strng{authorfullhash}{d86e4e2d144f8fafb446bf646a0f09c8}
+      \strng{authorfullhashraw}{d86e4e2d144f8fafb446bf646a0f09c8}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{15}
+      \field{journaltitle}{Physical Review}
+      \field{month}{9}
+      \field{number}{6}
+      \field{shortjournal}{Phys. Rev.}
+      \field{title}{Interactions between {{Light Waves}} in a {{Nonlinear Dielectric}}}
+      \field{urlday}{16}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{127}
+      \field{year}{1962}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1918\bibrangedash 1939}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1103/PhysRev.127.1918
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRev.127.1918
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRev.127.1918
+      \endverb
+    \endentry
+    \entry{stolenParametricAmplificationFrequency1982}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=1f7ac5bd48842e08a84f02ad043366e0}{%
+           family={Stolen},
+           familyi={S\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=54098d620b5215bc6bdca71eaf8eb429}{%
+           family={Bjorkholm},
+           familyi={B\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{2f212be4d1e61ddd9153403837fda0dc}
+      \strng{fullhash}{2f212be4d1e61ddd9153403837fda0dc}
+      \strng{fullhashraw}{2f212be4d1e61ddd9153403837fda0dc}
+      \strng{bibnamehash}{2f212be4d1e61ddd9153403837fda0dc}
+      \strng{authorbibnamehash}{2f212be4d1e61ddd9153403837fda0dc}
+      \strng{authornamehash}{2f212be4d1e61ddd9153403837fda0dc}
+      \strng{authorfullhash}{2f212be4d1e61ddd9153403837fda0dc}
+      \strng{authorfullhashraw}{2f212be4d1e61ddd9153403837fda0dc}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1558-1713}
+      \field{journaltitle}{IEEE Journal of Quantum Electronics}
+      \field{month}{7}
+      \field{number}{7}
+      \field{title}{Parametric Amplification and Frequency Conversion in Optical Fibers}
+      \field{urlday}{30}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{18}
+      \field{year}{1982}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1062\bibrangedash 1072}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1109/JQE.1982.1071660
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/1071660
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/1071660
+      \endverb
+    \endentry
+    \entry{chenFourphotonParametricMixing1989}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=eb52453427a56e9815ad2687dbc97c45}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Yijiang},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=130f9b87279dd8c560017e051fdaa085}{%
+           family={Snyder},
+           familyi={S\bibinitperiod},
+           given={Allan\bibnamedelima W.},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Optica Publishing Group}%
+      }
+      \strng{namehash}{bf077b475a17273ffdd8cda1bb945d4f}
+      \strng{fullhash}{bf077b475a17273ffdd8cda1bb945d4f}
+      \strng{fullhashraw}{bf077b475a17273ffdd8cda1bb945d4f}
+      \strng{bibnamehash}{bf077b475a17273ffdd8cda1bb945d4f}
+      \strng{authorbibnamehash}{bf077b475a17273ffdd8cda1bb945d4f}
+      \strng{authornamehash}{bf077b475a17273ffdd8cda1bb945d4f}
+      \strng{authorfullhash}{bf077b475a17273ffdd8cda1bb945d4f}
+      \strng{authorfullhashraw}{bf077b475a17273ffdd8cda1bb945d4f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{1}
+      \field{issn}{1539-4794}
+      \field{journaltitle}{Optics Letters}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shortjournal}{Opt. Lett., OL}
+      \field{shorttitle}{Four-Photon Parametric Mixing in Optical Fibers}
+      \field{title}{Four-Photon Parametric Mixing in Optical Fibers: Effect of Pump Depletion}
+      \field{urlday}{10}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{volume}{14}
+      \field{year}{1989}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{87\bibrangedash 89}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1364/OL.14.000087
+      \endverb
+      \verb{urlraw}
+      \verb https://opg.optica.org/ol/abstract.cfm?uri=ol-14-1-87
+      \endverb
+      \verb{url}
+      \verb https://opg.optica.org/ol/abstract.cfm?uri=ol-14-1-87
+      \endverb
+    \endentry
+    \entry{chenFourwaveMixingOptical1989}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=eb52453427a56e9815ad2687dbc97c45}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Yijiang},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Optica Publishing Group}%
+      }
+      \strng{namehash}{eb52453427a56e9815ad2687dbc97c45}
+      \strng{fullhash}{eb52453427a56e9815ad2687dbc97c45}
+      \strng{fullhashraw}{eb52453427a56e9815ad2687dbc97c45}
+      \strng{bibnamehash}{eb52453427a56e9815ad2687dbc97c45}
+      \strng{authorbibnamehash}{eb52453427a56e9815ad2687dbc97c45}
+      \strng{authornamehash}{eb52453427a56e9815ad2687dbc97c45}
+      \strng{authorfullhash}{eb52453427a56e9815ad2687dbc97c45}
+      \strng{authorfullhashraw}{eb52453427a56e9815ad2687dbc97c45}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{1}
+      \field{issn}{1520-8540}
+      \field{journaltitle}{JOSA B}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{11}
+      \field{shortjournal}{J. Opt. Soc. Am. B, JOSAB}
+      \field{shorttitle}{Four-Wave Mixing in Optical Fibers}
+      \field{title}{Four-Wave Mixing in Optical Fibers: Exact Solution}
+      \field{urlday}{30}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{6}
+      \field{year}{1989}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1986\bibrangedash 1993}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1364/JOSAB.6.001986
+      \endverb
+      \verb{urlraw}
+      \verb https://opg.optica.org/josab/abstract.cfm?uri=josab-6-11-1986
+      \endverb
+      \verb{url}
+      \verb https://opg.optica.org/josab/abstract.cfm?uri=josab-6-11-1986
+      \endverb
+    \endentry
+    \entry{agrawalNonlinearFiberOptics2019}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=910d801de7c7b036bee279a678fc8362}{%
+           family={Agrawal},
+           familyi={A\bibinitperiod},
+           given={Govind\bibnamedelima P.},
+           giveni={G\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Academic Press}%
+      }
+      \strng{namehash}{910d801de7c7b036bee279a678fc8362}
+      \strng{fullhash}{910d801de7c7b036bee279a678fc8362}
+      \strng{fullhashraw}{910d801de7c7b036bee279a678fc8362}
+      \strng{bibnamehash}{910d801de7c7b036bee279a678fc8362}
+      \strng{authorbibnamehash}{910d801de7c7b036bee279a678fc8362}
+      \strng{authornamehash}{910d801de7c7b036bee279a678fc8362}
+      \strng{authorfullhash}{910d801de7c7b036bee279a678fc8362}
+      \strng{authorfullhashraw}{910d801de7c7b036bee279a678fc8362}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{15}
+      \field{edition}{6}
+      \field{isbn}{978-0-12-817042-7}
+      \field{langid}{american}
+      \field{month}{8}
+      \field{title}{Nonlinear {{Fiber Optics}}}
+      \field{urlday}{30}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://shop.elsevier.com/books/nonlinear-fiber-optics/agrawal/978-0-12-817042-7
+      \endverb
+      \verb{url}
+      \verb https://shop.elsevier.com/books/nonlinear-fiber-optics/agrawal/978-0-12-817042-7
+      \endverb
+    \endentry
+    \entry{jensenNonlinearCoherentCoupler1982}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=83b6c4e5685b1bc6cb2dfb5c82c31e50}{%
+           family={Jensen},
+           familyi={J\bibinitperiod},
+           given={S.M.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{83b6c4e5685b1bc6cb2dfb5c82c31e50}
+      \strng{fullhash}{83b6c4e5685b1bc6cb2dfb5c82c31e50}
+      \strng{fullhashraw}{83b6c4e5685b1bc6cb2dfb5c82c31e50}
+      \strng{bibnamehash}{83b6c4e5685b1bc6cb2dfb5c82c31e50}
+      \strng{authorbibnamehash}{83b6c4e5685b1bc6cb2dfb5c82c31e50}
+      \strng{authornamehash}{83b6c4e5685b1bc6cb2dfb5c82c31e50}
+      \strng{authorfullhash}{83b6c4e5685b1bc6cb2dfb5c82c31e50}
+      \strng{authorfullhashraw}{83b6c4e5685b1bc6cb2dfb5c82c31e50}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1557-9670}
+      \field{journaltitle}{IEEE Transactions on Microwave Theory and Techniques}
+      \field{month}{10}
+      \field{number}{10}
+      \field{title}{The {{Nonlinear Coherent Coupler}}}
+      \field{urlday}{20}
+      \field{urlmonth}{2}
+      \field{urlyear}{2026}
+      \field{volume}{30}
+      \field{year}{1982}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1568\bibrangedash 1571}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/TMTT.1982.1131291
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/1131291
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/1131291
+      \endverb
+    \endentry
+    \entry{heskethGeneralComplexEnvelope2015}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=1d7bc127dff7603699c24117aaf97d4c}{%
+           family={Hesketh},
+           familyi={H\bibinitperiod},
+           given={Graham\bibnamedelima D.},
+           giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Optica Publishing Group}%
+      }
+      \strng{namehash}{1d7bc127dff7603699c24117aaf97d4c}
+      \strng{fullhash}{1d7bc127dff7603699c24117aaf97d4c}
+      \strng{fullhashraw}{1d7bc127dff7603699c24117aaf97d4c}
+      \strng{bibnamehash}{1d7bc127dff7603699c24117aaf97d4c}
+      \strng{authorbibnamehash}{1d7bc127dff7603699c24117aaf97d4c}
+      \strng{authornamehash}{1d7bc127dff7603699c24117aaf97d4c}
+      \strng{authorfullhash}{1d7bc127dff7603699c24117aaf97d4c}
+      \strng{authorfullhashraw}{1d7bc127dff7603699c24117aaf97d4c}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{issn}{1520-8540}
+      \field{journaltitle}{JOSA B}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{12}
+      \field{shortjournal}{J. Opt. Soc. Am. B, JOSAB}
+      \field{title}{General Complex Envelope Solutions of Coupled-Mode Optics with Quadratic or Cubic Nonlinearity}
+      \field{urlday}{30}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{volume}{32}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2391\bibrangedash 2399}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1364/JOSAB.32.002391
+      \endverb
+      \verb{urlraw}
+      \verb https://opg.optica.org/josab/abstract.cfm?uri=josab-32-12-2391
+      \endverb
+      \verb{url}
+      \verb https://opg.optica.org/josab/abstract.cfm?uri=josab-32-12-2391
+      \endverb
+    \endentry
+    \entry{heskethFWMWeierstrassElliptic2026}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=377f9db53e2daeb53d6fb8e1e94e3c24}{%
+           family={Hesketh},
+           familyi={H\bibinitperiod},
+           given={Graham},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{377f9db53e2daeb53d6fb8e1e94e3c24}
+      \strng{fullhash}{377f9db53e2daeb53d6fb8e1e94e3c24}
+      \strng{fullhashraw}{377f9db53e2daeb53d6fb8e1e94e3c24}
+      \strng{bibnamehash}{377f9db53e2daeb53d6fb8e1e94e3c24}
+      \strng{authorbibnamehash}{377f9db53e2daeb53d6fb8e1e94e3c24}
+      \strng{authornamehash}{377f9db53e2daeb53d6fb8e1e94e3c24}
+      \strng{authorfullhash}{377f9db53e2daeb53d6fb8e1e94e3c24}
+      \strng{authorfullhashraw}{377f9db53e2daeb53d6fb8e1e94e3c24}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{16}
+      \field{eprintclass}{nlin.SI}
+      \field{eprinttype}{arXiv}
+      \field{month}{1}
+      \field{pubstate}{prepublished}
+      \field{title}{Complete {{Weierstrass}} Elliptic Function Solutions and Canonical Coordinates for Four-Wave Mixing in Nonlinear Optical Fibres}
+      \field{urlday}{20}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2601.11740
+      \endverb
+      \verb{eprint}
+      \verb 2601.11740
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2601.11740
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2601.11740
+      \endverb
+    \endentry
+    \entry{heskethCompleteWeierstrassElliptic2026}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=377f9db53e2daeb53d6fb8e1e94e3c24}{%
+           family={Hesketh},
+           familyi={H\bibinitperiod},
+           given={Graham},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{377f9db53e2daeb53d6fb8e1e94e3c24}
+      \strng{fullhash}{377f9db53e2daeb53d6fb8e1e94e3c24}
+      \strng{fullhashraw}{377f9db53e2daeb53d6fb8e1e94e3c24}
+      \strng{bibnamehash}{377f9db53e2daeb53d6fb8e1e94e3c24}
+      \strng{authorbibnamehash}{377f9db53e2daeb53d6fb8e1e94e3c24}
+      \strng{authornamehash}{377f9db53e2daeb53d6fb8e1e94e3c24}
+      \strng{authorfullhash}{377f9db53e2daeb53d6fb8e1e94e3c24}
+      \strng{authorfullhashraw}{377f9db53e2daeb53d6fb8e1e94e3c24}
+      \field{extraname}{3}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{19}
+      \field{eprintclass}{nlin.SI}
+      \field{eprinttype}{arXiv}
+      \field{month}{5}
+      \field{pubstate}{prepublished}
+      \field{title}{Complete {{Weierstrass}} Elliptic Function Solutions for Coherent Couplers and Their Relation to Degenerate Four-Wave Mixing}
+      \field{urlday}{20}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2605.19216
+      \endverb
+      \verb{eprint}
+      \verb 2605.19216
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2605.19216
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2605.19216
+      \endverb
+    \endentry
+    \entry{Whittaker1937}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=208aafea9f5e1344ec070b5aa2949a90}{%
+           family={Whittaker},
+           familyi={W\bibinitperiod},
+           given={Edmund\bibnamedelima Taylor},
+           giveni={E\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{208aafea9f5e1344ec070b5aa2949a90}
+      \strng{fullhash}{208aafea9f5e1344ec070b5aa2949a90}
+      \strng{fullhashraw}{208aafea9f5e1344ec070b5aa2949a90}
+      \strng{bibnamehash}{208aafea9f5e1344ec070b5aa2949a90}
+      \strng{authorbibnamehash}{208aafea9f5e1344ec070b5aa2949a90}
+      \strng{authornamehash}{208aafea9f5e1344ec070b5aa2949a90}
+      \strng{authorfullhash}{208aafea9f5e1344ec070b5aa2949a90}
+      \strng{authorfullhashraw}{208aafea9f5e1344ec070b5aa2949a90}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{4}
+      \field{title}{A Treatise on the Analytical Dynamics of Particles and Rigid Bodies: {{With}} an Introduction to the Problem of Three Bodies}
+      \field{year}{1937}
+      \field{dateera}{ce}
+    \endentry
+    \entry{kovacicJacobiEllipticFunctions2016}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=86f65094bb026aa64ca913770696a620}{%
+           family={Kovacic},
+           familyi={K\bibinitperiod},
+           given={Ivana},
+           giveni={I\bibinitperiod}}}%
+        {{hash=cd1978e4ba9617bb334db9de94f985b1}{%
+           family={Cveticanin},
+           familyi={C\bibinitperiod},
+           given={Livija},
+           giveni={L\bibinitperiod}}}%
+        {{hash=72bb9002a5046f0cab418a094cba6852}{%
+           family={Zukovic},
+           familyi={Z\bibinitperiod},
+           given={Miodrag},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a95170550cf7dcda947d3fb19e2d4d3b}{%
+           family={Rakaric},
+           familyi={R\bibinitperiod},
+           given={Zvonko},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{a41feacf12e6226b69df3fabe2be0b6c}
+      \strng{fullhash}{f1da7442afe477e150ef7597b56d88c5}
+      \strng{fullhashraw}{f1da7442afe477e150ef7597b56d88c5}
+      \strng{bibnamehash}{a41feacf12e6226b69df3fabe2be0b6c}
+      \strng{authorbibnamehash}{a41feacf12e6226b69df3fabe2be0b6c}
+      \strng{authornamehash}{a41feacf12e6226b69df3fabe2be0b6c}
+      \strng{authorfullhash}{f1da7442afe477e150ef7597b56d88c5}
+      \strng{authorfullhashraw}{f1da7442afe477e150ef7597b56d88c5}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{13}
+      \field{issn}{0022-460X}
+      \field{journaltitle}{Journal of Sound and Vibration}
+      \field{month}{10}
+      \field{shortjournal}{Journal of Sound and Vibration}
+      \field{shorttitle}{Jacobi Elliptic Functions}
+      \field{title}{Jacobi Elliptic Functions: {{A}} Review of Nonlinear Oscillatory Application Problems}
+      \field{urlday}{25}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{volume}{380}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 36}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.1016/j.jsv.2016.05.051
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0022460X16302279
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0022460X16302279
+      \endverb
+    \endentry
+    \entry{zotero-item-855}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=377f9db53e2daeb53d6fb8e1e94e3c24}{%
+           family={Hesketh},
+           familyi={H\bibinitperiod},
+           given={Graham},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{377f9db53e2daeb53d6fb8e1e94e3c24}
+      \strng{fullhash}{377f9db53e2daeb53d6fb8e1e94e3c24}
+      \strng{fullhashraw}{377f9db53e2daeb53d6fb8e1e94e3c24}
+      \strng{bibnamehash}{377f9db53e2daeb53d6fb8e1e94e3c24}
+      \strng{authorbibnamehash}{377f9db53e2daeb53d6fb8e1e94e3c24}
+      \strng{authornamehash}{377f9db53e2daeb53d6fb8e1e94e3c24}
+      \strng{authorfullhash}{377f9db53e2daeb53d6fb8e1e94e3c24}
+      \strng{authorfullhashraw}{377f9db53e2daeb53d6fb8e1e94e3c24}
+      \field{extraname}{4}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{pubstate}{prepublished}
+      \field{title}{Hyperelliptic Sigma Solutions of Polynomial {{Hamiltonian}} Systems}
+    \endentry
+    \entry{krishnaswamiIntroductionLaxPairs2020}{online}{}{}
+      \name{author}{2}{}{%
+        {{hash=3d2e81a46f36de6488223218487bf49c}{%
+           family={Krishnaswami},
+           familyi={K\bibinitperiod},
+           given={Govind\bibnamedelima S.},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=4e2ab03e64c1a812b9e11198803733a0}{%
+           family={Vishnu},
+           familyi={V\bibinitperiod},
+           given={T.\bibnamedelimi R.},
+           giveni={T\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{0134e8d9c3f2b9c24ef096cdbb6fa704}
+      \strng{fullhash}{0134e8d9c3f2b9c24ef096cdbb6fa704}
+      \strng{fullhashraw}{0134e8d9c3f2b9c24ef096cdbb6fa704}
+      \strng{bibnamehash}{0134e8d9c3f2b9c24ef096cdbb6fa704}
+      \strng{authorbibnamehash}{0134e8d9c3f2b9c24ef096cdbb6fa704}
+      \strng{authornamehash}{0134e8d9c3f2b9c24ef096cdbb6fa704}
+      \strng{authorfullhash}{0134e8d9c3f2b9c24ef096cdbb6fa704}
+      \strng{authorfullhashraw}{0134e8d9c3f2b9c24ef096cdbb6fa704}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{13}
+      \field{eprintclass}{nlin}
+      \field{eprinttype}{arXiv}
+      \field{month}{4}
+      \field{pubstate}{prepublished}
+      \field{title}{An Introduction to {{Lax}} Pairs and the Zero Curvature Representation}
+      \field{urlday}{26}
+      \field{urlmonth}{1}
+      \field{urlyear}{2026}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2004.05791
+      \endverb
+      \verb{eprint}
+      \verb 2004.05791
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2004.05791
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2004.05791
+      \endverb
+    \endentry
+    \entry{blaszakGeneralizedStackelSystems2011}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=e4b5587db507c804e298705a80e5caa3}{%
+           family={Błaszak},
+           familyi={B\bibinitperiod},
+           given={Maciej},
+           giveni={M\bibinitperiod}}}%
+        {{hash=19d746ca6554ad015db133d4ca8c4134}{%
+           family={Sergyeyev},
+           familyi={S\bibinitperiod},
+           given={Artur},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{6afd6f8ec919cd860ed7eed88522c677}
+      \strng{fullhash}{6afd6f8ec919cd860ed7eed88522c677}
+      \strng{fullhashraw}{6afd6f8ec919cd860ed7eed88522c677}
+      \strng{bibnamehash}{6afd6f8ec919cd860ed7eed88522c677}
+      \strng{authorbibnamehash}{6afd6f8ec919cd860ed7eed88522c677}
+      \strng{authornamehash}{6afd6f8ec919cd860ed7eed88522c677}
+      \strng{authorfullhash}{6afd6f8ec919cd860ed7eed88522c677}
+      \strng{authorfullhashraw}{6afd6f8ec919cd860ed7eed88522c677}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{4}
+      \field{issn}{0375-9601}
+      \field{journaltitle}{Physics Letters A}
+      \field{month}{7}
+      \field{number}{27}
+      \field{shortjournal}{Physics Letters A}
+      \field{title}{Generalized {{Stäckel}} Systems}
+      \field{urlday}{1}
+      \field{urlmonth}{6}
+      \field{urlyear}{2026}
+      \field{volume}{375}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2617\bibrangedash 2623}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1016/j.physleta.2011.05.046
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0375960111006554
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0375960111006554
+      \endverb
+    \endentry
+    \entry{sergyeyevCouplingConstantMetamorphosis2012}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=7559ce201b577cd6ba9258d767e87f22}{%
+           family={Sergyeyev},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{7559ce201b577cd6ba9258d767e87f22}
+      \strng{fullhash}{7559ce201b577cd6ba9258d767e87f22}
+      \strng{fullhashraw}{7559ce201b577cd6ba9258d767e87f22}
+      \strng{bibnamehash}{7559ce201b577cd6ba9258d767e87f22}
+      \strng{authorbibnamehash}{7559ce201b577cd6ba9258d767e87f22}
+      \strng{authornamehash}{7559ce201b577cd6ba9258d767e87f22}
+      \strng{authorfullhash}{7559ce201b577cd6ba9258d767e87f22}
+      \strng{authorfullhashraw}{7559ce201b577cd6ba9258d767e87f22}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{nlin.SI}
+      \field{eprinttype}{arXiv}
+      \field{issn}{03759601}
+      \field{journaltitle}{Physics Letters A}
+      \field{month}{6}
+      \field{number}{28--29}
+      \field{shortjournal}{Physics Letters A}
+      \field{title}{Coupling Constant Metamorphosis as an Integrability-Preserving Transformation for General Finite-Dimensional Dynamical Systems and {{ODEs}}}
+      \field{urlday}{25}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{376}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2015\bibrangedash 2022}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.physleta.2012.04.055
+      \endverb
+      \verb{eprint}
+      \verb 1008.1575
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1008.1575
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1008.1575
+      \endverb
+    \endentry
+    \entry{kummerResonantClassicalHamiltonians1990}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=49790df4bdb6ec0f8c544c0cfaae4c70}{%
+           family={Kummer},
+           familyi={K\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{49790df4bdb6ec0f8c544c0cfaae4c70}
+      \strng{fullhash}{49790df4bdb6ec0f8c544c0cfaae4c70}
+      \strng{fullhashraw}{49790df4bdb6ec0f8c544c0cfaae4c70}
+      \strng{bibnamehash}{49790df4bdb6ec0f8c544c0cfaae4c70}
+      \strng{authorbibnamehash}{49790df4bdb6ec0f8c544c0cfaae4c70}
+      \strng{authornamehash}{49790df4bdb6ec0f8c544c0cfaae4c70}
+      \strng{authorfullhash}{49790df4bdb6ec0f8c544c0cfaae4c70}
+      \strng{authorfullhashraw}{49790df4bdb6ec0f8c544c0cfaae4c70}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00220396}
+      \field{journaltitle}{Journal of Differential Equations}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{2}
+      \field{shortjournal}{Journal of Differential Equations}
+      \field{title}{On Resonant Classical {{Hamiltonians}} with n Frequencies}
+      \field{urlday}{6}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{83}
+      \field{year}{1990}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{220\bibrangedash 243}
+      \range{pages}{24}
+      \verb{doi}
+      \verb 10.1016/0022-0396(90)90057-V
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/002203969090057V
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/002203969090057V
+      \endverb
+    \endentry
+    \entry{odzijewiczIntegrableMultibosonSystems2001}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=f78b572902b380185ecb30d516bdc11b}{%
+           family={Odzijewicz},
+           familyi={O\bibinitperiod},
+           given={Anatol},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b60db05c4c303262ec81268a2a3156c3}{%
+           family={Horowski},
+           familyi={H\bibinitperiod},
+           given={Maciej},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a59327c268caa07d946cdbaeb5f4583f}{%
+           family={Tereszkiewicz},
+           familyi={T\bibinitperiod},
+           given={Agnieszka},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{0312314d2fc40e40dda27d00266ff1fe}
+      \strng{fullhash}{0312314d2fc40e40dda27d00266ff1fe}
+      \strng{fullhashraw}{0312314d2fc40e40dda27d00266ff1fe}
+      \strng{bibnamehash}{0312314d2fc40e40dda27d00266ff1fe}
+      \strng{authorbibnamehash}{0312314d2fc40e40dda27d00266ff1fe}
+      \strng{authornamehash}{0312314d2fc40e40dda27d00266ff1fe}
+      \strng{authorfullhash}{0312314d2fc40e40dda27d00266ff1fe}
+      \strng{authorfullhashraw}{0312314d2fc40e40dda27d00266ff1fe}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0305-4470}
+      \field{journaltitle}{Journal of Physics A: Mathematical and General}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{20}
+      \field{shortjournal}{J. Phys. A: Math. Gen.}
+      \field{title}{Integrable Multi-Boson Systems and Orthogonal Polynomials}
+      \field{urlday}{17}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{34}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{4353}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/0305-4470/34/20/308
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1088/0305-4470/34/20/308
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1088/0305-4470/34/20/308
+      \endverb
+    \endentry
+    \entry{horowskiSystemsIntensitydependentConversion2004}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=b60db05c4c303262ec81268a2a3156c3}{%
+           family={Horowski},
+           familyi={H\bibinitperiod},
+           given={Maciej},
+           giveni={M\bibinitperiod}}}%
+        {{hash=bc6012dd540ac1b90cd989c5164716e4}{%
+           family={Chadzitaskos},
+           familyi={C\bibinitperiod},
+           given={Goce},
+           giveni={G\bibinitperiod}}}%
+        {{hash=f78b572902b380185ecb30d516bdc11b}{%
+           family={Odzijewicz},
+           familyi={O\bibinitperiod},
+           given={Anatol},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a59327c268caa07d946cdbaeb5f4583f}{%
+           family={Tereszkiewicz},
+           familyi={T\bibinitperiod},
+           given={Agnieszka},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{f56445c071180f78dbd444627747f619}
+      \strng{fullhash}{1a2929982bd19d613199ebe730791bd1}
+      \strng{fullhashraw}{1a2929982bd19d613199ebe730791bd1}
+      \strng{bibnamehash}{f56445c071180f78dbd444627747f619}
+      \strng{authorbibnamehash}{f56445c071180f78dbd444627747f619}
+      \strng{authornamehash}{f56445c071180f78dbd444627747f619}
+      \strng{authorfullhash}{1a2929982bd19d613199ebe730791bd1}
+      \strng{authorfullhashraw}{1a2929982bd19d613199ebe730791bd1}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0305-4470}
+      \field{journaltitle}{Journal of Physics A: Mathematical and General}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{23}
+      \field{shortjournal}{J. Phys. A: Math. Gen.}
+      \field{title}{Systems with Intensity-Dependent Conversion Integrable by Finite Orthogonal Polynomials}
+      \field{urlday}{17}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{37}
+      \field{year}{2004}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{6115}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/0305-4470/37/23/010
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1088/0305-4470/37/23/010
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1088/0305-4470/37/23/010
+      \endverb
+    \endentry
+    \entry{odzijewiczClassicalQuantumKummer2016}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=ff980cd88251e72ebf53f149c888a7ff}{%
+           family={Odzijewicz},
+           familyi={O\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=bde6b7a74f9723c813d1c90114d51f4a}{%
+           family={Wawreniuk},
+           familyi={W\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{8e9c9b09c7112b0a7aa5bf18c59903d0}
+      \strng{fullhash}{8e9c9b09c7112b0a7aa5bf18c59903d0}
+      \strng{fullhashraw}{8e9c9b09c7112b0a7aa5bf18c59903d0}
+      \strng{bibnamehash}{8e9c9b09c7112b0a7aa5bf18c59903d0}
+      \strng{authorbibnamehash}{8e9c9b09c7112b0a7aa5bf18c59903d0}
+      \strng{authornamehash}{8e9c9b09c7112b0a7aa5bf18c59903d0}
+      \strng{authorfullhash}{8e9c9b09c7112b0a7aa5bf18c59903d0}
+      \strng{authorfullhashraw}{8e9c9b09c7112b0a7aa5bf18c59903d0}
+      \field{extraname}{1}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{eprintclass}{math-ph}
+      \field{eprinttype}{arXiv}
+      \field{issn}{1751-8113, 1751-8121}
+      \field{journaltitle}{Journal of Physics A: Mathematical and Theoretical}
+      \field{month}{7}
+      \field{number}{26}
+      \field{shortjournal}{J. Phys. A: Math. Theor.}
+      \field{title}{Classical and Quantum {{Kummer}} Shape Algebras}
+      \field{urlday}{5}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{49}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{265202}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1751-8113/49/26/265202
+      \endverb
+      \verb{eprint}
+      \verb 1512.09279
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1512.09279
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1512.09279
+      \endverb
+    \endentry
+    \entry{odzijewiczIntegrabilityCorrespondenceClassical2018}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=ff980cd88251e72ebf53f149c888a7ff}{%
+           family={Odzijewicz},
+           familyi={O\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=bde6b7a74f9723c813d1c90114d51f4a}{%
+           family={Wawreniuk},
+           familyi={W\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{8e9c9b09c7112b0a7aa5bf18c59903d0}
+      \strng{fullhash}{8e9c9b09c7112b0a7aa5bf18c59903d0}
+      \strng{fullhashraw}{8e9c9b09c7112b0a7aa5bf18c59903d0}
+      \strng{bibnamehash}{8e9c9b09c7112b0a7aa5bf18c59903d0}
+      \strng{authorbibnamehash}{8e9c9b09c7112b0a7aa5bf18c59903d0}
+      \strng{authornamehash}{8e9c9b09c7112b0a7aa5bf18c59903d0}
+      \strng{authorfullhash}{8e9c9b09c7112b0a7aa5bf18c59903d0}
+      \strng{authorfullhashraw}{8e9c9b09c7112b0a7aa5bf18c59903d0}
+      \field{extraname}{2}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{16}
+      \field{issn}{0022-2488}
+      \field{journaltitle}{Journal of Mathematical Physics}
+      \field{month}{4}
+      \field{number}{4}
+      \field{shortjournal}{J. Math. Phys.}
+      \field{title}{Integrability and Correspondence of Classical and Quantum Non-Linear Three-Mode Systems}
+      \field{urlday}{17}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{volume}{59}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{043504}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/1.5024043
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1063/1.5024043
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1063/1.5024043
+      \endverb
+    \endentry
+    \entry{odzijewiczIntegrableClassicalQuantum2020}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=f78b572902b380185ecb30d516bdc11b}{%
+           family={Odzijewicz},
+           familyi={O\bibinitperiod},
+           given={Anatol},
+           giveni={A\bibinitperiod}}}%
+        {{hash=73926f7356e7d39b32c02a10ea78e1be}{%
+           family={Wawreniuk},
+           familyi={W\bibinitperiod},
+           given={Elwira},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{ac0202a422945d892093c40d99b730f4}
+      \strng{fullhash}{ac0202a422945d892093c40d99b730f4}
+      \strng{fullhashraw}{ac0202a422945d892093c40d99b730f4}
+      \strng{bibnamehash}{ac0202a422945d892093c40d99b730f4}
+      \strng{authorbibnamehash}{ac0202a422945d892093c40d99b730f4}
+      \strng{authornamehash}{ac0202a422945d892093c40d99b730f4}
+      \strng{authorfullhash}{ac0202a422945d892093c40d99b730f4}
+      \strng{authorfullhashraw}{ac0202a422945d892093c40d99b730f4}
+      \field{extraname}{3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{eprintclass}{math-ph}
+      \field{eprinttype}{arXiv}
+      \field{issn}{0022-2488, 1089-7658}
+      \field{journaltitle}{Journal of Mathematical Physics}
+      \field{month}{7}
+      \field{number}{7}
+      \field{title}{An Integrable (Classical and Quantum) Four-Wave Mixing {{Hamiltonian}} System}
+      \field{urlday}{5}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{volume}{61}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{073503}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/5.0006887
+      \endverb
+      \verb{eprint}
+      \verb 2003.03060
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2003.03060
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2003.03060
+      \endverb
+    \endentry
+    \entry{baigentLotkaVolterraDynamicsIntroduction}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=7e88d9fa8ebea38f17cb86d094c74794}{%
+           family={Baigent},
+           familyi={B\bibinitperiod},
+           given={Steve},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{7e88d9fa8ebea38f17cb86d094c74794}
+      \strng{fullhash}{7e88d9fa8ebea38f17cb86d094c74794}
+      \strng{fullhashraw}{7e88d9fa8ebea38f17cb86d094c74794}
+      \strng{bibnamehash}{7e88d9fa8ebea38f17cb86d094c74794}
+      \strng{authorbibnamehash}{7e88d9fa8ebea38f17cb86d094c74794}
+      \strng{authornamehash}{7e88d9fa8ebea38f17cb86d094c74794}
+      \strng{authorfullhash}{7e88d9fa8ebea38f17cb86d094c74794}
+      \strng{authorfullhashraw}{7e88d9fa8ebea38f17cb86d094c74794}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Lotka-{{Volterra Dynamics}} - {{An}} Introduction.}
+    \endentry
+    \entry{onishiDETERMINANTEXPRESSIONSHYPERELLIPTIC2005}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=d13d946a19c1222983b87824b09e2c5e}{%
+           family={Ônishi},
+           familyi={Ô\bibinitperiod},
+           given={Yoshihiro},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{d13d946a19c1222983b87824b09e2c5e}
+      \strng{fullhash}{d13d946a19c1222983b87824b09e2c5e}
+      \strng{fullhashraw}{d13d946a19c1222983b87824b09e2c5e}
+      \strng{bibnamehash}{d13d946a19c1222983b87824b09e2c5e}
+      \strng{authorbibnamehash}{d13d946a19c1222983b87824b09e2c5e}
+      \strng{authornamehash}{d13d946a19c1222983b87824b09e2c5e}
+      \strng{authorfullhash}{d13d946a19c1222983b87824b09e2c5e}
+      \strng{authorfullhashraw}{d13d946a19c1222983b87824b09e2c5e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1464-3839, 0013-0915}
+      \field{journaltitle}{Proceedings of the Edinburgh Mathematical Society}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{3}
+      \field{title}{{{DETERMINANT EXPRESSIONS FOR HYPERELLIPTIC FUNCTIONS}}}
+      \field{urlday}{3}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{48}
+      \field{year}{2005}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{705\bibrangedash 742}
+      \range{pages}{38}
+      \verb{doi}
+      \verb 10.1017/S0013091503000695
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cambridge.org/core/journals/proceedings-of-the-edinburgh-mathematical-society/article/determinant-expressions-for-hyperelliptic-functions/BC6059C05E83E7D86D993DAB765A8A17
+      \endverb
+      \verb{url}
+      \verb https://www.cambridge.org/core/journals/proceedings-of-the-edinburgh-mathematical-society/article/determinant-expressions-for-hyperelliptic-functions/BC6059C05E83E7D86D993DAB765A8A17
+      \endverb
+    \endentry
+    \entry{garcia-naranjoStructurePreservingDiscretization2020}{online}{}{}
+      \name{author}{2}{}{%
+        {{hash=ff6fde64a19901c9a17e95d625bed79f}{%
+           family={García-Naranjo},
+           familyi={G\bibinithyphendelim N\bibinitperiod},
+           given={Luis\bibnamedelima C.},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=391cd3ff05f16d080da0ac722ac78c8c}{%
+           family={Vermeeren},
+           familyi={V\bibinitperiod},
+           given={Mats},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{d72f705f76d188fca1e76ef899f33415}
+      \strng{fullhash}{d72f705f76d188fca1e76ef899f33415}
+      \strng{fullhashraw}{d72f705f76d188fca1e76ef899f33415}
+      \strng{bibnamehash}{d72f705f76d188fca1e76ef899f33415}
+      \strng{authorbibnamehash}{d72f705f76d188fca1e76ef899f33415}
+      \strng{authornamehash}{d72f705f76d188fca1e76ef899f33415}
+      \strng{authorfullhash}{d72f705f76d188fca1e76ef899f33415}
+      \strng{authorfullhashraw}{d72f705f76d188fca1e76ef899f33415}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{17}
+      \field{eprintclass}{math.NA}
+      \field{eprinttype}{arXiv}
+      \field{month}{8}
+      \field{pubstate}{prepublished}
+      \field{title}{Structure Preserving Discretization of Time-Reparametrized {{Hamiltonian}} Systems with Application to Nonholonomic Mechanics}
+      \field{urlday}{18}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2008.07222
+      \endverb
+      \verb{eprint}
+      \verb 2008.07222
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2008.07222
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2008.07222
+      \endverb
+    \endentry
+    \entry{whittakerCourseModernAnalysis2021}{book}{}{}
+      \name{author}{2}{}{%
+        {{hash=5132db19fe0ad334db14252f9887f29d}{%
+           family={Whittaker},
+           familyi={W\bibinitperiod},
+           given={E.\bibnamedelimi T.},
+           giveni={E\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=35673bb7ba499f77d168ee80794262e8}{%
+           family={Watson},
+           familyi={W\bibinitperiod},
+           given={G.\bibnamedelimi N.},
+           giveni={G\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=459db79507400740d3b2b1509ee49e18}{%
+           family={Moll},
+           familyi={M\bibinitperiod},
+           given={Victor\bibnamedelima H.},
+           giveni={V\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{72dd6060b6f1d789d78346a350a43218}
+      \strng{fullhash}{72dd6060b6f1d789d78346a350a43218}
+      \strng{fullhashraw}{72dd6060b6f1d789d78346a350a43218}
+      \strng{bibnamehash}{72dd6060b6f1d789d78346a350a43218}
+      \strng{authorbibnamehash}{72dd6060b6f1d789d78346a350a43218}
+      \strng{authornamehash}{72dd6060b6f1d789d78346a350a43218}
+      \strng{authorfullhash}{72dd6060b6f1d789d78346a350a43218}
+      \strng{authorfullhashraw}{72dd6060b6f1d789d78346a350a43218}
+      \strng{editorbibnamehash}{459db79507400740d3b2b1509ee49e18}
+      \strng{editornamehash}{459db79507400740d3b2b1509ee49e18}
+      \strng{editorfullhash}{459db79507400740d3b2b1509ee49e18}
+      \strng{editorfullhashraw}{459db79507400740d3b2b1509ee49e18}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{5}
+      \field{isbn}{978-1-316-51893-9}
+      \field{title}{A {{Course}} of {{Modern Analysis}}}
+      \field{urlday}{31}
+      \field{urlmonth}{12}
+      \field{urlyear}{2025}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1017/9781009004091
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cambridge.org/core/books/course-of-modern-analysis/B2DDAE32B565419FA452C51FA03F6F3D
+      \endverb
+      \verb{url}
+      \verb https://www.cambridge.org/core/books/course-of-modern-analysis/B2DDAE32B565419FA452C51FA03F6F3D
+      \endverb
+    \endentry
+    \entry{zotero-item-852}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=7d89e18dfdc92a6366db4c5cb9fc93d9}{%
+           family={Dixon},
+           familyi={D\bibinitperiod},
+           given={Alfred},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{7d89e18dfdc92a6366db4c5cb9fc93d9}
+      \strng{fullhash}{7d89e18dfdc92a6366db4c5cb9fc93d9}
+      \strng{fullhashraw}{7d89e18dfdc92a6366db4c5cb9fc93d9}
+      \strng{bibnamehash}{7d89e18dfdc92a6366db4c5cb9fc93d9}
+      \strng{authorbibnamehash}{7d89e18dfdc92a6366db4c5cb9fc93d9}
+      \strng{authornamehash}{7d89e18dfdc92a6366db4c5cb9fc93d9}
+      \strng{authorfullhash}{7d89e18dfdc92a6366db4c5cb9fc93d9}
+      \strng{authorfullhashraw}{7d89e18dfdc92a6366db4c5cb9fc93d9}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Quarterly Journal of Pure and Applied Mathematics}
+      \field{title}{On the Doubly Periodic Functions Arising out of the Curve X³ + Y³ − 3αxy = 1}
+      \field{volume}{24}
+      \field{year}{1890}
+      \field{dateera}{ce}
+      \field{pages}{167\bibrangedash 233}
+      \range{pages}{67}
+      \verb{urlraw}
+      \verb https://resolver.sub.uni-goettingen.de/purl?PPN600494829_0024
+      \endverb
+      \verb{url}
+      \verb https://resolver.sub.uni-goettingen.de/purl?PPN600494829_0024
+      \endverb
+    \endentry
+    \entry{ferrerNExtendedEulerSystem2015}{online}{}{}
+      \name{author}{3}{}{%
+        {{hash=8b0ef2be6df7ed2d10e63cbbd649c4c9}{%
+           family={Ferrer},
+           familyi={F\bibinitperiod},
+           given={Sebastián},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c76e2ec5f885ebf95db94ace14983bb3}{%
+           family={Crespo},
+           familyi={C\bibinitperiod},
+           given={Francisco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=f80bbe909a595433bbb74e30be305fc7}{%
+           family={Molero},
+           familyi={M\bibinitperiod},
+           given={Francisco\bibnamedelima Javier},
+           giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{f22908757a7099c18563f08ee5db1c10}
+      \strng{fullhash}{f22908757a7099c18563f08ee5db1c10}
+      \strng{fullhashraw}{f22908757a7099c18563f08ee5db1c10}
+      \strng{bibnamehash}{f22908757a7099c18563f08ee5db1c10}
+      \strng{authorbibnamehash}{f22908757a7099c18563f08ee5db1c10}
+      \strng{authornamehash}{f22908757a7099c18563f08ee5db1c10}
+      \strng{authorfullhash}{f22908757a7099c18563f08ee5db1c10}
+      \strng{authorfullhashraw}{f22908757a7099c18563f08ee5db1c10}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{22}
+      \field{eprintclass}{math}
+      \field{eprinttype}{arXiv}
+      \field{month}{5}
+      \field{pubstate}{prepublished}
+      \field{title}{On the {{N-Extended Euler System I}}. {{Generalized Jacobi Elliptic Functions}}}
+      \field{urlday}{23}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1505.06142
+      \endverb
+      \verb{eprint}
+      \verb 1505.06142
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1505.06142
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1505.06142
+      \endverb
+    \endentry
+    \entry{corlessLambertWFunction1996}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=b98964fee3e15db31cea4fc5ea02dbf8}{%
+           family={Corless},
+           familyi={C\bibinitperiod},
+           given={R.\bibnamedelimi M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=d9f4420225cc8ef191b10bdb7001f1d4}{%
+           family={Gonnet},
+           familyi={G\bibinitperiod},
+           given={G.\bibnamedelimi H.},
+           giveni={G\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=a3b312a9819eec0269854bca16e6a212}{%
+           family={Hare},
+           familyi={H\bibinitperiod},
+           given={D.\bibnamedelimi E.\bibnamedelimi G.},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=6c920045bcf3d52fc14f7f7857a5a8fa}{%
+           family={Jeffrey},
+           familyi={J\bibinitperiod},
+           given={D.\bibnamedelimi J.},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=c7986b8f9a74e8a99dd8346c98b35f3e}{%
+           family={Knuth},
+           familyi={K\bibinitperiod},
+           given={D.\bibnamedelimi E.},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{caa487100ae85dbc584f0aacffea6981}
+      \strng{fullhash}{3156928040563a1e15f2102a0d876cf4}
+      \strng{fullhashraw}{3156928040563a1e15f2102a0d876cf4}
+      \strng{bibnamehash}{caa487100ae85dbc584f0aacffea6981}
+      \strng{authorbibnamehash}{caa487100ae85dbc584f0aacffea6981}
+      \strng{authornamehash}{caa487100ae85dbc584f0aacffea6981}
+      \strng{authorfullhash}{3156928040563a1e15f2102a0d876cf4}
+      \strng{authorfullhashraw}{3156928040563a1e15f2102a0d876cf4}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1019-7168, 1572-9044}
+      \field{journaltitle}{Advances in Computational Mathematics}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{1}
+      \field{shortjournal}{Adv Comput Math}
+      \field{title}{On the {{LambertW}} Function}
+      \field{urlday}{26}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{5}
+      \field{year}{1996}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{329\bibrangedash 359}
+      \range{pages}{31}
+      \verb{doi}
+      \verb 10.1007/BF02124750
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/BF02124750
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/BF02124750
+      \endverb
+    \endentry
+    \entry{ramezaniUnidirectionalNonlinearPTsymmetric2010}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=110464ce5267e1ddfc4b1e333e2a2074}{%
+           family={Ramezani},
+           familyi={R\bibinitperiod},
+           given={Hamidreza},
+           giveni={H\bibinitperiod}}}%
+        {{hash=af6d2f9a7d933d4eba4c9cf8135d539b}{%
+           family={Kottos},
+           familyi={K\bibinitperiod},
+           given={Tsampikos},
+           giveni={T\bibinitperiod}}}%
+        {{hash=8c12c35a70fd67c5f05b09b8b839af1e}{%
+           family={El-Ganainy},
+           familyi={E\bibinithyphendelim G\bibinitperiod},
+           given={Ramy},
+           giveni={R\bibinitperiod}}}%
+        {{hash=44479a430ed24a07155a1065a5ac92c9}{%
+           family={Christodoulides},
+           familyi={C\bibinitperiod},
+           given={Demetrios\bibnamedelima N.},
+           giveni={D\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \strng{namehash}{de9082ed5d9f4be2b21ee60335899201}
+      \strng{fullhash}{6ae69596b862e4b5ff50f07063e3614f}
+      \strng{fullhashraw}{6ae69596b862e4b5ff50f07063e3614f}
+      \strng{bibnamehash}{de9082ed5d9f4be2b21ee60335899201}
+      \strng{authorbibnamehash}{de9082ed5d9f4be2b21ee60335899201}
+      \strng{authornamehash}{de9082ed5d9f4be2b21ee60335899201}
+      \strng{authorfullhash}{6ae69596b862e4b5ff50f07063e3614f}
+      \strng{authorfullhashraw}{6ae69596b862e4b5ff50f07063e3614f}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{5}
+      \field{eprintclass}{physics}
+      \field{eprinttype}{arXiv}
+      \field{issn}{1050-2947, 1094-1622}
+      \field{journaltitle}{Physical Review A}
+      \field{month}{10}
+      \field{number}{4}
+      \field{shortjournal}{Phys. Rev. A}
+      \field{title}{Unidirectional {{Nonlinear PT}}-Symmetric {{Optical Structures}}}
+      \field{urlday}{20}
+      \field{urlmonth}{2}
+      \field{urlyear}{2026}
+      \field{volume}{82}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{043803}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevA.82.043803
+      \endverb
+      \verb{eprint}
+      \verb 1005.5189
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1005.5189
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1005.5189
+      \endverb
+    \endentry
+    \entry{mezoGeneralizationLambert$W$2015}{online}{}{}
+      \name{author}{2}{}{%
+        {{hash=c6bb454e6e3e3413a3ab7882dfe10821}{%
+           family={Mező},
+           familyi={M\bibinitperiod},
+           given={István},
+           giveni={I\bibinitperiod}}}%
+        {{hash=38625edd88d09be77c4b8c2d57b528a3}{%
+           family={Baricz},
+           familyi={B\bibinitperiod},
+           given={Árpád},
+           giveni={Á\bibinitperiod}}}%
+      }
+      \strng{namehash}{d24d2adc1e6ba1989f3c398facf0c38a}
+      \strng{fullhash}{d24d2adc1e6ba1989f3c398facf0c38a}
+      \strng{fullhashraw}{d24d2adc1e6ba1989f3c398facf0c38a}
+      \strng{bibnamehash}{d24d2adc1e6ba1989f3c398facf0c38a}
+      \strng{authorbibnamehash}{d24d2adc1e6ba1989f3c398facf0c38a}
+      \strng{authornamehash}{d24d2adc1e6ba1989f3c398facf0c38a}
+      \strng{authorfullhash}{d24d2adc1e6ba1989f3c398facf0c38a}
+      \strng{authorfullhashraw}{d24d2adc1e6ba1989f3c398facf0c38a}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{22}
+      \field{eprintclass}{math.CA}
+      \field{eprinttype}{arXiv}
+      \field{month}{6}
+      \field{pubstate}{prepublished}
+      \field{title}{On the Generalization of the {{Lambert}} \${{W}}\$ Function with Applications in Theoretical Physics}
+      \field{urlday}{9}
+      \field{urlmonth}{9}
+      \field{urlyear}{2026}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1408.3999
+      \endverb
+      \verb{eprint}
+      \verb 1408.3999
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1408.3999
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1408.3999
+      \endverb
+    \endentry
+    \entry{castleTaylorSeriesGeneralized2018}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=6534d2f543ac2d711fcbdf8a31414e53}{%
+           family={Castle},
+           familyi={C\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{6534d2f543ac2d711fcbdf8a31414e53}
+      \strng{fullhash}{6534d2f543ac2d711fcbdf8a31414e53}
+      \strng{fullhashraw}{6534d2f543ac2d711fcbdf8a31414e53}
+      \strng{bibnamehash}{6534d2f543ac2d711fcbdf8a31414e53}
+      \strng{authorbibnamehash}{6534d2f543ac2d711fcbdf8a31414e53}
+      \strng{authornamehash}{6534d2f543ac2d711fcbdf8a31414e53}
+      \strng{authorfullhash}{6534d2f543ac2d711fcbdf8a31414e53}
+      \strng{authorfullhashraw}{6534d2f543ac2d711fcbdf8a31414e53}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{30}
+      \field{eprintclass}{math.CA}
+      \field{eprinttype}{arXiv}
+      \field{month}{1}
+      \field{pubstate}{prepublished}
+      \field{title}{Taylor Series for Generalized {{Lambert W}} Functions}
+      \field{urlday}{9}
+      \field{urlmonth}{9}
+      \field{urlyear}{2026}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1801.09904
+      \endverb
+      \verb{eprint}
+      \verb 1801.09904
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1801.09904
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1801.09904
+      \endverb
+    \endentry
+    \entry{moralesManifoldWaysDarbouxHalphen2018}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=d8d58df9a90d0513e30617aa0cc63c26}{%
+           family={Morales},
+           familyi={M\bibinitperiod},
+           given={John\bibnamedelimb Alexander\bibnamedelima Cruz},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=5b95780d77ad5b78f48a0630f11732c1}{%
+           family={Movasati},
+           familyi={M\bibinitperiod},
+           given={Hossein},
+           giveni={H\bibinitperiod}}}%
+        {{hash=1436fd96babafacecb6e91d1ae87ca13}{%
+           family={Nikdelan},
+           familyi={N\bibinitperiod},
+           given={Younes},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=8fd6240bc9e749cf2ecc44b62f9a8eaa}{%
+           family={Roychowdhury},
+           familyi={R\bibinitperiod},
+           given={Raju},
+           giveni={R\bibinitperiod}}}%
+        {{hash=47097de8af996163d57c5b11bc426ece}{%
+           family={Torres},
+           familyi={T\bibinitperiod},
+           given={Marcus\bibnamedelimb A.\bibnamedelimi C.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{51265d5964813278d49c07d8fc8e7cbf}
+      \strng{fullhash}{28d3e2f2d2960651e9eafd576935ec21}
+      \strng{fullhashraw}{28d3e2f2d2960651e9eafd576935ec21}
+      \strng{bibnamehash}{51265d5964813278d49c07d8fc8e7cbf}
+      \strng{authorbibnamehash}{51265d5964813278d49c07d8fc8e7cbf}
+      \strng{authornamehash}{51265d5964813278d49c07d8fc8e7cbf}
+      \strng{authorfullhash}{28d3e2f2d2960651e9eafd576935ec21}
+      \strng{authorfullhashraw}{28d3e2f2d2960651e9eafd576935ec21}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{8}
+      \field{eprintclass}{math.DG}
+      \field{eprinttype}{arXiv}
+      \field{issn}{18150659}
+      \field{journaltitle}{Symmetry, Integrability and Geometry: Methods and Applications}
+      \field{month}{1}
+      \field{shortjournal}{SIGMA}
+      \field{title}{Manifold {{Ways}} to {{Darboux-Halphen System}}}
+      \field{urlday}{11}
+      \field{urlmonth}{8}
+      \field{urlyear}{2026}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.3842/SIGMA.2018.003
+      \endverb
+      \verb{eprint}
+      \verb 1709.09682
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1709.09682
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1709.09682
+      \endverb
+    \endentry
+    \entry{stoutemyerInverseSphericalBessel2022}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=2692b56d4f0710f2a8e279a1fc0229e2}{%
+           family={Stoutemyer},
+           familyi={S\bibinitperiod},
+           given={David\bibnamedelima R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {arXiv.org}%
+      }
+      \strng{namehash}{2692b56d4f0710f2a8e279a1fc0229e2}
+      \strng{fullhash}{2692b56d4f0710f2a8e279a1fc0229e2}
+      \strng{fullhashraw}{2692b56d4f0710f2a8e279a1fc0229e2}
+      \strng{bibnamehash}{2692b56d4f0710f2a8e279a1fc0229e2}
+      \strng{authorbibnamehash}{2692b56d4f0710f2a8e279a1fc0229e2}
+      \strng{authornamehash}{2692b56d4f0710f2a8e279a1fc0229e2}
+      \strng{authorfullhash}{2692b56d4f0710f2a8e279a1fc0229e2}
+      \strng{authorfullhashraw}{2692b56d4f0710f2a8e279a1fc0229e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{2}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{title}{Inverse Spherical {{Bessel}} Functions Generalize {{Lambert W}} and Solve Similar Equations Containing Trigonometric or Hyperbolic Subexpressions or Their Inverses}
+      \field{urlday}{25}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2207.00707v4
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2207.00707v4
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

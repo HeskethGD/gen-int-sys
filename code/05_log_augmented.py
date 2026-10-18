@@ -257,8 +257,9 @@ def _():
 
     For the two-mode example, differentiating H=L[log(a0*L)-U-V] gives the
     displayed polynomial equations plus terms proportional to H/L. The power
-    difference is conserved. Substituting w=1/(a0*R(rho)) verifies the paper's
-    final logarithmically deformed scalar equation.
+    difference is conserved. Substituting w=1/(a0*ell(rho)) verifies the paper's
+    final logarithmically deformed scalar equation, with
+    ell(rho)=a1*(gamma1-rho)+a2*(gamma2-rho).
 
     **All symbolic residuals vanish.** The tests also check the distinction
     between a local conservation identity and a principal-branch restriction.
