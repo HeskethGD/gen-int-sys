@@ -185,4 +185,4 @@ def test_complete_notebook_execution(notebooks, number):
     # Marimo serializes display math as a marimo-tex element with ||[ delimiters.
     # Count the expected blocks so successful execution cannot hide raw math text.
     rendered = "".join(getattr(output, "text", "") for output in outputs)
-    assert rendered.count('class="arithmatex">||[') == {"01": 5, "02": 4, "03": 6}[number]
+    assert rendered.count('class="arithmatex">||[') == {"01": 18, "02": 4, "03": 6}[number]

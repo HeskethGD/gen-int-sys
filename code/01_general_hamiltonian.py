@@ -93,14 +93,14 @@ def _():
     mo.md(r"""
     # 1. The general Hamiltonian and reconstruction
 
-    This notebook accompanies **The general Hamiltonian system** and Appendix A.
+    This notebook accompanies **The general Hamiltonian system** and includes the general proof of Liouville integrability on the regular locus.
     We differentiate the unreduced Hamiltonian before restricting to $H=0$:
     \[
     H=P(x)(U+V)-Q(x),\quad x_j=u_jv_j,\quad
     U=\prod_j u_j^{\beta_j},\quad V=\prod_j v_j^{\beta_j}.
     \]
     P and Q remain arbitrary symbolic functions. The calculations below check
-    finite mode counts; the paper supplies the argument for general N.
+    finite mode counts; the general reduction is derived in the paper, and the integrability proof below applies to arbitrary N.
 
     Work locally on compatible holomorphic branches, with nonzero modes and P,
     and integer weights whose sum is nonzero. A prime differentiates in z.
@@ -181,6 +181,101 @@ def _():
       +\frac{q}{p}P_{x_j}\right)=0.
     \]
     It makes U and V constant; individual modes need not be constant.
+    """)
+    return
+
+
+
+@app.cell
+def _():
+    mo.md(r"""
+    ## Liouville integrability on the regular locus: general proof
+
+    This argument holds for arbitrary mode count N, independently of the finite
+    symbolic checks above. Work on an open phase-space domain where H is
+    holomorphic, every modal product is nonzero, and at least one integer weight
+    is nonzero. Retain the notation
+    \[
+    H=P(x)(U+V)-Q(x),\qquad x_j=u_jv_j,\qquad
+    U=\prod_j u_j^{\beta_j},\quad V=\prod_j v_j^{\beta_j}.
+    \]
+    The canonical Poisson bracket is
+    \[
+    \{F,G\}=\sum_{j=1}^{N}
+    (\partial_{u_j}F\,\partial_{v_j}G-
+     \partial_{v_j}F\,\partial_{u_j}G).
+    \]
+
+    ### Conserved quantities and independence
+
+    Relabel the pairs so that the last weight is nonzero. The intermodal power
+    laws give the conserved combinations
+    \[
+    B_{j,k}=\beta_kx_j-\beta_jx_k
+           =\beta_k\gamma_j-\beta_j\gamma_k.
+    \]
+    Choose N-1 of them as
+    \[
+    C_l=\beta_Nx_l-\beta_lx_N,\qquad l=1,\ldots,N-1.
+    \]
+    All the other combinations follow from
+    \[
+    B_{j,k}=\frac{\beta_k}{\beta_N}C_j-
+            \frac{\beta_j}{\beta_N}C_k,\qquad C_N=0.
+    \]
+    On the stated domain the differentials of the modal products are independent:
+    each is nonzero and supported on its own canonical pair. Holding the last
+    product fixed, varying x_l changes C_l and leaves the other C_m unchanged.
+    Thus the N-1 chosen power invariants are functionally independent.
+
+    The Hamiltonian is conserved because it has no explicit dependence on z.
+    Its independence from the power invariants is a further condition. Define
+    the regular locus by
+    \[
+    dH\wedge dC_1\wedge\cdots\wedge dC_{N-1}\ne0.
+    \]
+    A sufficient condition is
+    \[
+    P(U-V)\ne0.
+    \]
+    Indeed, varying a pair with nonzero weight by
+    \[
+    u_j\mapsto u_je^\theta,\qquad v_j\mapsto v_je^{-\theta}
+    \]
+    fixes all modal products and hence every C_l, whereas
+    \[
+    \left.\frac{dH}{d\theta}\right|_{\theta=0}=\beta_jP(U-V)\ne0.
+    \]
+    Other points may also be regular. No independence claim is made on degenerate
+    loci or for coefficient choices that make H dependent on the power invariants.
+
+    ### Involution
+
+    The modal products commute:
+    \[
+    \{x_j,x_k\}=0.
+    \]
+    Each C_l is a linear combination of modal products, so
+    \[
+    \{C_l,C_m\}=0.
+    \]
+    Differentiating the full Hamiltonian, without an energy-level restriction, gives
+    \[
+    \{x_j,H\}=x_j'=-\beta_jP(U-V).
+    \]
+    Consequently,
+    \[
+    \{C_l,H\}=\beta_N\{x_l,H\}-\beta_l\{x_N,H\}=0.
+    \]
+    The N integrals consisting of H and the N-1 power invariants are therefore
+    in involution and independent on the stated regular locus. This establishes
+    **local Liouville integrability there**.
+
+    On a real symplectic restriction, the Liouville-Arnold conclusion about
+    invariant tori and action-angle coordinates additionally requires a compact
+    connected regular common level set. These global hypotheses are not asserted
+    for the general complex systems. The paper's constructions use the explicit
+    scalar reduction and reconstruction quadratures directly.
     """)
     return
 

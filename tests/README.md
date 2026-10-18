@@ -17,7 +17,7 @@ The checks cover arbitrary symbolic coefficient functions P,Q for weight vectors
 
 An independent 90-digit evaluation compares derivatives of explicitly corrected modes against derivatives of the original unreduced phase Hamiltonian at three points. It requires scaled residuals below 1e-55 and checks that uncorrected modes do not pass the same comparison. This is a local equation-residual check, not a numerical trajectory integration or a claim of global continuation.
 
-General symbolic arguments remain in the paper; finite weight-vector checks do not replace them or establish independence on degenerate loci.
+The general reduction arguments remain in the paper, and notebook 01 contains the general proof of Liouville integrability on the regular locus. Finite weight-vector checks do not replace those arguments or establish independence on degenerate loci.
 
 ## Example verification
 

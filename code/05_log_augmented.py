@@ -266,5 +266,88 @@ def _():
     return
 
 
+
+@app.cell
+def _():
+    mo.md(r"""
+    ## Weierstrass form under reparameterisation
+
+    This supplementary derivation concerns the logarithmically deformed scalar
+    equation, not the common-factor Hamiltonian lemma used in the main construction.
+    Let the coefficients be constant and write
+    \[
+    s'^2=W(s)+c_5(s+c_6)^2\log^2\left(\frac{4(s+c_6)}{c_0}\right),
+    \qquad W(s)=4s^3-g_2s-g_3,\qquad c_0\ne0.
+    \]
+    All expressions below are local, on consistent logarithmic and square-root
+    branches, avoiding zeros of displayed denominators. Choose a solution of the
+    ordinary Weierstrass equation
+    \[
+    \left(\frac{dw}{dh}\right)^2=W(w),\qquad
+    w(h)=\wp(h-h_*;g_2,g_3),
+    \]
+    with a shift h_*. For singular cubic invariants, use the corresponding
+    degenerate Weierstrass solution on a regular local branch. Seek
+    \[
+    s(z)=w(h(z)).
+    \]
+    Substitution gives
+    \[
+    \left(\frac{dw}{dh}\right)^2h'^2
+      =\left(\frac{dw}{dh}\right)^2+
+        c_5(w+c_6)^2\log^2\left(\frac{4(w+c_6)}{c_0}\right).
+    \]
+    Define the double-logarithmic function
+    \[
+    L(h)=\log\left[\log\left(\frac{4(w(h)+c_6)}{c_0}\right)\right].
+    \]
+    On a branch where this is defined,
+    \[
+    L'(h)=\frac{dw/dh}{(w+c_6)\log(4(w+c_6)/c_0)},\qquad
+    h'^2=1+\frac{c_5}{L'(h)^2}.
+    \]
+    With h_0=h(z_0), introduce
+    \[
+    \mathcal Z(h)=\int_{h_0}^{h}
+      \frac{L'(\tau)}{\sqrt{L'(\tau)^2+c_5}}\,d\tau.
+    \]
+    Choosing the square-root branch consistently with the sign of h' gives
+    \[
+    z-z_0=\mathcal Z(h(z)).
+    \]
+    Wherever this map is locally invertible,
+    \[
+    s(z)=\wp\left(\mathcal Z^{-1}(z-z_0)-h_*;g_2,g_3\right).
+    \]
+    Thus the Weierstrass representation remains available, but it requires
+    inversion of a generally nonelliptic integral. It does **not** imply that
+    s is an elliptic function of the original independent variable z.
+
+    ### A dominant-logarithm approximation
+
+    If
+    \[
+    |c_5|\gg|L'(h)|^2
+    \]
+    throughout the part of the trajectory considered, expansion on a chosen branch
+    of the square root gives the leading approximation
+    \[
+    \mathcal Z(h)\sim\frac{L(h)-L(h_0)}{\sqrt{c_5}}.
+    \]
+    Consequently, on a regular inverse branch of L,
+    \[
+    L(h(z))\sim L(h_0)+\sqrt{c_5}(z-z_0),\qquad
+    h(z)\sim L^{-1}\left(L(h_0)+\sqrt{c_5}(z-z_0)\right).
+    \]
+    This is a local leading-order approximation under the stated dominance
+    assumption, not a global error or continuation estimate.
+
+    For c_5=0, the reparameterisation integrand is locally plus or minus one,
+    so h differs from z by a sign and a constant and the ordinary Weierstrass
+    solution is recovered.
+    """)
+    return
+
+
 if __name__=='__main__':
     app.run()

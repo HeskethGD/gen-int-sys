@@ -2,11 +2,11 @@
 
 Eight self-contained Marimo notebooks accompany the manuscript:
 
-1. `01_general_hamiltonian.py` — canonical equations, power invariants, scalar reduction, reconstruction and initial compatibility.
+1. `01_general_hamiltonian.py` — canonical equations, power invariants, scalar reduction, reconstruction, initial compatibility and a general proof of Liouville integrability on the regular locus.
 2. `02_inverse_construction.py` — prescribed scalar ODEs, admissible square roots, time reparameterisation and equivalent mixing functions.
 3. `03_total_phase.py` — prescribed phases, correction quadratures and preservation of weighted products.
 4. `04_algebraic_examples.py` — selected summary-table checks, scalar degree/genus and the Fermat/incomplete-beta family.
-5. `05_log_augmented.py` — the paper's first- and second-power logarithmic examples and conservation laws.
+5. `05_log_augmented.py` — the paper's first- and second-power logarithmic examples, conservation laws and a supplementary Weierstrass reparameterisation.
 6. `06_rational_generators.py` — rational scalar equations, generalised Lambert-W-type inverse laws and rational mode equations.
 7. `07_inverse_spherical_bessel.py` — the paper's branch-specific construction and independent full-system validation.
 8. `08_modular_lambda.py` — the paper's Hamiltonian, theta-constant modes, parameter constraints, Darboux–Halphen map and validation.

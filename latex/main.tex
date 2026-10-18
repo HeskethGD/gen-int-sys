@@ -97,7 +97,7 @@ The modular example has explicit theta-constant mode solutions and a direct map 
 
 \section{Introduction}
 
-Integrable systems of coupled modes provide a meeting point between nonlinear optics, classical mechanics, and special-function theory. In nonlinear optics, resonant wave mixing and nonlinear directional couplers furnish familiar examples \cite{armstrongInteractionsLightWaves1962,stolenParametricAmplificationFrequency1982,chenFourphotonParametricMixing1989,chenFourwaveMixingOptical1989,agrawalNonlinearFiberOptics2019,jensenNonlinearCoherentCoupler1982}. Conserved combinations of modal powers reduce these systems to a scalar autonomous differential equation. Cubic and quartic polynomial reductions lead to elliptic functions, while the individual complex mode amplitudes require additional reconstruction. Explicit solutions of optical coupled-mode equations reveal connections with classical mechanical systems and identities among elliptic functions, motivating the search for a common constructive framework \cite{jensenNonlinearCoherentCoupler1982,heskethGeneralComplexEnvelope2015,heskethFWMWeierstrassElliptic2026,heskethCompleteWeierstrassElliptic2026}.
+Integrable systems of coupled modes provide a meeting point between nonlinear optics, classical mechanics, and special-function theory. In nonlinear optics, resonant wave mixing and nonlinear directional couplers furnish familiar examples \cite{armstrongInteractionsLightWaves1962,stolenParametricAmplificationFrequency1982,chenFourphotonParametricMixing1989,chenFourwaveMixingOptical1989,agrawalNonlinearFiberOptics2019,jensenNonlinearCoherentCoupler1982}. Conserved combinations of modal powers reduce these systems to a scalar autonomous differential equation. Cubic and quartic polynomial reductions lead to elliptic functions, while the individual complex mode amplitudes require additional reconstruction. Explicit solutions of optical coupled-mode equations reveal connections with classical mechanical systems and identities among elliptic functions, motivating the search for a common constructive framework \cite{jensenNonlinearCoherentCoupler1982,heskethGeneralComplexEnvelope2015,heskethFWMWeierstrassElliptic2026,heskethCompleteWeierstrassElliptic2026}. More recently, we obtained local solutions for polynomial Kummer-type systems with larger mode number $N$ using hyperelliptic sigma functions and Abelian integrals \cite{zotero-item-855}.
 
 Under suitable parameter choices and initial conditions, these coupled-mode systems also admit projections to classical mechanical systems, including the Lagrange top and the Duffing oscillator; the Euler top appears as a special reduction, as discussed in the examples below \cite{Whittaker1937,kovacicJacobiEllipticFunctions2016}.
 
@@ -105,55 +105,26 @@ The construction of integrable Hamiltonian systems has several established appro
 
 The closest precedents are the resonant Hamiltonians studied by Kummer and their subsequent generalisations. Kummer developed reduction and integration for Hamiltonians with polynomial dependence on oscillator powers and constant resonant coupling \cite{kummerResonantClassicalHamiltonians1990}. Related work on integrable multiboson systems and intensity-dependent conversion allowed functions of mode occupations to enter both the diagonal and interaction terms, with explicit constructions linked to orthogonal polynomials \cite{odzijewiczIntegrableMultibosonSystems2001,horowskiSystemsIntensitydependentConversion2004}. Odzijewicz and Wawreniuk formulated a classical and quantum Kummer-shape framework with smooth power-dependent functions in place of the polynomial and constant choices. Their examples include a non-polynomial classical Hamiltonian associated with a deformed oscillator algebra \cite{odzijewiczClassicalQuantumKummer2016}. Their studies of three- and four-wave mixing further connect this framework with nonlinear optics \cite{odzijewiczIntegrabilityCorrespondenceClassical2018,odzijewiczIntegrableClassicalQuantum2020}.
 
-Our recent work extends the explicit solution theory beyond the genus-one reductions of the familiar optical systems. When nonlinear interactions produce a higher-degree scalar polynomial whose normalized curve has genus greater than one, a more general class of polynomial Kummer-type systems is accessible through hyperelliptic sigma functions and Abelian integrals \cite{zotero-item-855}. That work constructs local solutions for smooth odd-degree curves under the stated degree and regularity conditions, together with reconstruction of the individual modes. Section \ref{sec:hyperelliptic-examples} places these systems within the present framework.
-
 We believe that the freedom to realise a wider range of special functions in Kummer-type systems remains underexplored. The established freedom in the coefficient functions makes it possible to explore scalar dynamics beyond the familiar elliptic examples. Polynomial mode equations can themselves conceal such behaviour: logarithmic terms in a conserved Hamiltonian may disappear from the equations of motion after the conserved value is used, yet remain in the reduced scalar equation. The classical two-species Lotka--Volterra predator--prey system is a familiar example: its polynomial equations possess a logarithmic first integral, and the scalar reduction considered below retains logarithmic terms \cite{baigentLotkaVolterraDynamicsIntroduction}. Polynomial coupled equations therefore need not lead to an elliptic or hyperelliptic reduction. Conversely, allowing non-polynomial Hamiltonians provides a way to embed prescribed scalar dynamics and special functions into coupled canonical systems. These observations motivate treating the scalar equation as a means both of constructing systems and of comparing their dynamics.
 
 \subsection{Our contribution}
 \label{sec:our-contribution}
 
-Our focus is to explore this special-function freedom through explicit examples and solvability results. We use a differential-equation-first construction for canonical Hamiltonians of the form
+{\emergencystretch=1em
+We explore the special-function freedom of the established Kummer-type Hamiltonian framework through explicit examples and solvability results. Our approach starts from a prescribed scalar autonomous equation and constructs compatible canonical systems, with individual modes recovered by quadratures.\par}
 
-\begin{equation}
-\begin{gathered}
-H=(U+V)P(x_1,\ldots,x_N)-Q(x_1,\ldots,x_N),\\
-x_j=u_jv_j,\qquad
-U=\prod_{j=1}^{N}u_j^{\beta_j},\qquad
-V=\prod_{j=1}^{N}v_j^{\beta_j}.
-\end{gathered}
-\end{equation}
+First, we introduce the category of \emph{log-augmented polynomial systems}, whose polynomial mode equations retain logarithmic terms in their scalar reductions. We connect examples including Lotka--Volterra and a parity-time-symmetric dimer with newly constructed mode systems, showing that polynomial coupled equations need not have algebraic scalar dynamics.
 
-Here $u_j(z)$ and $v_j(z)$ are canonical mode variables, and the exponents $\beta_j$ are integers with $\sum_j\beta_j\ne0$; the optical and polynomial examples use positive integer weights. The functions $P$ and $Q$ depend only on the modal products. Up to sign and conjugacy conventions, they play the roles of the coupling and power-dependent functions in the broader Kummer framework. We treat $u_j$ and $v_j$ as independent canonical variables, without requiring them to be complex conjugates. The underlying resonant integrability mechanism and the admission of smooth coefficient functions are established features of the preceding literature; our purpose is to use that freedom systematically to connect prescribed scalar equations with explicit coupled-mode systems.
+Second, we prove a correspondence between rational generating equations and extended Lambert--$W$-type inverse laws. We also establish elementary evaluation of rational reconstruction quadratures and describe how the associated rational coupled systems can be converted locally into polynomial systems by reparameterisation.
 
-The intermodal power laws give
+Third, we give constructions involving inverse incomplete beta and inverse spherical Bessel functions, together with a system generated by the modular $\lambda$ function. The modular example has explicit theta-constant mode solutions and a direct map to the Darboux--Halphen system. A formulation in terms of total modal phase explains how prescribed phases can be incorporated, with a correction by quadrature when required.
 
-\begin{equation}
-x_j(z)=\gamma_j-\beta_j\rho(z),
-\end{equation}
+These contributions use the known reduction and reconstruction mechanism to investigate a broader range of special-function dynamics.
 
-where the $\gamma_j$ are constants fixed by the conserved quantities. On the level $H=0$, the remaining power evolution satisfies
+\subsection{Organisation of the paper}
+\label{sec:organisation}
 
-\begin{equation}
-[\rho'(z)]^2
-=Q(x(\rho))^2
--4P(x(\rho))^2\prod_{j=1}^{N}(\gamma_j-\beta_j\rho)^{\beta_j},
-\end{equation}
-
-and the individual modes are recovered by quadratures. Reading this relation in reverse gives the construction: a prescribed autonomous equation $\rho'=f(\rho)$ determines a relation between $P$ and $Q$, leaving functional freedom to choose the mode equations. The squared equation requires a compatible local branch to recover the chosen sign of $\rho'=f(\rho)$. The target dynamics are realised on the specified Hamiltonian level and conserved-power relations; the construction is local, with regularity and branch conditions stated below.
-
-One may also begin with a sufficiently regular locally invertible function $\rho(z)$. If $s$ is its local inverse, then $f(\rho)=1/s'(\rho)$ defines the autonomous equation wherever the inverse is regular. Thus special functions can supply generating equations as well as solve reductions obtained from existing systems. The construction works in both directions: it produces canonical systems from a chosen scalar equation and identifies common scalar dynamics underlying apparently different coupled systems. The reduction and its product relations are recalled below in a form suited to this inverse construction.
-
-We recap the hierarchy of integrable continuous-wave nonlinear-optical mode systems and summarise its projections and reductions to classical mechanics in Section \ref{sec:elliptic-examples}.
-This overview establishes the common structure that motivates the construction; detailed solutions and derivations of those correspondences are left to the cited literature.
-The main aim here is to move beyond that familiar elliptic hierarchy by using prescribed scalar dynamics to construct and organise a broader family of canonical systems.
-
-The contributions are organised around three aspects of this freedom. First, we introduce the category of \emph{log-augmented polynomial systems}: polynomial mode equations whose scalar reductions retain logarithmic terms and are therefore generally nonalgebraic. This category brings together examples including the Lotka--Volterra model and a parity-time-symmetric dimer.
-
-Second, we prove that rational generating equations correspond to extended Lambert--$W$-type inverse laws, and establish elementary evaluation of rational reconstruction quadratures. These results describe local solvability of the associated rational coupled systems, with polynomial equations obtainable by a regular change of parameter on the selected level. 
-
-Third, we give further explicit constructions using inverse special functions, including a one-mode Fermat family expressed through incomplete beta inversion and a system generated by an inverse spherical Bessel function. A further example generated by the modular $\lambda$ function admits theta-constant mode solutions and a direct map to the Darboux--Halphen system. Together, these examples demonstrate how the established functional freedom can be used to construct and organise solvable canonical systems, including examples without an immediate physical interpretation.
-
-The paper first develops the general reduction and the inverse construction, followed by a formulation in terms of total complex modal phase. The remaining sections examine elliptic and higher-degree examples, log-augmented polynomial systems, rational generating equations and generalised Lambert--W-type inverse laws, and the two non-polynomial special-function constructions.
+We first recall the general Hamiltonian reduction and develop the inverse construction. We then review elliptic and higher-degree examples, introduce log-augmented systems, and establish the rational generating-equation results. The modular $\lambda$ construction follows. The final technical section develops the total-phase formulation and illustrates it with the inverse spherical Bessel example. Supporting integrability and Weierstrass-reparameterisation arguments are supplied in supplementary notebooks accompanying this paper.
 
 \section{The general Hamiltonian system}
 \label{sec:gen-ham-system}
@@ -243,7 +214,11 @@ It thus follows either by squaring \eqref{eq:rho-prime-u-v-prod} and using \eqre
 \end{align}
 and thus the differential equation for $\rho$ is separable. 
 
-Appendix \ref{app:la-integ-appendix} verifies Liouville integrability on the regular locus where the conserved quantities are functionally independent.
+Choosing $\beta_N\ne0$ after relabelling if necessary, the $N-1$ quantities
+\begin{equation}
+    C_j=\beta_Nu_jv_j-\beta_ju_Nv_N,\qquad j=1,\ldots,N-1,
+\end{equation}
+commute with one another and with $H$. The system is therefore Liouville integrable on the regular locus where these $N$ integrals are functionally independent. A detailed verification is supplied in the supplementary computational notebooks. The constructions below use the explicit scalar reduction and reconstruction quadratures directly. No global invariant-torus or action--angle conclusion is asserted for the general complex systems.
 
 \subsection{Theorem form without Hamiltonian mechanics}
 The separation and reconstruction mechanism underlying the following statement is established in the Kummer literature. Kummer treated constant resonant coupling ($P$ constant in our notation) and polynomial power dependence ($Q$ polynomial), subject to the degree restrictions of his setting \cite{kummerResonantClassicalHamiltonians1990}. Odzijewicz and Wawreniuk allowed smooth power-dependent coupling and diagonal functions, corresponding to $P$ and $Q$, and obtained the separated scalar equation and reconstruction quadratures \cite[Section~2, especially Eq.~(2.31)]{odzijewiczClassicalQuantumKummer2016}. Their formulation uses conjugate oscillator variables and a positive coupling function; here we work locally with independent complex canonical variables and holomorphic coefficients.
@@ -553,149 +528,6 @@ Since $d\widetilde H=A\,dK$ on $K=0$, this Hamiltonian reproduces the vector fie
 Consequently, a locally invertible function of $U+V$ does not enlarge the class of level-set dynamics represented by arbitrary $P,Q$, although this equivalence may not be apparent from the initial Hamiltonian expression.
 The equivalence is local to the chosen inverse branch and level set; the Hamiltonians need not generate the same dynamics away from that level.
 
-\section{Formulation in terms of total complex modal phase}
-\label{sec:mode-power-form}
-
-Throughout this section, all expressions are considered locally with consistent branch choices and where the displayed denominators are nonzero.
-We know that via \eqref{eq:uvj-rho-gammaj} we may write the modal power in terms of $\rho(z)$. 
-Therefore, if we define a complex modal phase function $\phi_j: \mathbb{C} \to \mathbb{C}$, we can write the modes as:
-\begin{align}
-    u_j(z) &= \sqrt{\gamma_j - \beta_j\rho(z)}\,e^{\phi_j(z)}, \notag \\
-    v_j(z) &= \sqrt{\gamma_j - \beta_j\rho(z)}\,e^{-\phi_j(z)}.
-\end{align}
-We then define a total complex modal phase $\Phi: \mathbb{C} \to \mathbb{C}$, weighted by degeneracy integers $\beta_m \in \mathbb{Z}\ (m=1,\dots,N)$, as:
-\begin{equation}
-    \Phi(z) = \sum_{j=1}^{N}\beta_j\phi_j(z)
-\end{equation}
-From \eqref{eq:u_v-qprho-prods} we get:
-\begin{align}
-    \prod_{j=1}^{N}\left(\frac{u_j}{v_j}\right)^{\beta_j} &= \frac{q + \rho'}{q - \rho'}, \notag \\
-    e^{2\Phi} &= \frac{q + f(\rho)}{q - f(\rho)} \label{eq:Phi-q-f-rho}
-\end{align}
-and thus $\Phi(z)$ can be expressed as a function of $\rho$ and thus as a function of modal powers.
-We also get the useful relations:
-\begin{align}
-    q &= \frac{\rho'}{\tanh{\Phi}}, \notag \\
-    p &= \frac{\rho'}{2\sqrt{r}\sinh{\Phi}}, \label{eq:q-p-phi}
-\end{align}
-or equivalently:
-\begin{align}
-    \cosh{\Phi} &= \frac{q}{2 \sqrt{r}\,p}, \notag \\
-    \sinh{\Phi} &= \frac{\rho'}{2 \sqrt{r}\,p}. \label{eq:cosh-sinh-qpr}
-\end{align}
-We also have by the definition of $\phi_j$ and $\Phi$ the relations:
-\begin{align}
-    \cosh{\Phi} &= \frac{\left(\prod_{m=1}^{N} u_{m}^{{\beta}_{m}} + \prod_{m=1}^{N} v_{m}^{{\beta}_{m}}\right)}{2\sqrt{\prod_{j=1}^{N}\left(u_jv_j\right)^{\beta_j}}}, \notag \\
-    \sinh{\Phi} &= \frac{\left(\prod_{m=1}^{N} u_{m}^{{\beta}_{m}} - \prod_{m=1}^{N} v_{m}^{{\beta}_{m}}\right)}{2\sqrt{\prod_{j=1}^{N}\left(u_jv_j\right)^{\beta_j}}}. \label{eq:cosh-sinh-u-v}
-\end{align}
-
-This viewpoint can be useful when constructing a Hamiltonian system from predefined solutions.
-In particular, it enables us to write a Hamiltonian system in which the solutions are related to the predefined solutions by quadrature, in a way that can be thought of as a gauge-like transform.
-Let us suppose we start from predefined solutions $u_j, v_j$ which we will refer to hereafter as the prescribed solutions.
-Let $\theta_j: \mathbb{C}^N \to \mathbb{C}$ be a function we choose when constructing the prescribed solutions to encode how each of the mode phases depends on all of the mode powers.
-The existence of such $\theta_j$ might appear presumptive and restrictive, but on any interval where $\rho$ is locally invertible it is formally possible to write any $z$ dependent phase term as a function of $\rho$ via $z=\rho^{-1}(\rho(z))$, and then replace $\rho$ with a function of modal powers.
-Let $\hat{\Phi}: \mathbb{C}^N \to \mathbb{C}$ be the degeneracy weighted sum of mode phases which encodes how the total modal phase depends on individual mode powers. 
-Similarly to how $q,p$ relate to $Q,P$ we thus set:
-\begin{align}
-    \phi_j(z) &= \theta_j(x_1(z), \dots, x_N(z)), \notag \\
-    \Phi(z) &= \hat{\Phi}\left(x_1(z), \dots , x_N(z) \right) = \sum_{j=1}^{N}\beta_j\theta_j(x_1(z), \dots, x_N(z)). 
-\end{align}
-Suppose then we use the functions $\hat{\Phi}$, $\theta_j$, and $F$ to build a Hamiltonian from \eqref{eq:Hamiltonian}, \eqref{eq:f-F}, and \eqref{eq:q-p-phi}, 
-such that: 
-\begin{align}
-    H\left(\bar{u}_1,\dots, \bar{u}_N, \bar{v}_1,\dots, \bar{v}_N\right) =& \left(\prod_{m=1}^{N} \bar{u}_{m}^{{\beta}_{m}} + \prod_{m=1}^{N} \bar{v}_{m}^{{\beta}_{m}}\right) \frac{F{\left(\bar{u}_1 \bar{v}_1, \dots , \bar{u}_N \bar{v}_N \right)}}{2\sqrt{\prod_{j=1}^{N}\left(\bar{u}_j \bar{v}_j\right)^{\beta_j}}\sinh{\hat{\Phi}\left(\bar{u}_1 \bar{v}_1, \dots , \bar{u}_N \bar{v}_N \right)}} \notag \\
-    &- \frac{F{\left(\bar{u}_1 \bar{v}_1, \dots , \bar{u}_N \bar{v}_N \right)}}{\tanh{\hat{\Phi}\left(\bar{u}_1 \bar{v}_1, \dots , \bar{u}_N \bar{v}_N \right)}}, \label{eq:H-phihat-F}
-\end{align}
-where we denote the modes in this Hamiltonian as $\bar{u}_j, \bar{v}_j$ and we will enquire whether $u_j=\bar{u}_j, v_j=\bar{v}_j$.
-It is important to stress that \eqref{eq:Phi-q-f-rho} and thus \eqref{eq:q-p-phi} and \eqref{eq:cosh-sinh-qpr} hold on the level set $H=0$.
-For clarity, the way to build and use the system in \eqref{eq:H-phihat-F} from prescribed solutions would be as follows:
-\begin{itemize}
-   \item Decide the autonomous differential equation that gives $\rho'=f\left(\rho\right)=F\left(x_1,\dots,x_N\right)$. Together with the constants $\beta_j,\gamma_j$ and an initial condition, this determines the modal powers $x_j$.
-   \item Decide how the mode phases $\phi_j$ are to depend on $x_1,\dots, x_N$ and thus on $\rho$, then sum them weighted by degeneracy to get $\hat{\Phi}\left(x_1,\dots,x_N\right)$ - this now already determines both the solutions and thus the equations of motion in the prescribed system but this may not in general be the Hamiltonian system we are constructing.
-   \item Use the constructed $\hat{\Phi}$ function as $\hat{\Phi}\left(\bar{u}_1 \bar{v}_1,\dots, \bar{u}_N \bar{v}_N\right)$ in \eqref{eq:H-phihat-F} but crucially, without using \eqref{eq:Phi-q-f-rho}, \eqref{eq:q-p-phi} and \eqref{eq:cosh-sinh-qpr} to further simplify the Hamiltonian as otherwise it would trivially become zero prior to differentiating.
-   \item Apply Hamilton's equations to \eqref{eq:H-phihat-F} to obtain the general equations of motion for $\bar{u}_j, \bar{v}_j$ and only after doing so does one work on the level set $H=0$ and use \eqref{eq:Phi-q-f-rho}, \eqref{eq:q-p-phi} and \eqref{eq:cosh-sinh-qpr} to simplify the equations of motion.
-\end{itemize}
-Writing $\bar{x}_j=\bar{u}_j\bar{v}_j$, the equations corresponding to \eqref{eq:eoms-rho-only} are
-\begin{align}
-    \frac{d \log{\bar{u}_j}}{dz} &= -F\partial_{\bar{x}_j}\hat{\Phi} - \frac{\beta_j F}{2 \bar{x}_j}, \notag \\[10pt]
-    \frac{d \log{\bar{v}_j}}{dz} &= F\partial_{\bar{x}_j}\hat{\Phi} - \frac{\beta_j F}{2 \bar{x}_j}, \label{eq:eoms-fhat-phihat}
-\end{align}
-where $F$ and $\hat{\Phi}$ are evaluated at $(\bar{x}_1,\dots,\bar{x}_N)$. These equations imply
-\begin{equation}
-    \bar{x}_j'=-\beta_jF.
-\end{equation}
-Choose a reference point $z_0$ at which the Hamiltonian modes and prescribed modes agree:
-\begin{equation}
-    \bar{u}_j(z_0)=u_j(z_0),
-    \qquad
-    \bar{v}_j(z_0)=v_j(z_0).
-\end{equation}
-It follows that $\bar{x}_j(z_0)=x_j(z_0)$. Since the prescribed and Hamiltonian modal powers satisfy the same differential equations with the same initial values, they agree on the corresponding local solution branch:
-\begin{equation}
-    \bar{x}_j=x_j.
-\end{equation}
-We henceforth make this identification. The partial derivatives of $\hat{\Phi}$ determine the individual Hamiltonian modal-phase evolution:
-\begin{align}
-    \frac{1}{2}\frac{d \log{\left(\frac{\bar{u}_j}{\bar{v}_j}\right)}}{dz} &= \bar{\phi}_j' = -F\partial_{x_j}\hat{\Phi} = -F\sum_{k=1}^{N}\beta_k\partial_{x_j}\theta_k. \label{eq:eoms-fhat-phihat-pow-phi}
-\end{align}
-However, by definition the prescribed individual phase velocity is:
-\begin{align}
-    \phi_j' = -F\sum_{k=1}^{N}\beta_k\partial_{x_k}\theta_j. \label{eq:prescribed-pow-phi}
-\end{align}
-Thus, if we define
-\begin{equation}
-    \xi'_j(z) = \bar{\phi}_j' - \phi_j' = -F\sum_{k=1}^{N}\beta_k\left(\partial_{x_j}\theta_k - \partial_{x_k}\theta_j\right),
-\end{equation}
-then the constructed Hamiltonian yields the prescribed phase velocities precisely when
-\begin{equation}
-    \sum_{k=1}^{N}\beta_k\left(\partial_{x_j}\theta_k-\partial_{x_k}\theta_j\right)=0,
-    \qquad j=1,\dots,N.
-\end{equation}
-Otherwise, the solutions of the constructed Hamiltonian system are related to the prescribed solutions by
-\begin{align}
-    \bar{u}_j&=u_je^{\xi_j}, \notag \\
-    \bar{v}_j&=v_je^{-\xi_j}. \label{eq:ubar-vbar-to-u-v-xi-j}
-\end{align}
-The common initial values at $z_0$ give $\xi_j(z_0)=0$. Let $\eta_j$ express this phase correction as a function of $\rho$, such that
-\begin{equation}
-    \xi_j(z)=\eta_j(\rho(z)).
-\end{equation}
-Letting $\rho_0=\rho(z_0)$, we have $\eta_j(\rho_0)=0$, and using $F=\rho'$ the phase correction is given by
-\begin{align}
-    \frac{d \eta_j}{d \rho} &= -\sum_{k=1}^{N}\beta_k\left(\partial_{x_j}\theta_k - \partial_{x_k}\theta_j\right), \notag \\
-    \eta_j(\rho) &= - \int_{\rho_0}^{\rho}
-    \sum_{k=1}^{N}\beta_k\left(\partial_{x_j}\theta_k - \partial_{x_k}\theta_j\right)
-    ds. \label{eq:eta-j-rho-quadrature}
-\end{align}
-In the integrand, all partial derivatives are evaluated at
-\begin{equation}
-    (x_1,\dots,x_N)
-    =
-    (\gamma_1-\beta_1s,\dots,\gamma_N-\beta_Ns).
-\end{equation}
-Thus the solutions of the Hamiltonian system are known by quadrature and can be written explicitly in terms of the prescribed modes.
-Furthermore, antisymmetry under interchange of $j$ and $k$ gives
-\begin{equation}
-    \sum_{j=1}^{N}\beta_j\xi'_j
-    =
-    -F\sum_{j=1}^{N}\sum_{k=1}^{N}\beta_j\beta_k
-    \left(\partial_{x_j}\theta_k - \partial_{x_k}\theta_j\right)
-    =0.
-\end{equation}
-Since $\xi_j(z_0)=0$, it follows that
-\begin{equation}
-    \sum_{j=1}^{N}\beta_j\xi_j=0
-\end{equation}
-for all $z$. The transformation in \eqref{eq:ubar-vbar-to-u-v-xi-j} therefore preserves each modal power and both product terms in the Hamiltonian:
-\begin{align}
-    \bar{u}_j\bar{v}_j &= u_jv_j, \notag \\
-    \prod_{j=1}^{N}\bar{u}_j^{\beta_j} &= \prod_{j=1}^{N}u_j^{\beta_j}, \notag \\
-    \prod_{j=1}^{N}\bar{v}_j^{\beta_j} &= \prod_{j=1}^{N}v_j^{\beta_j}.
-\end{align}
-Hence the Hamiltonian in \eqref{eq:H-phihat-F} is exactly invariant along the paired solutions, and the transformation in \eqref{eq:ubar-vbar-to-u-v-xi-j} can be regarded as gauge-like.
-
-An example of building the Hamiltonian in this way is given in Section \ref{sec:modular-example}.
-
 \section{Nonlinear optics, classical mechanics, and elliptic functions}
 \label{sec:elliptic-examples}
 
@@ -956,7 +788,7 @@ We refer to \eqref{eq:log-weierstrass-normal} as the logarithmically deformed We
     +
     c_5\xi^2\log^2\xi. \label{eq:log-weierstrass-reciprocal}
 \end{equation}
-We will show that the Lotka--Volterra model, a parity-time symmetric dimer, and two further mode systems are related through special or degenerate cases of these equations. Appendix \ref{app:log-weierstrass-reparam} further clarifies their relation to elliptic systems by expressing the logarithmically deformed equation as a Weierstrass function of a reparameterised variable, where the change of variable is itself determined by a non-elliptic integral.
+We will show that the Lotka--Volterra model, a parity-time symmetric dimer, and two further mode systems are related through special or degenerate cases of these equations. These equations also admit a local representation through a Weierstrass function after reparameterisation, as detailed in the supplementary computational notebooks. The reparameterisation requires inversion of a generally nonelliptic integral, so this representation does not make the solutions elliptic functions of the original independent variable.
 
 \subsubsection{The Lotka--Volterra model}
 
@@ -1528,7 +1360,7 @@ For this subfamily, a Taylor series $w(Z)=\sum_{n=0}^{\infty}b_nZ^n$ for the inv
 \end{equation}
 where the series is used within its domain of convergence.
 The further inclusion of a general polynomial $\mathcal{P}$ and rational principal parts $\mathcal{R}$ in the exponential is what permits the partial-fraction expansion of an arbitrary rational equation to be represented by \eqref{eq:extended-lambert-inverse-law}.
-This family is not intended to include every inverse function that has been described as a generalisation of Lambert $W$; Section \ref{sec:inverse-spherical-bessel-example} considers a different extension based on inverse spherical Bessel functions.
+This family is not intended to include every inverse function that has been described as a generalisation of Lambert $W$; Subsection \ref{sec:inverse-spherical-bessel-example} considers a different extension based on inverse spherical Bessel functions.
 As elsewhere in this paper, the logarithms, powers, and inverse functions are understood locally with branches fixed by the initial condition.
 Zeros of $f$ also give constant solutions of \eqref{eq:rational-generating-ode}; these are separate from the nonconstant locally invertible solutions described by the theorem.
 
@@ -1582,138 +1414,6 @@ This is the same Hamiltonian multiplication and time-reparameterisation mechanis
 Multiplying $H$ by the denominator $D$ gives a Hamiltonian for the reparameterised polynomial equations on $H=0$, since the additional terms produced by the product rule are proportional to $H$ and vanish there.
 In particular, using a common modal-power denominator $D_0$ for the rational functions $F$ and $P$ gives a corresponding Kummer-type Hamiltonian with the polynomial functions $D_0F$ and $D_0P$.
 An additional factor depending separately on the modes, i.e. not just mode powers, may be needed to clear every denominator in the coupled equations; the resulting Hamiltonian remains canonical on the chosen level set but need not retain the Kummer-type form away from it.
-
-
-\section{A system generated by an inverse spherical Bessel function}
-\label{sec:inverse-spherical-bessel-example}
-
-We now give a deliberately constructed example whose purpose is to demonstrate the freedom of the inverse procedure developed in Sections \ref{sec:gen-ham-system}--\ref{sec:mode-power-form}.
-Rather than beginning with a familiar Hamiltonian system, we prescribe a locally invertible special function from which we obtain the equation for $\rho$, the mode solutions, and finally a non-polynomial Hamiltonian that generates them.
-
-Let $j_1$ denote the spherical Bessel function of the first kind of order one,
-\begin{equation}
-    j_1(s)=\frac{\sin s}{s^2}-\frac{\cos s}{s}.
-\end{equation}
-The real inverse of $j_1$ is multivalued, with locally single-valued branches on intervals between successive zeros of $j_1'$ \cite{stoutemyerInverseSphericalBessel2022}.
-Although inverse spherical Bessel functions have themselves been described as generalisations of Lambert $W$, they are different from the inverse laws in Section \ref{sec:rational-generating-equations}.
-Writing the sine and cosine in $j_1$ in exponential form introduces both $e^{is}$ and $e^{-is}$, rather than the single exponential-product structure in \eqref{eq:extended-lambert-inverse-law}; correspondingly, the function $1/j_1'(\rho)$ below is not rational in $\rho$.
-Choose $c$ such that $j_1'(c)\ne0$ and select the local inverse branch containing $c$ by defining
-\begin{equation}
-    j_1(\rho(z))=j_1(c)+z,
-    \qquad
-    \rho(0)=c. \label{eq:inverse-j1-rho-definition}
-\end{equation}
-Differentiating \eqref{eq:inverse-j1-rho-definition} gives the autonomous equation
-\begin{align}
-    \rho'
-    &=f(\rho)
-    =\frac{1}{j_1'(\rho)}, \notag \\
-    &=\frac{\rho^3}
-    {\rho^2\sin\rho+2\rho\cos\rho-2\sin\rho}. \label{eq:inverse-j1-rho-ode}
-\end{align}
-The solution is local: it can be continued along the chosen branch only while $j_1'(\rho)\ne0$.
-
-We construct a two-mode system by taking $N=2$ and $\beta_1=\beta_2=1$.
-Writing $x_j=u_jv_j$, the intermodal power laws give
-\begin{equation}
-    x_j=\gamma_j-\rho,
-    \qquad
-    \gamma_1+\gamma_2=0,
-    \qquad
-    \rho=-\frac{x_1+x_2}{2}. \label{eq:inverse-j1-modal-powers}
-\end{equation}
-For constants $a_j,b_j\in\mathbb{C}$, choose the modal phases
-\begin{equation}
-    \phi_j(x_j)=a_j\operatorname{Si}(b_jx_j),
-    \qquad
-    \operatorname{Si}(s)=\int_0^s\frac{\sin t}{t}\,dt,
-\end{equation}
-and hence the total phase
-\begin{equation}
-    \widehat{\Phi}(x_1,x_2)
-    =a_1\operatorname{Si}(b_1x_1)
-    +a_2\operatorname{Si}(b_2x_2). \label{eq:inverse-j1-total-phase}
-\end{equation}
-This choice has the useful derivative
-\begin{equation}
-    \partial_{x_j}\phi_j
-    =a_jb_jj_0(b_jx_j),
-\end{equation}
-where $j_0(s)=\sin(s)/s$.
-The prescribed modes are therefore
-\begin{align}
-    u_j(z)
-    &=\alpha_j\sqrt{\gamma_j-\rho(z)}
-    \exp\left[a_j\operatorname{Si}\left(b_j(\gamma_j-\rho(z))\right)\right], \notag \\
-    v_j(z)
-    &=\frac{1}{\alpha_j}\sqrt{\gamma_j-\rho(z)}
-    \exp\left[-a_j\operatorname{Si}\left(b_j(\gamma_j-\rho(z))\right)\right],
-    \label{eq:inverse-j1-mode-solutions}
-\end{align}
-where $\alpha_j\ne0$ are constants satisfying $\alpha_1\alpha_2=1$, as required for the selected $H=0$ branch of the Hamiltonian below, and all square roots and inverse functions are taken on consistent local branches.
-
-To construct the Hamiltonian, define
-\begin{align}
-    F(x_1,x_2)
-    &=f\left(-\frac{x_1+x_2}{2}\right)
-    =\frac{1}{j_1'\left(-(x_1+x_2)/2\right)}, \notag \\
-    &=\frac{1}{j_1'\left((x_1+x_2)/2\right)}, \label{eq:inverse-j1-F}
-\end{align}
-where the final equality follows because $j_1$ is odd and $j_1'$ is even.
-Applying the construction in \eqref{eq:q-p-phi} gives
-\begin{equation}
-    P(x_1,x_2)
-    =\frac{F(x_1,x_2)}{2\sqrt{x_1x_2}\sinh\widehat{\Phi}(x_1,x_2)},
-    \qquad
-    Q(x_1,x_2)
-    =\frac{F(x_1,x_2)}{\tanh\widehat{\Phi}(x_1,x_2)}. \label{eq:inverse-j1-P-Q}
-\end{equation}
-Thus a canonical Hamiltonian generating the prescribed power and phase behaviour is
-\begin{multline}
-    H
-    =\frac{F(x_1,x_2)(u_1u_2+v_1v_2)}
-    {2\sqrt{x_1x_2}\sinh\widehat{\Phi}(x_1,x_2)}
-    -\frac{F(x_1,x_2)}{\tanh\widehat{\Phi}(x_1,x_2)}, \\
-    x_1=u_1v_1,
-    \qquad
-    x_2=u_2v_2. \label{eq:inverse-j1-Hamiltonian}
-\end{multline}
-Both $P$ and $Q$ are non-polynomial functions of the modal powers.
-
-After applying Hamilton's equations to \eqref{eq:inverse-j1-Hamiltonian} and then working on the level set $H=0$, the resulting coupled system can be written directly in terms of the modes as
-\begin{align}
-    \frac{du_j}{dz}
-    &=-\frac{a_jb_jj_0\left(b_ju_jv_j\right)}
-    {j_1'\left((u_1v_1+u_2v_2)/2\right)}u_j
-    -\frac{1}
-    {2v_jj_1'\left((u_1v_1+u_2v_2)/2\right)}, \notag \\
-    \frac{dv_j}{dz}
-    &=\frac{a_jb_jj_0\left(b_ju_jv_j\right)}
-    {j_1'\left((u_1v_1+u_2v_2)/2\right)}v_j
-    -\frac{1}
-    {2u_jj_1'\left((u_1v_1+u_2v_2)/2\right)},
-    \qquad j=1,2. \label{eq:inverse-j1-coupled-system}
-\end{align}
-Here $j_1'$ denotes differentiation with respect to the argument of $j_1$.
-The first term in each equation is proportional to the corresponding mode and contains $j_0(b_ju_jv_j)$, a function of that mode's own modal power.
-It may therefore be interpreted as a generalised self-phase-modulation-like term whose overall strength is modulated by the common total-power factor in the denominator.
-The second terms determine the modal-power evolution, and direct substitution into \eqref{eq:inverse-j1-coupled-system} gives
-\begin{equation}
-    (u_jv_j)'=-\frac{1}{j_1'\left((u_1v_1+u_2v_2)/2\right)}=-\rho',
-\end{equation}
-in agreement with \eqref{eq:inverse-j1-modal-powers} and \eqref{eq:inverse-j1-rho-ode}.
-
-Figure \ref{fig:inverse-j1-example} compares the modes in \eqref{eq:inverse-j1-mode-solutions} with a direct numerical integration of the four coupled equations in \eqref{eq:inverse-j1-coupled-system}.
-The numerical points lie on the prescribed solutions up to the end of the plotted inverse branch.
-The increasingly rapid variation near the right endpoint occurs as $\rho$ approaches the first critical point of $j_1$ on that branch, where $j_1'(\rho)=0$.
-This example is intentionally removed from the usual polynomial and elliptic settings: it shows directly how the choice of a locally invertible function can generate a solvable canonical Hamiltonian system involving a different class of special functions.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\textwidth]{figures/case1_plot_1.pdf}
-    \caption{Comparison of the prescribed inverse-spherical-Bessel solutions (lines) with direct numerical integration of the coupled Hamiltonian system (markers). The parameters are $a_1=2.3$, $a_2=1.35$, $b_1=6.4$, and $b_2=9.7$, with $x_1(0)=5.8116$, $x_2(0)=3.4584$, and $\alpha_1=\alpha_2=1$ in \eqref{eq:inverse-j1-mode-solutions}. Thus $u_j(0)=\sqrt{x_j(0)}\exp[a_j\operatorname{Si}(b_jx_j(0))]$ and $v_j(0)=x_j(0)/u_j(0)$, giving $\rho(0)=-4.635$ on the selected branch of $j_1^{-1}$. Numerical integration uses SciPy \texttt{solve\_ivp} with DOP853, relative tolerance $10^{-11}$, absolute tolerance $10^{-13}$, and maximum step $0.05$. The comparison stops at $98\%$ of the interval to the next critical point of $j_1$; the mode panel uses a logarithmic vertical scale.}
-    \label{fig:inverse-j1-example}
-\end{figure}
 
 
 \section{A system generated by the modular \texorpdfstring{$\lambda$}{lambda} function}
@@ -2021,6 +1721,287 @@ In particular, when $a_0=0$, equation \eqref{eq:modular-lambda-mode-ratios} give
 There is then no nontrivial phase evolution and $v_j=\alpha_j^{-1}u_j$, so the distinction between each mode and its Hamiltonian conjugate reduces to a constant rescaling.
 The Darboux--Halphen connection is therefore inherited from the generating equation; the focus here is the new canonical two-mode system and its exact theta-constant solutions.
 
+\section{Formulation in terms of total complex modal phase}
+\label{sec:mode-power-form}
+
+Throughout this section, all expressions are considered locally with consistent branch choices and where the displayed denominators are nonzero.
+We know that via \eqref{eq:uvj-rho-gammaj} we may write the modal power in terms of $\rho(z)$. 
+Therefore, if we define a complex modal phase function $\phi_j: \mathbb{C} \to \mathbb{C}$, we can write the modes as:
+\begin{align}
+    u_j(z) &= \sqrt{\gamma_j - \beta_j\rho(z)}\,e^{\phi_j(z)}, \notag \\
+    v_j(z) &= \sqrt{\gamma_j - \beta_j\rho(z)}\,e^{-\phi_j(z)}.
+\end{align}
+We then define a total complex modal phase $\Phi: \mathbb{C} \to \mathbb{C}$, weighted by degeneracy integers $\beta_m \in \mathbb{Z}\ (m=1,\dots,N)$, as:
+\begin{equation}
+    \Phi(z) = \sum_{j=1}^{N}\beta_j\phi_j(z)
+\end{equation}
+From \eqref{eq:u_v-qprho-prods} we get:
+\begin{align}
+    \prod_{j=1}^{N}\left(\frac{u_j}{v_j}\right)^{\beta_j} &= \frac{q + \rho'}{q - \rho'}, \notag \\
+    e^{2\Phi} &= \frac{q + f(\rho)}{q - f(\rho)} \label{eq:Phi-q-f-rho}
+\end{align}
+and thus $\Phi(z)$ can be expressed as a function of $\rho$ and thus as a function of modal powers.
+We also get the useful relations:
+\begin{align}
+    q &= \frac{\rho'}{\tanh{\Phi}}, \notag \\
+    p &= \frac{\rho'}{2\sqrt{r}\sinh{\Phi}}, \label{eq:q-p-phi}
+\end{align}
+or equivalently:
+\begin{align}
+    \cosh{\Phi} &= \frac{q}{2 \sqrt{r}\,p}, \notag \\
+    \sinh{\Phi} &= \frac{\rho'}{2 \sqrt{r}\,p}. \label{eq:cosh-sinh-qpr}
+\end{align}
+We also have by the definition of $\phi_j$ and $\Phi$ the relations:
+\begin{align}
+    \cosh{\Phi} &= \frac{\left(\prod_{m=1}^{N} u_{m}^{{\beta}_{m}} + \prod_{m=1}^{N} v_{m}^{{\beta}_{m}}\right)}{2\sqrt{\prod_{j=1}^{N}\left(u_jv_j\right)^{\beta_j}}}, \notag \\
+    \sinh{\Phi} &= \frac{\left(\prod_{m=1}^{N} u_{m}^{{\beta}_{m}} - \prod_{m=1}^{N} v_{m}^{{\beta}_{m}}\right)}{2\sqrt{\prod_{j=1}^{N}\left(u_jv_j\right)^{\beta_j}}}. \label{eq:cosh-sinh-u-v}
+\end{align}
+
+This viewpoint can be useful when constructing a Hamiltonian system from predefined solutions.
+In particular, it enables us to write a Hamiltonian system in which the solutions are related to the predefined solutions by quadrature, in a way that can be thought of as a gauge-like transform.
+Let us suppose we start from predefined solutions $u_j, v_j$ which we will refer to hereafter as the prescribed solutions.
+Let $\theta_j: \mathbb{C}^N \to \mathbb{C}$ be a function we choose when constructing the prescribed solutions to encode how each of the mode phases depends on all of the mode powers.
+The existence of such $\theta_j$ might appear presumptive and restrictive, but on any interval where $\rho$ is locally invertible it is formally possible to write any $z$ dependent phase term as a function of $\rho$ via $z=\rho^{-1}(\rho(z))$, and then replace $\rho$ with a function of modal powers.
+Let $\hat{\Phi}: \mathbb{C}^N \to \mathbb{C}$ be the degeneracy weighted sum of mode phases which encodes how the total modal phase depends on individual mode powers. 
+Similarly to how $q,p$ relate to $Q,P$ we thus set:
+\begin{align}
+    \phi_j(z) &= \theta_j(x_1(z), \dots, x_N(z)), \notag \\
+    \Phi(z) &= \hat{\Phi}\left(x_1(z), \dots , x_N(z) \right) = \sum_{j=1}^{N}\beta_j\theta_j(x_1(z), \dots, x_N(z)). 
+\end{align}
+Suppose then we use the functions $\hat{\Phi}$, $\theta_j$, and $F$ to build a Hamiltonian from \eqref{eq:Hamiltonian}, \eqref{eq:f-F}, and \eqref{eq:q-p-phi}, 
+such that: 
+\begin{align}
+    H\left(\bar{u}_1,\dots, \bar{u}_N, \bar{v}_1,\dots, \bar{v}_N\right) =& \left(\prod_{m=1}^{N} \bar{u}_{m}^{{\beta}_{m}} + \prod_{m=1}^{N} \bar{v}_{m}^{{\beta}_{m}}\right) \frac{F{\left(\bar{u}_1 \bar{v}_1, \dots , \bar{u}_N \bar{v}_N \right)}}{2\sqrt{\prod_{j=1}^{N}\left(\bar{u}_j \bar{v}_j\right)^{\beta_j}}\sinh{\hat{\Phi}\left(\bar{u}_1 \bar{v}_1, \dots , \bar{u}_N \bar{v}_N \right)}} \notag \\
+    &- \frac{F{\left(\bar{u}_1 \bar{v}_1, \dots , \bar{u}_N \bar{v}_N \right)}}{\tanh{\hat{\Phi}\left(\bar{u}_1 \bar{v}_1, \dots , \bar{u}_N \bar{v}_N \right)}}, \label{eq:H-phihat-F}
+\end{align}
+where we denote the modes in this Hamiltonian as $\bar{u}_j, \bar{v}_j$ and we will enquire whether $u_j=\bar{u}_j, v_j=\bar{v}_j$.
+It is important to stress that \eqref{eq:Phi-q-f-rho} and thus \eqref{eq:q-p-phi} and \eqref{eq:cosh-sinh-qpr} hold on the level set $H=0$.
+For clarity, the way to build and use the system in \eqref{eq:H-phihat-F} from prescribed solutions would be as follows:
+\begin{itemize}
+   \item Decide the autonomous differential equation that gives $\rho'=f\left(\rho\right)=F\left(x_1,\dots,x_N\right)$. Together with the constants $\beta_j,\gamma_j$ and an initial condition, this determines the modal powers $x_j$.
+   \item Decide how the mode phases $\phi_j$ are to depend on $x_1,\dots, x_N$ and thus on $\rho$, then sum them weighted by degeneracy to get $\hat{\Phi}\left(x_1,\dots,x_N\right)$ - this now already determines both the solutions and thus the equations of motion in the prescribed system but this may not in general be the Hamiltonian system we are constructing.
+   \item Use the constructed $\hat{\Phi}$ function as $\hat{\Phi}\left(\bar{u}_1 \bar{v}_1,\dots, \bar{u}_N \bar{v}_N\right)$ in \eqref{eq:H-phihat-F} but crucially, without using \eqref{eq:Phi-q-f-rho}, \eqref{eq:q-p-phi} and \eqref{eq:cosh-sinh-qpr} to further simplify the Hamiltonian as otherwise it would trivially become zero prior to differentiating.
+   \item Apply Hamilton's equations to \eqref{eq:H-phihat-F} to obtain the general equations of motion for $\bar{u}_j, \bar{v}_j$ and only after doing so does one work on the level set $H=0$ and use \eqref{eq:Phi-q-f-rho}, \eqref{eq:q-p-phi} and \eqref{eq:cosh-sinh-qpr} to simplify the equations of motion.
+\end{itemize}
+Writing $\bar{x}_j=\bar{u}_j\bar{v}_j$, the equations corresponding to \eqref{eq:eoms-rho-only} are
+\begin{align}
+    \frac{d \log{\bar{u}_j}}{dz} &= -F\partial_{\bar{x}_j}\hat{\Phi} - \frac{\beta_j F}{2 \bar{x}_j}, \notag \\[10pt]
+    \frac{d \log{\bar{v}_j}}{dz} &= F\partial_{\bar{x}_j}\hat{\Phi} - \frac{\beta_j F}{2 \bar{x}_j}, \label{eq:eoms-fhat-phihat}
+\end{align}
+where $F$ and $\hat{\Phi}$ are evaluated at $(\bar{x}_1,\dots,\bar{x}_N)$. These equations imply
+\begin{equation}
+    \bar{x}_j'=-\beta_jF.
+\end{equation}
+Choose a reference point $z_0$ at which the Hamiltonian modes and prescribed modes agree:
+\begin{equation}
+    \bar{u}_j(z_0)=u_j(z_0),
+    \qquad
+    \bar{v}_j(z_0)=v_j(z_0).
+\end{equation}
+It follows that $\bar{x}_j(z_0)=x_j(z_0)$. Since the prescribed and Hamiltonian modal powers satisfy the same differential equations with the same initial values, they agree on the corresponding local solution branch:
+\begin{equation}
+    \bar{x}_j=x_j.
+\end{equation}
+We henceforth make this identification. The partial derivatives of $\hat{\Phi}$ determine the individual Hamiltonian modal-phase evolution:
+\begin{align}
+    \frac{1}{2}\frac{d \log{\left(\frac{\bar{u}_j}{\bar{v}_j}\right)}}{dz} &= \bar{\phi}_j' = -F\partial_{x_j}\hat{\Phi} = -F\sum_{k=1}^{N}\beta_k\partial_{x_j}\theta_k. \label{eq:eoms-fhat-phihat-pow-phi}
+\end{align}
+However, by definition the prescribed individual phase velocity is:
+\begin{align}
+    \phi_j' = -F\sum_{k=1}^{N}\beta_k\partial_{x_k}\theta_j. \label{eq:prescribed-pow-phi}
+\end{align}
+Thus, if we define
+\begin{equation}
+    \xi'_j(z) = \bar{\phi}_j' - \phi_j' = -F\sum_{k=1}^{N}\beta_k\left(\partial_{x_j}\theta_k - \partial_{x_k}\theta_j\right),
+\end{equation}
+then the constructed Hamiltonian yields the prescribed phase velocities precisely when
+\begin{equation}
+    \sum_{k=1}^{N}\beta_k\left(\partial_{x_j}\theta_k-\partial_{x_k}\theta_j\right)=0,
+    \qquad j=1,\dots,N.
+\end{equation}
+Otherwise, the solutions of the constructed Hamiltonian system are related to the prescribed solutions by
+\begin{align}
+    \bar{u}_j&=u_je^{\xi_j}, \notag \\
+    \bar{v}_j&=v_je^{-\xi_j}. \label{eq:ubar-vbar-to-u-v-xi-j}
+\end{align}
+The common initial values at $z_0$ give $\xi_j(z_0)=0$. Let $\eta_j$ express this phase correction as a function of $\rho$, such that
+\begin{equation}
+    \xi_j(z)=\eta_j(\rho(z)).
+\end{equation}
+Letting $\rho_0=\rho(z_0)$, we have $\eta_j(\rho_0)=0$, and using $F=\rho'$ the phase correction is given by
+\begin{align}
+    \frac{d \eta_j}{d \rho} &= -\sum_{k=1}^{N}\beta_k\left(\partial_{x_j}\theta_k - \partial_{x_k}\theta_j\right), \notag \\
+    \eta_j(\rho) &= - \int_{\rho_0}^{\rho}
+    \sum_{k=1}^{N}\beta_k\left(\partial_{x_j}\theta_k - \partial_{x_k}\theta_j\right)
+    ds. \label{eq:eta-j-rho-quadrature}
+\end{align}
+In the integrand, all partial derivatives are evaluated at
+\begin{equation}
+    (x_1,\dots,x_N)
+    =
+    (\gamma_1-\beta_1s,\dots,\gamma_N-\beta_Ns).
+\end{equation}
+Thus the solutions of the Hamiltonian system are known by quadrature and can be written explicitly in terms of the prescribed modes.
+Furthermore, antisymmetry under interchange of $j$ and $k$ gives
+\begin{equation}
+    \sum_{j=1}^{N}\beta_j\xi'_j
+    =
+    -F\sum_{j=1}^{N}\sum_{k=1}^{N}\beta_j\beta_k
+    \left(\partial_{x_j}\theta_k - \partial_{x_k}\theta_j\right)
+    =0.
+\end{equation}
+Since $\xi_j(z_0)=0$, it follows that
+\begin{equation}
+    \sum_{j=1}^{N}\beta_j\xi_j=0
+\end{equation}
+for all $z$. The transformation in \eqref{eq:ubar-vbar-to-u-v-xi-j} therefore preserves each modal power and both product terms in the Hamiltonian:
+\begin{align}
+    \bar{u}_j\bar{v}_j &= u_jv_j, \notag \\
+    \prod_{j=1}^{N}\bar{u}_j^{\beta_j} &= \prod_{j=1}^{N}u_j^{\beta_j}, \notag \\
+    \prod_{j=1}^{N}\bar{v}_j^{\beta_j} &= \prod_{j=1}^{N}v_j^{\beta_j}.
+\end{align}
+Hence the Hamiltonian in \eqref{eq:H-phihat-F} is exactly invariant along the paired solutions, and the transformation in \eqref{eq:ubar-vbar-to-u-v-xi-j} can be regarded as gauge-like.
+
+The following example applies this construction with each prescribed modal phase depending only on its own modal power. This satisfies the phase-compatibility condition identically, so the gauge-like correction vanishes and the prescribed modes are recovered directly.
+
+\subsection{A system generated by an inverse spherical Bessel function}
+\label{sec:inverse-spherical-bessel-example}
+
+We now give a deliberately constructed example that combines the inverse procedure of Section \ref{sec:ode-generation} with the total-phase formulation above.
+Rather than beginning with a familiar Hamiltonian system, we prescribe a locally invertible special function from which we obtain the equation for $\rho$, the mode solutions, and finally a non-polynomial Hamiltonian that generates them.
+
+Let $j_1$ denote the spherical Bessel function of the first kind of order one,
+\begin{equation}
+    j_1(s)=\frac{\sin s}{s^2}-\frac{\cos s}{s}.
+\end{equation}
+The real inverse of $j_1$ is multivalued, with locally single-valued branches on intervals between successive zeros of $j_1'$ \cite{stoutemyerInverseSphericalBessel2022}.
+Although inverse spherical Bessel functions have themselves been described as generalisations of Lambert $W$, they are different from the inverse laws in Section \ref{sec:rational-generating-equations}.
+Writing the sine and cosine in $j_1$ in exponential form introduces both $e^{is}$ and $e^{-is}$, rather than the single exponential-product structure in \eqref{eq:extended-lambert-inverse-law}; correspondingly, the function $1/j_1'(\rho)$ below is not rational in $\rho$.
+Choose $c$ such that $j_1'(c)\ne0$ and select the local inverse branch containing $c$ by defining
+\begin{equation}
+    j_1(\rho(z))=j_1(c)+z,
+    \qquad
+    \rho(0)=c. \label{eq:inverse-j1-rho-definition}
+\end{equation}
+Differentiating \eqref{eq:inverse-j1-rho-definition} gives the autonomous equation
+\begin{align}
+    \rho'
+    &=f(\rho)
+    =\frac{1}{j_1'(\rho)}, \notag \\
+    &=\frac{\rho^3}
+    {\rho^2\sin\rho+2\rho\cos\rho-2\sin\rho}. \label{eq:inverse-j1-rho-ode}
+\end{align}
+The solution is local: it can be continued along the chosen branch only while $j_1'(\rho)\ne0$.
+
+We construct a two-mode system by taking $N=2$ and $\beta_1=\beta_2=1$.
+Writing $x_j=u_jv_j$, the intermodal power laws give
+\begin{equation}
+    x_j=\gamma_j-\rho,
+    \qquad
+    \gamma_1+\gamma_2=0,
+    \qquad
+    \rho=-\frac{x_1+x_2}{2}. \label{eq:inverse-j1-modal-powers}
+\end{equation}
+For constants $a_j,b_j\in\mathbb{C}$, choose the modal phases
+\begin{equation}
+    \phi_j(x_j)=a_j\operatorname{Si}(b_jx_j),
+    \qquad
+    \operatorname{Si}(s)=\int_0^s\frac{\sin t}{t}\,dt,
+\end{equation}
+and hence the total phase
+\begin{equation}
+    \widehat{\Phi}(x_1,x_2)
+    =a_1\operatorname{Si}(b_1x_1)
+    +a_2\operatorname{Si}(b_2x_2). \label{eq:inverse-j1-total-phase}
+\end{equation}
+In the notation of the general construction, $\theta_j(x_1,x_2)=\phi_j(x_j)$, so
+\begin{equation}
+    \partial_{x_j}\theta_k-\partial_{x_k}\theta_j=0,
+    \qquad j,k=1,2.
+\end{equation}
+The correction in \eqref{eq:eta-j-rho-quadrature} therefore vanishes: $\xi_j'=0$ and, with the matching initial conditions, $\xi_j=0$.
+This choice also has the useful derivative
+\begin{equation}
+    \partial_{x_j}\phi_j
+    =a_jb_jj_0(b_jx_j),
+\end{equation}
+where $j_0(s)=\sin(s)/s$.
+The prescribed modes are therefore
+\begin{align}
+    u_j(z)
+    &=\alpha_j\sqrt{\gamma_j-\rho(z)}
+    \exp\left[a_j\operatorname{Si}\left(b_j(\gamma_j-\rho(z))\right)\right], \notag \\
+    v_j(z)
+    &=\frac{1}{\alpha_j}\sqrt{\gamma_j-\rho(z)}
+    \exp\left[-a_j\operatorname{Si}\left(b_j(\gamma_j-\rho(z))\right)\right],
+    \label{eq:inverse-j1-mode-solutions}
+\end{align}
+where $\alpha_j\ne0$ are constants satisfying $\alpha_1\alpha_2=1$, as required for the selected $H=0$ branch of the Hamiltonian below, and all square roots and inverse functions are taken on consistent local branches.
+
+To construct the Hamiltonian, define
+\begin{align}
+    F(x_1,x_2)
+    &=f\left(-\frac{x_1+x_2}{2}\right)
+    =\frac{1}{j_1'\left(-(x_1+x_2)/2\right)}, \notag \\
+    &=\frac{1}{j_1'\left((x_1+x_2)/2\right)}, \label{eq:inverse-j1-F}
+\end{align}
+where the final equality follows because $j_1$ is odd and $j_1'$ is even.
+Applying the construction in \eqref{eq:q-p-phi} gives
+\begin{equation}
+    P(x_1,x_2)
+    =\frac{F(x_1,x_2)}{2\sqrt{x_1x_2}\sinh\widehat{\Phi}(x_1,x_2)},
+    \qquad
+    Q(x_1,x_2)
+    =\frac{F(x_1,x_2)}{\tanh\widehat{\Phi}(x_1,x_2)}. \label{eq:inverse-j1-P-Q}
+\end{equation}
+Thus a canonical Hamiltonian generating the prescribed power and phase behaviour is
+\begin{multline}
+    H
+    =\frac{F(x_1,x_2)(u_1u_2+v_1v_2)}
+    {2\sqrt{x_1x_2}\sinh\widehat{\Phi}(x_1,x_2)}
+    -\frac{F(x_1,x_2)}{\tanh\widehat{\Phi}(x_1,x_2)}, \\
+    x_1=u_1v_1,
+    \qquad
+    x_2=u_2v_2. \label{eq:inverse-j1-Hamiltonian}
+\end{multline}
+Both $P$ and $Q$ are non-polynomial functions of the modal powers.
+
+After applying Hamilton's equations to \eqref{eq:inverse-j1-Hamiltonian} and then working on the level set $H=0$, the resulting coupled system can be written directly in terms of the modes as
+\begin{align}
+    \frac{du_j}{dz}
+    &=-\frac{a_jb_jj_0\left(b_ju_jv_j\right)}
+    {j_1'\left((u_1v_1+u_2v_2)/2\right)}u_j
+    -\frac{1}
+    {2v_jj_1'\left((u_1v_1+u_2v_2)/2\right)}, \notag \\
+    \frac{dv_j}{dz}
+    &=\frac{a_jb_jj_0\left(b_ju_jv_j\right)}
+    {j_1'\left((u_1v_1+u_2v_2)/2\right)}v_j
+    -\frac{1}
+    {2u_jj_1'\left((u_1v_1+u_2v_2)/2\right)},
+    \qquad j=1,2. \label{eq:inverse-j1-coupled-system}
+\end{align}
+Here $j_1'$ denotes differentiation with respect to the argument of $j_1$.
+The first term in each equation is proportional to the corresponding mode and contains $j_0(b_ju_jv_j)$, a function of that mode's own modal power.
+It may therefore be interpreted as a generalised self-phase-modulation-like term whose overall strength is modulated by the common total-power factor in the denominator.
+The second terms determine the modal-power evolution, and direct substitution into \eqref{eq:inverse-j1-coupled-system} gives
+\begin{equation}
+    (u_jv_j)'=-\frac{1}{j_1'\left((u_1v_1+u_2v_2)/2\right)}=-\rho',
+\end{equation}
+in agreement with \eqref{eq:inverse-j1-modal-powers} and \eqref{eq:inverse-j1-rho-ode}.
+
+Figure \ref{fig:inverse-j1-example} compares the modes in \eqref{eq:inverse-j1-mode-solutions} with a direct numerical integration of the four coupled equations in \eqref{eq:inverse-j1-coupled-system}.
+The numerical points lie on the prescribed solutions up to the end of the plotted inverse branch.
+The increasingly rapid variation near the right endpoint occurs as $\rho$ approaches the first critical point of $j_1$ on that branch, where $j_1'(\rho)=0$.
+This example is intentionally removed from the usual polynomial and elliptic settings: it shows directly how the choice of a locally invertible function can generate a solvable canonical Hamiltonian system involving a different class of special functions.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{figures/case1_plot_1.pdf}
+    \caption{Comparison of the prescribed inverse-spherical-Bessel solutions (lines) with direct numerical integration of the coupled Hamiltonian system (markers). The parameters are $a_1=2.3$, $a_2=1.35$, $b_1=6.4$, and $b_2=9.7$, with $x_1(0)=5.8116$, $x_2(0)=3.4584$, and $\alpha_1=\alpha_2=1$ in \eqref{eq:inverse-j1-mode-solutions}. Thus $u_j(0)=\sqrt{x_j(0)}\exp[a_j\operatorname{Si}(b_jx_j(0))]$ and $v_j(0)=x_j(0)/u_j(0)$, giving $\rho(0)=-4.635$ on the selected branch of $j_1^{-1}$. Numerical integration uses SciPy \texttt{solve\_ivp} with DOP853, relative tolerance $10^{-11}$, absolute tolerance $10^{-13}$, and maximum step $0.05$. The comparison stops at $98\%$ of the interval to the next critical point of $j_1$; the mode panel uses a logarithmic vertical scale.}
+    \label{fig:inverse-j1-example}
+\end{figure}
+
+
 \section{Discussion}
 \label{sec:conclusion}
 
@@ -2061,165 +2042,10 @@ The present construction is local and applies on a selected Hamiltonian level an
 Extending it therefore involves understanding how those local realisations continue, how they vary with the conserved quantities, and which equivalences preserve their reconstruction data.
 This provides a mathematical programme for organising the functional freedom of the Hamiltonian family beyond a list of explicitly solvable examples.
 
-\appendix
+\section*{Code availability}
 
-
-% ---------- APPENDIX ------------
-% --------------------------------
-
-\section{Liouville integrability on the regular locus}
-\label{app:la-integ-appendix}
-
-We have already shown in Section \ref{sec:gen-ham-system} that the differential equations for $\rho, u_j, v_j$ are separable and thus the system is solvable by quadratures. 
-For completeness, this appendix verifies the commuting-integral criterion for Liouville integrability on the regular locus. Work on an open phase-space domain where the Hamiltonian is holomorphic, the modal products are nonzero, and at least one weight is nonzero.
-
-From \eqref{eq:uvj-rho-gammaj} we see that the intermodal power conservation laws may be written as:
-\begin{equation}
-    B_{j,k} = \beta_k u_j v_j - \beta_j u_k v_k = \beta_k \gamma_j - \beta_j \gamma_k
-\end{equation}
-for $j,k=1\dots N$, where the right hand side is constant. 
-However, not all $B_{j,k}$ are independent. 
-If, without loss of generality, we take $\beta_{N}\ne0$, we may define $N-1$ intermodal power laws as:
-\begin{equation}
-    C_{l} = \beta_N u_l v_l - \beta_l u_N v_N = \beta_N \gamma_l - \beta_l \gamma_N
-\end{equation}
-for $l=1,\dots,N-1$, then all other $B_{j,k}$ can be written as linear combinations of these via:
-\begin{equation}
-    B_{j,k} = \frac{\beta_k}{\beta_N}C_j - \frac{\beta_j}{\beta_N}C_k,
-\end{equation}
-for $j,k=1\dots N$ with the convention that $C_N=0$. 
-On this domain the differentials $dx_m$ are independent: each is nonzero and supported on its own canonical pair $(u_m,v_m)$. 
-Holding $x_N$ fixed, varying $x_l$ changes $C_l=\beta_Nx_l-\beta_lx_N$ and leaves the other $C_m$ unchanged. 
-Since $\beta_N\ne0$, the $C_l, l=1,\dots,N-1$, are independent.
-
-The Hamiltonian is conserved because it has no explicit $z$ dependence.
-Its functional independence from the $C_l$ must be imposed on the locus under consideration:
-\begin{equation}
-    dH\wedge dC_1\wedge\cdots\wedge dC_{N-1}\ne0.
-    \label{eq:liouville-regular-locus}
-\end{equation}
-A sufficient condition is $P(U-V)\ne0$: varying a pair with $\beta_j\ne0$ by $u_j\mapsto u_je^\theta$, $v_j\mapsto v_je^{-\theta}$ fixes every $x_m$ and gives $dH/d\theta=\beta_jP(U-V)$ at $\theta=0$.
-Other points may also satisfy \eqref{eq:liouville-regular-locus}; no independence claim is made on degenerate loci or for coefficient choices that make $H$ dependent on the $C_l$.
-
-We will now show that the $C_l, l=1,\dots,N-1$ and $H$ are in involution.
-We use the canonical Poisson bracket
-\begin{equation}
-    \{F,G\} =\sum_{j=1}^{N}\left(\partial_{u_j}F\,\partial_{v_j}G - \partial_{v_j}F\,\partial_{u_j}G\right).
-\end{equation}
-The modal powers $x_j=u_jv_j$ are mutually in involution, since, for all $j,k$:
-\begin{equation}
-    \{x_j,x_k\}=0,
-\end{equation}
-and, since each $C_l$ is a linear combination of modal powers, it follows immediately that
-\begin{equation}
-    \{C_l,C_m\}=0.
-\end{equation}
-Moreover, Hamilton's equations give
-\begin{equation}
-    \{x_j,H\}=\frac{d x_j}{dz} = -\beta_j P \left(\prod_{r=1}^{N}u_r^{\beta_r} - \prod_{r=1}^{N}v_r^{\beta_r} \right),
-\end{equation}
-therefore:
-\begin{equation}
-    \{C_l,H\} = \beta_N\{x_l,H\} - \beta_l\{x_N,H\} = 0.
-\end{equation}
-Thus $C_1,\dots,C_{N-1},H$ are in involution and are independent on the locus \eqref{eq:liouville-regular-locus}, establishing local Liouville integrability there.
-For a real symplectic restriction, the Liouville--Arnold torus and action--angle conclusion additionally requires a compact connected regular common level set; these global hypotheses are not asserted for the general complex systems considered here.
-
-\section{Weierstrass form under reparameterisation}
-\label{app:log-weierstrass-reparam}
-
-Consider the logarithmically deformed Weierstrass equation \eqref{eq:log-weierstrass-normal}, and write
-\begin{equation}
-    W(s)=4s^3-g_2s-g_3.
-\end{equation}
-Let $w(h)$ solve the ordinary Weierstrass equation
-\begin{equation}
-    \left(\frac{dw}{dh}\right)^2=W(w),
-\end{equation}
-so that, after choosing a shift $h_*$,
-\begin{equation}
-    w(h)=\wp(h-h_*;g_2,g_3).
-\end{equation}
-We seek a solution of the deformed equation in the form
-\begin{equation}
-    s(z)=w(h(z)).
-\end{equation}
-Substitution into \eqref{eq:log-weierstrass-normal} gives
-\begin{equation}
-    \left(\frac{dw}{dh}\right)^2 h'^2
-    =
-    \left(\frac{dw}{dh}\right)^2 +
-    c_5(w+c_6)^2
-    \log^2\left(\frac{4(w+c_6)}{c_0}\right).
-\end{equation}
-Now define
-\begin{equation}
-    L(h)
-    =
-    \log\left[
-        \log\left(
-            \frac{4(w(h)+c_6)}{c_0}
-        \right)
-    \right].
-\end{equation}
-Its derivative is
-\begin{equation}
-    \frac{dL}{dh} = \frac{dw/dh}{(w+c_6)\log\left(4(w+c_6)/c_0\right)}.
-\end{equation}
-It follows that the equation for the new variable $h$ is
-\begin{equation}
-    h'^2 = 1 + \frac{c_5}{(dL/dh)^2}. \label{eq:log-weierstrass-h-prime}
-\end{equation}
-Let $h_0=h(z_0)$ and define, locally on consistent branches,
-\begin{equation}
-    \mathcal{Z}(h)
-    =
-    \int_{h_0}^{h}
-    \frac{L'(\tau)}
-    {\sqrt{L'(\tau)^2+c_5}}
-    \,d\tau. \label{eq:log-weierstrass-reparam-integral}
-\end{equation}
-Equation \eqref{eq:log-weierstrass-h-prime} is then equivalent to
-\begin{equation}
-    z-z_0=\mathcal{Z}(h(z)).
-\end{equation}
-Where $\mathcal{Z}$ is locally invertible, the solution may therefore be written
-\begin{equation}
-    s(z)
-    =
-    \wp\left(
-        \mathcal{Z}^{-1}(z-z_0)-h_*;
-        g_2,g_3
-    \right). \label{eq:log-weierstrass-wp-reparam}
-\end{equation}
-There is also a simple limiting form when the logarithmic deformation is dominant. If
-\begin{equation}
-    |c_5|\gg |L'(h)|^2
-\end{equation}
-along the part of the solution under consideration, then, on a chosen branch of $\sqrt{c_5}$,
-\begin{equation}
-    \mathcal{Z}(h)
-    \sim
-    \frac{1}{\sqrt{c_5}}
-    \int_{h_0}^{h}L'(\tau)\,d\tau
-    =
-    \frac{L(h)-L(h_0)}{\sqrt{c_5}}.
-\end{equation}
-Consequently,
-\begin{equation}
-    L(h(z))
-    \sim
-    L(h_0)+\sqrt{c_5}(z-z_0),
-    \qquad
-    h(z)
-    \sim
-    L^{-1}\left(
-        L(h_0)+\sqrt{c_5}(z-z_0)
-    \right). \label{eq:log-weierstrass-large-c5}
-\end{equation}
-Thus, in this regime, the reparameterisation is approximately obtained by directly inverting the double-logarithmic function $L$.
-
-When $c_5=0$, the integrand in \eqref{eq:log-weierstrass-reparam-integral} is locally $\pm1$, so $h$ differs from $z$ only by a sign and an additive constant and the ordinary Weierstrass solution is recovered. When $c_5\ne0$, the dependence on the Weierstrass function remains, but the relation between $h$ and $z$ requires inversion of the integral \eqref{eq:log-weierstrass-reparam-integral}. Thus the logarithmically deformed equation is elliptic in the reparameterised variable $h$, but is not generally an elliptic function of $z$.
+The computational companion, including self-contained Marimo notebooks, supplementary derivations, executed HTML exports, and symbolic and numerical tests, is available at\newline
+\url{https://github.com/HeskethGD/gen-int-sys}.
 
 \printbibliography
 
