@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1792354704.56428 "main.bcf" "main.bbl" "main" 1792362082.40698 0
-  "main.bcf" 1792362082.32449 113902 666514311a52ea0d776ac3dffd770aa1 "pdflatex"
-  "references.bib" 1792337614.05793 15836 ffd116419c6c712d994a262e335f9ba6 ""
+["biber main"] 1792399808.52208 "main.bcf" "main.bbl" "main" 1792414277.66029 0
+  "main.bcf" 1792414277.57624 113902 666514311a52ea0d776ac3dffd770aa1 "pdflatex"
+  "references.bib" 1792399802.43144 16006 f5418911e7098f2d13f0368a7aa4bcd4 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1792362080.84537 "main.tex" "main.pdf" "main" 1792362082.4074 0
+["pdflatex"] 1792414276.05742 "main.tex" "main.pdf" "main" 1792414277.66054 0
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -157,11 +157,11 @@
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
   "figures/case1_plot_1.pdf" 1792337614.05385 20918 6fd888df5351913cf8ac1508589eac74 ""
   "figures/quartic_two_mode_validation.pdf" 1792337614.05494 41931 82d7cf26368e91ec80f36bd3a925f95b ""
-  "main.aux" 1792362082.31627 33404 2d83f16e38554ab9b49e5b8015af712c "pdflatex"
-  "main.bbl" 1792354705.55312 64381 559f51beb3ab12dfd1ce9af4469a63a2 "biber main"
-  "main.out" 1792362082.32375 6417 cbb04ada7946ddeaa29d2485e195b90e "pdflatex"
-  "main.run.xml" 1792362082.32507 2305 52095dfad395b381e9a32937e764a41c "pdflatex"
-  "main.tex" 1792362078.91724 119784 a3ec4c2e45b4e537d1b62defaff24169 ""
+  "main.aux" 1792414277.56881 33902 bd2bd1a4aa4cfc41a6204ca5e5691322 "pdflatex"
+  "main.bbl" 1792399809.32272 64869 76658954b647df765430f685d0eea26e "biber main"
+  "main.out" 1792414277.57548 6417 cbb04ada7946ddeaa29d2485e195b90e "pdflatex"
+  "main.run.xml" 1792414277.57678 2305 52095dfad395b381e9a32937e764a41c "pdflatex"
+  "main.tex" 1792414274.22565 121227 76127a6597ecebb33897f57a07190796 ""
   (generated)
   "main.aux"
   "main.bcf"

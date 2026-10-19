@@ -143,15 +143,15 @@ def _():
 
     If $\mathcal H_S=P S(T)-Q$, with $T=U+V$, let
     \[
-    h=S^{-1}(Q/P),\quad K=T-h,\quad A=PS'(h).
+    \widetilde Q=S^{-1}(Q/P),\quad K=T-\widetilde Q,\quad A=PS'(\widetilde Q).
     \]
-    Differentiation on T=h gives $d\mathcal H_S=A\,dK$.
+    Differentiation on $T=\widetilde Q$ gives $d\mathcal H_S=A\,dK$.
     Thus K gives the same local trajectories after reparameterisation, and
-    $\widetilde H=AK$ gives the same vector field in z **on the selected level**.
+    $\widetilde H=AK$ gives the same mode equations in z **on the selected level**.
     Invertibility of S and nonzero P,A are local assumptions.
 
-    The symbolic check uses S(T)=exp(T): h=log(Q/P), A=Q. Derivatives with respect
-    to T and x agree on T=h. This does not assert equality away from that level.
+    The symbolic check uses S(T)=exp(T): $\widetilde Q=\log(Q/P)$, A=Q. Derivatives with respect
+    to T and x agree on $T=\widetilde Q$. This does not assert equality away from that level.
     """)
     return
 

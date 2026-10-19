@@ -6,6 +6,8 @@ with app.setup:
     import marimo as mo
     import sympy as sp
     import mpmath as mp
+    import numpy as np
+    from scipy.integrate import solve_ivp
 
 
 @app.function
@@ -147,6 +149,158 @@ def lambert_log_validation():
         return float(max(rows))
 
 
+@app.function
+def lambert_mode_checks():
+    """Check the full Hamiltonian first, then impose its unsquared zero level."""
+    u,v,a,K=sp.symbols('u v a K',nonzero=True)
+    h=sp.Symbol('h',positive=True)
+    x=u*v;rho=-x;total=u+v
+    P=sp.sqrt(a)*x/(1+a*x)
+    H=P*(total-2*sp.sqrt((K-sp.log(-x))/a))
+    rhs=(u*(2+a*v*total)/(sp.sqrt(a)*(1+a*x)*total),
+         -v*(2+a*u*total)/(sp.sqrt(a)*(1+a*x)*total))
+    invariant=a*total**2/4+sp.log(-x)
+    drho=sp.factor(-v*rhs[0]-u*rhs[1])
+    # The positive dummy h fixes the algebraic square-root branch, which is
+    # then matched to (u+v)/2; no principal-root assertion is made globally.
+    full=(sp.diff(H,v),-sp.diff(H,u))
+    restricted=tuple(sp.simplify(f.subs(sp.log(-x),K-a*h*h)
+                                .subs(h,total/2)) for f in full)
+    residuals=[sp.simplify(f-r) for f,r in zip(restricted,rhs)]
+    residuals.extend([
+        sp.cancel(rhs[0]-rhs[1]-2/sp.sqrt(a)),
+        sp.cancel(sp.diff(invariant,u)*rhs[0]+sp.diff(invariant,v)*rhs[1]),
+        sp.simplify(drho-sp.sqrt(a)*rho*(u-v)/(a*rho-1)),
+        sp.simplify(drho**2-4*rho**2/(a*rho-1)**2*
+                    (a*rho-sp.log(rho)+invariant))])
+    denominator=(1+a*x)*total
+    polynomial=(u*(2+a*v*total)/sp.sqrt(a),
+                -v*(2+a*u*total)/sp.sqrt(a))
+    residuals.extend(sp.cancel(denominator*r-p) for r,p in zip(rhs,polynomial))
+    residuals.append(sp.simplify(
+        sum(sp.diff(invariant,y)*r for y,r in zip((u,v),polynomial))))
+    return dict(H=H,rhs=rhs,invariant=invariant,drho=drho,
+                denominator=denominator,polynomial=polynomial,
+                residuals=tuple(residuals))
+
+
+@app.function
+def lambert_mode_pair(t,a=-1,level=0,branch=0,root_sign=1):
+    """Exact modes with t=z-z0; roots must be continued from the initial data."""
+    t,a,level=mp.mpc(t),mp.mpc(a),mp.mpc(level)
+    if a == 0 or root_sign not in (-1,1):
+        raise ValueError("Use nonzero a and a square-root sign of +1 or -1.")
+    rho=-mp.lambertw(-a*mp.exp(level-t*t),branch)/a
+    common=root_sign*mp.sqrt(t*t/a-rho)
+    difference=t/mp.sqrt(a)
+    return common+difference,common-difference
+
+
+@app.function
+def lambert_mode_derivative_validation():
+    """High-precision equation checks on two a signs, two W branches and levels."""
+    with mp.workdps(55):
+        errors=[]
+        for a,branch in [(-1,0),(mp.mpf('0.25'),0),(mp.mpf('0.25'),-1)]:
+            for level in [mp.mpf('0'),mp.mpf('0.2')]:
+                for root_sign in (-1,1):
+                    for t in [mp.mpf('0.1'),mp.mpf('0.3')]:
+                        u,v=lambert_mode_pair(t,a,level,branch,root_sign)
+                        total=u+v;rho=-u*v
+                        denominator=mp.sqrt(a)*(1+a*u*v)*total
+                        rhs=(u*(2+a*v*total)/denominator,
+                             -v*(2+a*u*total)/denominator)
+                        for j in range(2):
+                            derivative=mp.diff(
+                                lambda z:lambert_mode_pair(z,a,level,branch,root_sign)[j],t)
+                            errors.append(abs(derivative-rhs[j])/max(1,abs(rhs[j])))
+                        errors.extend([
+                            abs(a*total**2/4+mp.log(rho)-level),
+                            abs(a*rho-mp.log(rho)-(t*t-level)),
+                            abs(total**2-4*(level-mp.log(rho))/a)])
+        return float(max(errors))
+
+
+@app.function
+def lambert_mode_rhs(t,modes,a):
+    u,v=modes;total=u+v
+    denominator=np.sqrt(complex(a))*(1+a*u*v)*total
+    return np.array([u*(2+a*v*total)/denominator,
+                     -v*(2+a*u*total)/denominator])
+
+
+@app.function
+def lambert_mode_full_rhs(t,modes,a,level=0,root_sign=1,root_anchor=None):
+    """Unreduced H_K gradient, retaining terms that vanish only on H_K=0."""
+    u,v=modes;x=u*v;total=u+v
+    root=root_sign*np.sqrt((level-np.log(-x))/a+0j)
+    if root_anchor is not None and abs(-root-root_anchor)<abs(root-root_anchor):
+        root=-root
+    P=np.sqrt(complex(a))*x/(1+a*x)
+    dP=np.sqrt(complex(a))/(1+a*x)**2
+    bracket=total-2*root
+    return np.array([dP*u*bracket+P*(1+u/(a*x*root)),
+                     -dP*v*bracket-P*(1+v/(a*x*root))])
+
+
+@app.function
+def lambert_mode_validation(a=-1,level=0,branch=0,points=41):
+    """Compare exact modes with rational, full Hamiltonian and cubic flows."""
+    times=np.linspace(.1,.4,points)
+    with mp.workdps(45):
+        exact=np.array([[complex(x) for x in lambert_mode_pair(str(t),a,level,branch)]
+                        for t in times]).T
+    initial=exact[:,0]
+    root_anchor=initial.sum()/2
+    options=dict(t_eval=times,method='DOP853',rtol=2e-12,atol=2e-13)
+    rational=solve_ivp(lambert_mode_rhs,(times[0],times[-1]),initial,
+                       args=(a,),**options)
+    full=solve_ivp(lambert_mode_full_rhs,(times[0],times[-1]),initial,
+                   args=(a,level,1,root_anchor),**options)
+    if not rational.success or not full.success:
+        raise RuntimeError((rational.message,full.message))
+    scale=max(1,float(np.max(abs(exact))))
+    u,v=full.y
+    invariant=a*(u+v)**2/4+np.log(-u*v)
+    root=np.sqrt((level-np.log(-u*v))/a+0j)
+    root=np.where(abs(-root-root_anchor)<abs(root-root_anchor),-root,root)
+    H=np.sqrt(complex(a))*u*v/(1+a*u*v)*(u+v-2*root)
+    report=dict(rational_mode_error=float(np.max(abs(rational.y-exact))/scale),
+                full_mode_error=float(np.max(abs(full.y-exact))/scale),
+                invariant_error=float(np.max(abs(invariant-level))),
+                hamiltonian_error=float(np.max(abs(H))),
+                difference_error=float(np.max(abs(u-v-2*times/np.sqrt(complex(a))))))
+    # Verify the polynomial clock on its own short complex-time path,
+    # reconstructing t rather than identifying real clock time with real t.
+    clock0=(1+a*initial.prod())*initial.sum()
+    clock_end=.08/clock0
+    def cubic_path(s,state):
+        u,v,t=state;total=u+v
+        return clock_end*np.array([
+            u*(2+a*v*total)/np.sqrt(complex(a)),
+            -v*(2+a*u*total)/np.sqrt(complex(a)),
+            (1+a*u*v)*total])
+    cubic=solve_ivp(cubic_path,(0,1),np.array([*initial,complex(times[0])]),
+                    t_eval=np.linspace(0,1,25),method='DOP853',rtol=2e-12,atol=2e-13)
+    if not cubic.success:
+        raise RuntimeError(cubic.message)
+    with mp.workdps(45):
+        expected=[]
+        previous_common=initial.sum()/2
+        for t in cubic.y[2]:
+            pair=[complex(x) for x in lambert_mode_pair(complex(t),a,level,branch)]
+            common=sum(pair)/2
+            if abs(-common-previous_common)<abs(common-previous_common):
+                difference=(pair[0]-pair[1])/2
+                pair=[-common+difference,-common-difference]
+            previous_common=sum(pair)/2
+            expected.append(pair)
+    expected=np.array(expected).T
+    report['cubic_mode_error']=float(np.max(abs(cubic.y[:2]-expected))/scale)
+    report['min_abs_denominator']=float(np.min(abs((1+a*u*v)*(u+v))))
+    return report
+
+
 @app.cell
 def _():
     mo.md(r"""
@@ -199,6 +353,102 @@ def _():
     The chosen log branch satisfies a*rho-log(rho)=(z-z0)^2. A 60-digit check
     on the real a=-1 branch gives maximum implicit/equation residual {lambert_error:.2e}.
     This example is independent of Sergyeyev's system.
+    """)
+    return
+
+
+@app.cell
+def _():
+    lambert_modes=lambert_mode_checks()
+    assert all(r==0 for r in lambert_modes['residuals'])
+    mo.md(r"""
+    ## A one-mode Hamiltonian for the squared-time Lambert solution
+
+    Use the paper's parameter a, with t=z-z0 and rho=-uv. For a fixed conserved
+    value K, take
+    \[
+    H_K=\frac{\sqrt a\,uv}{1+a uv}
+       \left[u+v-2\sqrt{\frac{K-\log(-uv)}a}\right].
+    \]
+    Differentiating the full Hamiltonian before imposing its zero level, and
+    matching the root to (u+v)/2, gives
+    \[
+    u'=\frac{u[2+a v(u+v)]}{\sqrt a(1+a uv)(u+v)},\qquad
+    v'=-\frac{v[2+a u(u+v)]}{\sqrt a(1+a uv)(u+v)}.
+    \]
+    The symbolic checks verify both Hamilton equations on that branch, as well as
+    \[
+    (u-v)'=\frac2{\sqrt a},\qquad
+    C=\frac a4(u+v)^2+\log(-uv),\qquad C'=0.
+    \]
+    With C=K, the explicit modes are
+    \[
+    \rho=-\frac1aW_k(-a e^{K-t^2}),\qquad
+    u=\frac t{\sqrt a}+\sqrt{\frac{t^2}a-\rho},\quad
+    v=-\frac t{\sqrt a}+\sqrt{\frac{t^2}a-\rho}.
+    \]
+    The common root may have either local sign. Initial modes determine
+    z0=z*-(sqrt(a)/2)(u*-v*) and K=C(u*,v*); choose the W branch and root
+    sign consistently with them. K=0 gives the paper's scalar equation.
+
+    Work where a, uv, 1+a*uv and u+v are nonzero, with continued local
+    logarithms and roots. For fixed K the rational equations agree with H_K
+    on its selected zero-energy branch; they need not agree away from it.
+
+    **All symbolic residuals vanish.**
+    """)
+    return
+
+
+@app.cell
+def _():
+    lambert_mode_error=lambert_mode_derivative_validation()
+    assert lambert_mode_error<1e-45
+    lambert_mode_reports=[]
+    for _a,_level,_branch in [(-1,0,0),(.25,.2,0),(.25,0,-1)]:
+        _report=lambert_mode_validation(_a,_level,_branch)
+        assert max(v for k,v in _report.items() if k!='min_abs_denominator')<1e-8
+        assert _report['min_abs_denominator']>0
+        lambert_mode_reports.append(dict(a=_a,K=_level,branch=_branch,**_report))
+    mo.vstack([
+        mo.md(f"""
+        ### Independent numerical checks
+
+        At 55-digit precision, derivatives of the explicit modes, the conserved
+        level and the Lambert identity have maximum residual
+        **{lambert_mode_error:.2e}**. The checks cover both signs of the common
+        square root, positive and negative a, two conserved levels, and W branches
+        0 and -1 on intervals where the selected logarithm agrees.
+
+        DOP853 integration of both the rational equations and the unreduced
+        Hamilton equations is compared against the explicit modes below.
+        The latter retains all terms proportional to H_K. The integration uses
+        rtol=2e-12 and atol=2e-13 for t in [0.1,0.4].
+        """),
+        mo.ui.table(lambert_mode_reports,selection=None)])
+    return
+
+
+@app.cell
+def _():
+    mo.md(r"""
+    ### Cubic equations in a polynomial clock
+
+    With D=(1+a*uv)(u+v) and dσ/dz=1/D, the rational equations become
+    \[
+    \frac{du}{d\sigma}=\frac{u[2+a v(u+v)]}{\sqrt a},\qquad
+    \frac{dv}{d\sigma}=-\frac{v[2+a u(u+v)]}{\sqrt a},\qquad
+    \frac{dz}{d\sigma}=(1+a uv)(u+v).
+    \]
+    These cubic mode equations preserve C and trace the same local solution curves.
+    Multiplying H_K by D gives their canonical Hamiltonian on the selected zero
+    level; additional product-rule terms vanish there.
+
+    The table's cubic-mode error comes from independently integrating this
+    augmented polynomial system along a short complex σ path, reconstructing t
+    and comparing with the Lambert modes there. The square root is continued by
+    matching neighbouring values. The exact formulas are parametric solutions
+    in this clock: real σ is not identified with real z.
     """)
     return
 

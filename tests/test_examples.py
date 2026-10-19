@@ -87,6 +87,42 @@ def test_explicit_log_lambert_solution(examples):
     assert examples['05'].lambert_log_validation()<1e-50
 
 
+def test_lambert_mode_hamiltonian_invariant_and_scalar(examples):
+    assert all(r==0 for r in examples['05'].lambert_mode_checks()['residuals'])
+
+
+def test_lambert_mode_explicit_derivatives(examples):
+    assert examples['05'].lambert_mode_derivative_validation()<1e-45
+
+
+@pytest.mark.parametrize('a,level,branch',[(-1,0,0),(-1,.2,0),(.25,0,-1),(.25,.2,0)])
+def test_lambert_modes_and_polynomial_clock(examples,a,level,branch):
+    report=examples['05'].lambert_mode_validation(a,level,branch)
+    assert report['min_abs_denominator']>0
+    assert max(value for key,value in report.items() if key!='min_abs_denominator')<1e-8
+
+
+@pytest.mark.parametrize('a,branch',[(-1,0),(.25,-1)])
+def test_lambert_full_hamiltonian_gradient_off_level(examples,a,branch):
+    module=examples['05']
+    with mp.workdps(55):
+        initial=module.lambert_mode_pair('.2',a,0,branch)
+        values=[initial[0]*mp.mpf('1.01'),initial[1]]
+        anchor=sum(initial)/2
+        def H(u,v):
+            x=u*v
+            root=mp.sqrt(-mp.log(-x)/a)
+            if abs(-root-anchor)<abs(root-anchor):
+                root=-root
+            return mp.sqrt(a)*x/(1+a*x)*(u+v-2*root)
+        assert abs(H(*values))>mp.mpf('1e-6')
+        expected=np.array([complex(mp.diff(lambda v:H(values[0],v),values[1])),
+                           complex(-mp.diff(lambda u:H(u,values[1]),values[0]))])
+        actual=module.lambert_mode_full_rhs(0,np.array(list(map(complex,values))),a,
+                                           root_anchor=complex(anchor))
+        assert np.max(abs(actual-expected))/max(1,np.max(abs(expected)))<1e-12
+
+
 @pytest.mark.parametrize('f',[
     lambda r:r/(1+r),lambda r:(r-1)**3*(r+2)/(1+r*r),lambda r:1/(1+r*r)])
 def test_rational_separation_and_inverse_derivative(examples,f):

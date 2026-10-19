@@ -25,6 +25,8 @@ The general reduction arguments remain in the paper, and notebook 01 contains th
 
 Rational inverse laws are checked by differentiation, and denominator clearing is checked only on the selected level. The Bessel and modular numerical vector fields are compared off level against high-precision derivatives of their full Hamiltonians. Their trajectories are compared with inverse-function and theta-constant solutions. The modular tests also check theta continuation, the lambda ODE and the Darboux–Halphen map.
 
+The squared-time Lambert-W example checks the rational one-mode equations against the differentiated Hamiltonian on its selected zero-energy branch, the conserved logarithmic integral, and the scalar reduction. High-precision differentiation checks the explicit modes across two signs of the parameter, two Lambert branches, two conserved levels and both common-root signs. Independent integrations compare the explicit modes with the rational equations, the full Hamilton equations and the cubic equations in a reparameterised clock; the latter reconstructs the original time along a short complex path. Off-level high-precision gradients check the implemented full Hamilton equations separately. All comparisons use local branches away from the singular denominators.
+
 The example-notebook checks also require recognised display-math elements and bracket delimiters in source.
 
 ## Numerical settings and limits

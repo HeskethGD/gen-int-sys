@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.12.30)  18 OCT 2026 23:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.12.30)  19 OCT 2026 13:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -730,18 +730,18 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 [21]
 
 [22]
-<figures/quartic_two_mode_validation.pdf, id=592, 1293.97992pt x 1456.44125pt>
+
+[23]
+<figures/quartic_two_mode_validation.pdf, id=604, 1293.97992pt x 1456.44125pt>
 File: figures/quartic_two_mode_validation.pdf Graphic file (type pdf)
 <use figures/quartic_two_mode_validation.pdf>
-Package pdftex.def Info: figures/quartic_two_mode_validation.pdf  used on input line 1552.
+Package pdftex.def Info: figures/quartic_two_mode_validation.pdf  used on input line 1579.
 (pdftex.def)             Requested size: 407.66833pt x 458.8481pt.
 
 
-[23]
+[24]
 
-[24 <./figures/quartic_two_mode_validation.pdf>]
-
-[25]
+[25 <./figures/quartic_two_mode_validation.pdf>]
 
 [26]
 
@@ -750,18 +750,18 @@ Package pdftex.def Info: figures/quartic_two_mode_validation.pdf  used on input 
 [28]
 
 [29]
-<figures/case1_plot_1.pdf, id=788, 731.13103pt x 586.59103pt>
+
+[30]
+<figures/case1_plot_1.pdf, id=796, 731.13103pt x 586.59103pt>
 File: figures/case1_plot_1.pdf Graphic file (type pdf)
 <use figures/case1_plot_1.pdf>
-Package pdftex.def Info: figures/case1_plot_1.pdf  used on input line 1880.
+Package pdftex.def Info: figures/case1_plot_1.pdf  used on input line 1907.
 (pdftex.def)             Requested size: 452.9679pt x 363.41415pt.
 
 
-[30]
+[31]
 
-[31 <./figures/case1_plot_1.pdf>]
-
-[32]
+[32 <./figures/case1_plot_1.pdf>]
 
 [33]
 
@@ -770,15 +770,12 @@ Package pdftex.def Info: figures/case1_plot_1.pdf  used on input line 1880.
 [35]
 
 [36]
-Overfull \hbox (11.18898pt too wide) in paragraph at lines 2051--2051
-\OT1/cmr/m/it/10.95 Reparametrized Hamil-to-nian Sys-tems with Ap-pli-ca-tion to Non-holo-nomic Me-chan-ics\OT1/cmr/m/n/10.95 . Aug. 17,
- []
-
-
 
 [37]
 
-[38] (./main.aux)
+[38]
+
+[39] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -790,18 +787,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 20877 strings out of 473190
- 370155 string characters out of 5715799
- 1224355 words of memory out of 5000000
- 43592 multiletter control sequences out of 15000+600000
+ 20888 strings out of 473190
+ 370397 string characters out of 5715799
+ 1224628 words of memory out of 5000000
+ 43598 multiletter control sequences out of 15000+600000
  577630 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,13n,81p,1381b,1728s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on main.pdf (38 pages, 487470 bytes).
+Output written on main.pdf (39 pages, 490052 bytes).
 PDF statistics:
- 1179 PDF objects out of 1200 (max. 8388607)
- 945 compressed objects within 10 object streams
- 308 named destinations out of 1000 (max. 500000)
+ 1190 PDF objects out of 1200 (max. 8388607)
+ 955 compressed objects within 10 object streams
+ 313 named destinations out of 1000 (max. 500000)
  211 words of extra memory for PDF output out of 10000 (max. 10000000)
 
